@@ -2253,13 +2253,13 @@ static int __pyx_f_15Model_FB_cython_func(double __pyx_v_t, double *__pyx_v_y, d
   double __pyx_v_kadd_ECb_smooth;
   double __pyx_v_kn_ECb_smooth;
   double __pyx_v_kpkaI1;
-  double __pyx_v_PP10;
+  CYTHON_UNUSED double __pyx_v_PP10;
   double __pyx_v_KM;
   double __pyx_v_K5;
   double __pyx_v_k12;
-  double __pyx_v_k11;
+  CYTHON_UNUSED double __pyx_v_k11;
   double __pyx_v_kcan0I1;
-  double __pyx_v_km11;
+  CYTHON_UNUSED double __pyx_v_km11;
   double __pyx_v_CaMKT;
   double __pyx_v_k7;
   double __pyx_v_k6;
@@ -2553,22 +2553,22 @@ static int __pyx_f_15Model_FB_cython_func(double __pyx_v_t, double *__pyx_v_y, d
   CYTHON_UNUSED double __pyx_v_reverseRate_PKAcAMP2_bind;
   CYTHON_UNUSED double __pyx_v_forwardRate_PKAcAMP4_diss;
   CYTHON_UNUSED double __pyx_v_reverseRate_PKAcAMP4_diss;
-  CYTHON_UNUSED double __pyx_v_forwardRate_Cam_plus_PP2B__PP2BCam_reac;
-  CYTHON_UNUSED double __pyx_v_reverseRate_Cam_plus_PP2B__PP2BCam_reac;
-  CYTHON_UNUSED double __pyx_v_forwardRate_CamCa2C_plus_PP2B__PP2BCamCa2C_reac;
-  CYTHON_UNUSED double __pyx_v_reverseRate_CamCa2C_plus_PP2B__PP2BCamCa2C_reac;
-  CYTHON_UNUSED double __pyx_v_forwardRate_CamCa2N_plus_PP2B__PP2BCamCa2N_reac;
-  CYTHON_UNUSED double __pyx_v_reverseRate_CamCa2N_plus_PP2B__PP2BCamCa2N_reac;
-  CYTHON_UNUSED double __pyx_v_forwardRate_PP2BCam_plus_Ca2__PP2BCamCa2C_reac;
-  CYTHON_UNUSED double __pyx_v_reverseRate_PP2BCam_plus_Ca2__PP2BCamCa2C_reac;
-  CYTHON_UNUSED double __pyx_v_forwardRate_PP2BCam_plus_Ca2__PP2BCamCa2N_reac;
-  CYTHON_UNUSED double __pyx_v_reverseRate_PP2BCam_plus_Ca2__PP2BCamCa2N_reac;
+  double __pyx_v_forwardRate_Cam_plus_PP2B__PP2BCam_reac;
+  double __pyx_v_reverseRate_Cam_plus_PP2B__PP2BCam_reac;
+  double __pyx_v_forwardRate_CamCa2C_plus_PP2B__PP2BCamCa2C_reac;
+  double __pyx_v_reverseRate_CamCa2C_plus_PP2B__PP2BCamCa2C_reac;
+  double __pyx_v_forwardRate_CamCa2N_plus_PP2B__PP2BCamCa2N_reac;
+  double __pyx_v_reverseRate_CamCa2N_plus_PP2B__PP2BCamCa2N_reac;
+  double __pyx_v_forwardRate_PP2BCam_plus_Ca2__PP2BCamCa2C_reac;
+  double __pyx_v_reverseRate_PP2BCam_plus_Ca2__PP2BCamCa2C_reac;
+  double __pyx_v_forwardRate_PP2BCam_plus_Ca2__PP2BCamCa2N_reac;
+  double __pyx_v_reverseRate_PP2BCam_plus_Ca2__PP2BCamCa2N_reac;
   double __pyx_v_forwardRate_CamCa4_plus_PP2B__PP2BCamCa4_reac;
   double __pyx_v_reverseRate_CamCa4_plus_PP2B__PP2BCamCa4_reac;
-  CYTHON_UNUSED double __pyx_v_forwardRate_PP2BCamCa2C_plus_Ca2__PP2BCamCa4_reac;
-  CYTHON_UNUSED double __pyx_v_reverseRate_PP2BCamCa2C_plus_Ca2__PP2BCamCa4_reac;
-  CYTHON_UNUSED double __pyx_v_forwardRate_PP2BCamCa2N_plus_Ca2__PP2BCamCa4_reac;
-  CYTHON_UNUSED double __pyx_v_reverseRate_PP2BCamCa2N_plus_Ca2__PP2BCamCa4_reac;
+  double __pyx_v_forwardRate_PP2BCamCa2C_plus_Ca2__PP2BCamCa4_reac;
+  double __pyx_v_reverseRate_PP2BCamCa2C_plus_Ca2__PP2BCamCa4_reac;
+  double __pyx_v_forwardRate_PP2BCamCa2N_plus_Ca2__PP2BCamCa4_reac;
+  double __pyx_v_reverseRate_PP2BCamCa2N_plus_Ca2__PP2BCamCa4_reac;
   CYTHON_UNUSED double __pyx_v_forwardRate_PKAc_plus_PP2A__PKAcPP2AB56d_reac;
   CYTHON_UNUSED double __pyx_v_reverseRate_PKAc_plus_PP2A__PKAcPP2AB56d_reac;
   CYTHON_UNUSED double __pyx_v_forwardRate_PKAcPP2AB56d__PKAc_plus_pPP2A_reac;
@@ -2581,15 +2581,15 @@ static int __pyx_f_15Model_FB_cython_func(double __pyx_v_t, double *__pyx_v_y, d
   CYTHON_UNUSED double __pyx_v_reverseRate_D32_plus_PKAc__D32PKAc_reac;
   CYTHON_UNUSED double __pyx_v_forwardRate_D32PKAc__PKAc_plus_D32p34_reac;
   CYTHON_UNUSED double __pyx_v_reverseRate_D32PKAc__PKAc_plus_D32p34_reac;
-  CYTHON_UNUSED double __pyx_v_forwardRate_D32p34_plus_PP1__D32p34pp1_reac;
-  CYTHON_UNUSED double __pyx_v_reverseRate_D32p34_plus_PP1__D32p34pp1_reac;
+  double __pyx_v_forwardRate_D32p34_plus_PP1__D32p34pp1_reac;
+  double __pyx_v_reverseRate_D32p34_plus_PP1__D32p34pp1_reac;
   double __pyx_v_forwardRate_D32p34_plus_PP2BCamCa4__D32p34PP2BCamCa4_reac;
   double __pyx_v_reverseRate_D32p34_plus_PP2BCamCa4__D32p34PP2BCamCa4_reac;
-  CYTHON_UNUSED double __pyx_v_forwardRate_D32p34PP2BCamCa4__PP2BCamCa4_plus_D32_reac;
+  double __pyx_v_forwardRate_D32p34PP2BCamCa4__PP2BCamCa4_plus_D32_reac;
   CYTHON_UNUSED double __pyx_v_reverseRate_D32p34PP2BCamCa4__PP2BCamCa4_plus_D32_reac;
-  CYTHON_UNUSED double __pyx_v_forwardRate_D32p34PP1_plus_PP2BCamCa4__D32p34PP1PP2BCamCa4_reac;
-  CYTHON_UNUSED double __pyx_v_reverseRate_D32p34PP1_plus_PP2BCamCa4__D32p34PP1PP2BCamCa4_reac;
-  CYTHON_UNUSED double __pyx_v_forwardRate_D32p34PP1PP2BCamCa4__PP1_plus_PP2BCamCa4_plus_D32_reac;
+  double __pyx_v_forwardRate_D32p34PP1_plus_PP2BCamCa4__D32p34PP1PP2BCamCa4_reac;
+  double __pyx_v_reverseRate_D32p34PP1_plus_PP2BCamCa4__D32p34PP1PP2BCamCa4_reac;
+  double __pyx_v_forwardRate_D32p34PP1PP2BCamCa4__PP1_plus_PP2BCamCa4_plus_D32_reac;
   CYTHON_UNUSED double __pyx_v_reverseRate_D32p34PP1PP2BCamCa4__PP1_plus_PP2BCamCa4_plus_D32_reac;
   CYTHON_UNUSED double __pyx_v_forwardRate_D32p34_plus_PP2ABPR72__D32p34PP2ABPR72_reac;
   CYTHON_UNUSED double __pyx_v_reverseRate_D32p34_plus_PP2ABPR72__D32p34PP2ABPR72_reac;
@@ -9697,7 +9697,7 @@ static int __pyx_f_15Model_FB_cython_func(double __pyx_v_t, double *__pyx_v_y, d
  * 
  *     f[h_CICR] = (a2_CICR *d2_CICR *(y[IP3] +d1_CICR)/(y[IP3] +d3_CICR))*(1 -y[h_CICR]) - a2_CICR *y[Ca_cyt]*y[h_CICR]             # <<<<<<<<<<<<<<
  *     f[Ca_cyt] = (J_tot -(y[Ca_cyt] -Cab)/tauCab
- *                 -forwardRate_CamC_bind*y[Cam]*y[Ca_cyt]**2 +reverseRate_CamC_bind*y[CamCa2C] -forwardRate_CamCa2C_bind*y[CamCa2C]*y[Ca_cyt]**2 +reverseRate_CamCa2C_bind*y[CamCa4] -forwardRate_CamN_bind*y[Cam]*y[Ca_cyt]**2 +reverseRate_CamN_bind*y[CamCa2N] -forwardRate_CamCa2N_bind*y[CamCa2N]*y[Ca_cyt]**2 +reverseRate_CamCa2N_bind*y[CamCa4]
+ *                 -forwardRate_CamC_bind*y[Cam]*y[Ca_cyt]**2 +reverseRate_CamC_bind*y[CamCa2C] -forwardRate_CamCa2C_bind*y[CamCa2C]*y[Ca_cyt]**2 +reverseRate_CamCa2C_bind*y[CamCa4] -forwardRate_CamN_bind*y[Cam]*y[Ca_cyt]**2 +reverseRate_CamN_bind*y[CamCa2N] -forwardRate_CamCa2N_bind*y[CamCa2N]*y[Ca_cyt]**2 +reverseRate_CamCa2N_bind*y[CamCa4] -forwardRate_PP2BCam_plus_Ca2__PP2BCamCa2C_reac*y[PP2BCam]*y[Ca_cyt]**2 +reverseRate_PP2BCam_plus_Ca2__PP2BCamCa2C_reac*y[PP2BCamCa2C] -forwardRate_PP2BCam_plus_Ca2__PP2BCamCa2N_reac*y[PP2BCam]*y[Ca_cyt]**2 +reverseRate_PP2BCam_plus_Ca2__PP2BCamCa2N_reac*y[PP2BCamCa2N] -forwardRate_PP2BCamCa2C_plus_Ca2__PP2BCamCa4_reac*y[PP2BCamCa2C]*y[Ca_cyt]**2 +reverseRate_PP2BCamCa2C_plus_Ca2__PP2BCamCa4_reac*y[PP2BCamCa4] -forwardRate_PP2BCamCa2N_plus_Ca2__PP2BCamCa4_reac*y[PP2BCamCa2N]*y[Ca_cyt]**2 +reverseRate_PP2BCamCa2N_plus_Ca2__PP2BCamCa4_reac*y[PP2BCamCa4]
  */
   __pyx_t_3 = ((__pyx_v_a2_CICR * __pyx_v_d2_CICR) * ((__pyx_v_y[_ind_IP3]) + __pyx_v_d1_CICR));
   __pyx_t_4 = ((__pyx_v_y[_ind_IP3]) + __pyx_v_d3_CICR);
@@ -9717,7 +9717,7 @@ static int __pyx_f_15Model_FB_cython_func(double __pyx_v_t, double *__pyx_v_y, d
  * 
  *     f[h_CICR] = (a2_CICR *d2_CICR *(y[IP3] +d1_CICR)/(y[IP3] +d3_CICR))*(1 -y[h_CICR]) - a2_CICR *y[Ca_cyt]*y[h_CICR]
  *     f[Ca_cyt] = (J_tot -(y[Ca_cyt] -Cab)/tauCab             # <<<<<<<<<<<<<<
- *                 -forwardRate_CamC_bind*y[Cam]*y[Ca_cyt]**2 +reverseRate_CamC_bind*y[CamCa2C] -forwardRate_CamCa2C_bind*y[CamCa2C]*y[Ca_cyt]**2 +reverseRate_CamCa2C_bind*y[CamCa4] -forwardRate_CamN_bind*y[Cam]*y[Ca_cyt]**2 +reverseRate_CamN_bind*y[CamCa2N] -forwardRate_CamCa2N_bind*y[CamCa2N]*y[Ca_cyt]**2 +reverseRate_CamCa2N_bind*y[CamCa4]
+ *                 -forwardRate_CamC_bind*y[Cam]*y[Ca_cyt]**2 +reverseRate_CamC_bind*y[CamCa2C] -forwardRate_CamCa2C_bind*y[CamCa2C]*y[Ca_cyt]**2 +reverseRate_CamCa2C_bind*y[CamCa4] -forwardRate_CamN_bind*y[Cam]*y[Ca_cyt]**2 +reverseRate_CamN_bind*y[CamCa2N] -forwardRate_CamCa2N_bind*y[CamCa2N]*y[Ca_cyt]**2 +reverseRate_CamCa2N_bind*y[CamCa4] -forwardRate_PP2BCam_plus_Ca2__PP2BCamCa2C_reac*y[PP2BCam]*y[Ca_cyt]**2 +reverseRate_PP2BCam_plus_Ca2__PP2BCamCa2C_reac*y[PP2BCamCa2C] -forwardRate_PP2BCam_plus_Ca2__PP2BCamCa2N_reac*y[PP2BCam]*y[Ca_cyt]**2 +reverseRate_PP2BCam_plus_Ca2__PP2BCamCa2N_reac*y[PP2BCamCa2N] -forwardRate_PP2BCamCa2C_plus_Ca2__PP2BCamCa4_reac*y[PP2BCamCa2C]*y[Ca_cyt]**2 +reverseRate_PP2BCamCa2C_plus_Ca2__PP2BCamCa4_reac*y[PP2BCamCa4] -forwardRate_PP2BCamCa2N_plus_Ca2__PP2BCamCa4_reac*y[PP2BCamCa2N]*y[Ca_cyt]**2 +reverseRate_PP2BCamCa2N_plus_Ca2__PP2BCamCa4_reac*y[PP2BCamCa4]
  *                 )/tauCa(y[Ca_cyt], BT_CaBuff, KdB_CaBuff)
  */
   __pyx_t_4 = ((__pyx_v_y[_ind_Ca_cyt]) - __pyx_v_Cab);
@@ -9725,7 +9725,7 @@ static int __pyx_f_15Model_FB_cython_func(double __pyx_v_t, double *__pyx_v_y, d
   /* "Model_FB.pyx":1698
  *     f[h_CICR] = (a2_CICR *d2_CICR *(y[IP3] +d1_CICR)/(y[IP3] +d3_CICR))*(1 -y[h_CICR]) - a2_CICR *y[Ca_cyt]*y[h_CICR]
  *     f[Ca_cyt] = (J_tot -(y[Ca_cyt] -Cab)/tauCab
- *                 -forwardRate_CamC_bind*y[Cam]*y[Ca_cyt]**2 +reverseRate_CamC_bind*y[CamCa2C] -forwardRate_CamCa2C_bind*y[CamCa2C]*y[Ca_cyt]**2 +reverseRate_CamCa2C_bind*y[CamCa4] -forwardRate_CamN_bind*y[Cam]*y[Ca_cyt]**2 +reverseRate_CamN_bind*y[CamCa2N] -forwardRate_CamCa2N_bind*y[CamCa2N]*y[Ca_cyt]**2 +reverseRate_CamCa2N_bind*y[CamCa4]             # <<<<<<<<<<<<<<
+ *                 -forwardRate_CamC_bind*y[Cam]*y[Ca_cyt]**2 +reverseRate_CamC_bind*y[CamCa2C] -forwardRate_CamCa2C_bind*y[CamCa2C]*y[Ca_cyt]**2 +reverseRate_CamCa2C_bind*y[CamCa4] -forwardRate_CamN_bind*y[Cam]*y[Ca_cyt]**2 +reverseRate_CamN_bind*y[CamCa2N] -forwardRate_CamCa2N_bind*y[CamCa2N]*y[Ca_cyt]**2 +reverseRate_CamCa2N_bind*y[CamCa4] -forwardRate_PP2BCam_plus_Ca2__PP2BCamCa2C_reac*y[PP2BCam]*y[Ca_cyt]**2 +reverseRate_PP2BCam_plus_Ca2__PP2BCamCa2C_reac*y[PP2BCamCa2C] -forwardRate_PP2BCam_plus_Ca2__PP2BCamCa2N_reac*y[PP2BCam]*y[Ca_cyt]**2 +reverseRate_PP2BCam_plus_Ca2__PP2BCamCa2N_reac*y[PP2BCamCa2N] -forwardRate_PP2BCamCa2C_plus_Ca2__PP2BCamCa4_reac*y[PP2BCamCa2C]*y[Ca_cyt]**2 +reverseRate_PP2BCamCa2C_plus_Ca2__PP2BCamCa4_reac*y[PP2BCamCa4] -forwardRate_PP2BCamCa2N_plus_Ca2__PP2BCamCa4_reac*y[PP2BCamCa2N]*y[Ca_cyt]**2 +reverseRate_PP2BCamCa2N_plus_Ca2__PP2BCamCa4_reac*y[PP2BCamCa4]             # <<<<<<<<<<<<<<
  *                 )/tauCa(y[Ca_cyt], BT_CaBuff, KdB_CaBuff)
  * 
  */
@@ -9744,14 +9744,14 @@ static int __pyx_f_15Model_FB_cython_func(double __pyx_v_t, double *__pyx_v_y, d
  * 
  *     f[h_CICR] = (a2_CICR *d2_CICR *(y[IP3] +d1_CICR)/(y[IP3] +d3_CICR))*(1 -y[h_CICR]) - a2_CICR *y[Ca_cyt]*y[h_CICR]
  *     f[Ca_cyt] = (J_tot -(y[Ca_cyt] -Cab)/tauCab             # <<<<<<<<<<<<<<
- *                 -forwardRate_CamC_bind*y[Cam]*y[Ca_cyt]**2 +reverseRate_CamC_bind*y[CamCa2C] -forwardRate_CamCa2C_bind*y[CamCa2C]*y[Ca_cyt]**2 +reverseRate_CamCa2C_bind*y[CamCa4] -forwardRate_CamN_bind*y[Cam]*y[Ca_cyt]**2 +reverseRate_CamN_bind*y[CamCa2N] -forwardRate_CamCa2N_bind*y[CamCa2N]*y[Ca_cyt]**2 +reverseRate_CamCa2N_bind*y[CamCa4]
+ *                 -forwardRate_CamC_bind*y[Cam]*y[Ca_cyt]**2 +reverseRate_CamC_bind*y[CamCa2C] -forwardRate_CamCa2C_bind*y[CamCa2C]*y[Ca_cyt]**2 +reverseRate_CamCa2C_bind*y[CamCa4] -forwardRate_CamN_bind*y[Cam]*y[Ca_cyt]**2 +reverseRate_CamN_bind*y[CamCa2N] -forwardRate_CamCa2N_bind*y[CamCa2N]*y[Ca_cyt]**2 +reverseRate_CamCa2N_bind*y[CamCa4] -forwardRate_PP2BCam_plus_Ca2__PP2BCamCa2C_reac*y[PP2BCam]*y[Ca_cyt]**2 +reverseRate_PP2BCam_plus_Ca2__PP2BCamCa2C_reac*y[PP2BCamCa2C] -forwardRate_PP2BCam_plus_Ca2__PP2BCamCa2N_reac*y[PP2BCam]*y[Ca_cyt]**2 +reverseRate_PP2BCam_plus_Ca2__PP2BCamCa2N_reac*y[PP2BCamCa2N] -forwardRate_PP2BCamCa2C_plus_Ca2__PP2BCamCa4_reac*y[PP2BCamCa2C]*y[Ca_cyt]**2 +reverseRate_PP2BCamCa2C_plus_Ca2__PP2BCamCa4_reac*y[PP2BCamCa4] -forwardRate_PP2BCamCa2N_plus_Ca2__PP2BCamCa4_reac*y[PP2BCamCa2N]*y[Ca_cyt]**2 +reverseRate_PP2BCamCa2N_plus_Ca2__PP2BCamCa4_reac*y[PP2BCamCa4]
  *                 )/tauCa(y[Ca_cyt], BT_CaBuff, KdB_CaBuff)
  */
-  __pyx_t_3 = (((((((((__pyx_v_J_tot - (__pyx_t_4 / __pyx_v_tauCab)) - ((__pyx_v_forwardRate_CamC_bind * (__pyx_v_y[_ind_Cam])) * pow((__pyx_v_y[_ind_Ca_cyt]), 2.0))) + (__pyx_v_reverseRate_CamC_bind * (__pyx_v_y[_ind_CamCa2C]))) - ((__pyx_v_forwardRate_CamCa2C_bind * (__pyx_v_y[_ind_CamCa2C])) * pow((__pyx_v_y[_ind_Ca_cyt]), 2.0))) + (__pyx_v_reverseRate_CamCa2C_bind * (__pyx_v_y[_ind_CamCa4]))) - ((__pyx_v_forwardRate_CamN_bind * (__pyx_v_y[_ind_Cam])) * pow((__pyx_v_y[_ind_Ca_cyt]), 2.0))) + (__pyx_v_reverseRate_CamN_bind * (__pyx_v_y[_ind_CamCa2N]))) - ((__pyx_v_forwardRate_CamCa2N_bind * (__pyx_v_y[_ind_CamCa2N])) * pow((__pyx_v_y[_ind_Ca_cyt]), 2.0))) + (__pyx_v_reverseRate_CamCa2N_bind * (__pyx_v_y[_ind_CamCa4])));
+  __pyx_t_3 = (((((((((((((((((__pyx_v_J_tot - (__pyx_t_4 / __pyx_v_tauCab)) - ((__pyx_v_forwardRate_CamC_bind * (__pyx_v_y[_ind_Cam])) * pow((__pyx_v_y[_ind_Ca_cyt]), 2.0))) + (__pyx_v_reverseRate_CamC_bind * (__pyx_v_y[_ind_CamCa2C]))) - ((__pyx_v_forwardRate_CamCa2C_bind * (__pyx_v_y[_ind_CamCa2C])) * pow((__pyx_v_y[_ind_Ca_cyt]), 2.0))) + (__pyx_v_reverseRate_CamCa2C_bind * (__pyx_v_y[_ind_CamCa4]))) - ((__pyx_v_forwardRate_CamN_bind * (__pyx_v_y[_ind_Cam])) * pow((__pyx_v_y[_ind_Ca_cyt]), 2.0))) + (__pyx_v_reverseRate_CamN_bind * (__pyx_v_y[_ind_CamCa2N]))) - ((__pyx_v_forwardRate_CamCa2N_bind * (__pyx_v_y[_ind_CamCa2N])) * pow((__pyx_v_y[_ind_Ca_cyt]), 2.0))) + (__pyx_v_reverseRate_CamCa2N_bind * (__pyx_v_y[_ind_CamCa4]))) - ((__pyx_v_forwardRate_PP2BCam_plus_Ca2__PP2BCamCa2C_reac * (__pyx_v_y[_ind_PP2BCam])) * pow((__pyx_v_y[_ind_Ca_cyt]), 2.0))) + (__pyx_v_reverseRate_PP2BCam_plus_Ca2__PP2BCamCa2C_reac * (__pyx_v_y[_ind_PP2BCamCa2C]))) - ((__pyx_v_forwardRate_PP2BCam_plus_Ca2__PP2BCamCa2N_reac * (__pyx_v_y[_ind_PP2BCam])) * pow((__pyx_v_y[_ind_Ca_cyt]), 2.0))) + (__pyx_v_reverseRate_PP2BCam_plus_Ca2__PP2BCamCa2N_reac * (__pyx_v_y[_ind_PP2BCamCa2N]))) - ((__pyx_v_forwardRate_PP2BCamCa2C_plus_Ca2__PP2BCamCa4_reac * (__pyx_v_y[_ind_PP2BCamCa2C])) * pow((__pyx_v_y[_ind_Ca_cyt]), 2.0))) + (__pyx_v_reverseRate_PP2BCamCa2C_plus_Ca2__PP2BCamCa4_reac * (__pyx_v_y[_ind_PP2BCamCa4]))) - ((__pyx_v_forwardRate_PP2BCamCa2N_plus_Ca2__PP2BCamCa4_reac * (__pyx_v_y[_ind_PP2BCamCa2N])) * pow((__pyx_v_y[_ind_Ca_cyt]), 2.0))) + (__pyx_v_reverseRate_PP2BCamCa2N_plus_Ca2__PP2BCamCa4_reac * (__pyx_v_y[_ind_PP2BCamCa4])));
 
   /* "Model_FB.pyx":1699
  *     f[Ca_cyt] = (J_tot -(y[Ca_cyt] -Cab)/tauCab
- *                 -forwardRate_CamC_bind*y[Cam]*y[Ca_cyt]**2 +reverseRate_CamC_bind*y[CamCa2C] -forwardRate_CamCa2C_bind*y[CamCa2C]*y[Ca_cyt]**2 +reverseRate_CamCa2C_bind*y[CamCa4] -forwardRate_CamN_bind*y[Cam]*y[Ca_cyt]**2 +reverseRate_CamN_bind*y[CamCa2N] -forwardRate_CamCa2N_bind*y[CamCa2N]*y[Ca_cyt]**2 +reverseRate_CamCa2N_bind*y[CamCa4]
+ *                 -forwardRate_CamC_bind*y[Cam]*y[Ca_cyt]**2 +reverseRate_CamC_bind*y[CamCa2C] -forwardRate_CamCa2C_bind*y[CamCa2C]*y[Ca_cyt]**2 +reverseRate_CamCa2C_bind*y[CamCa4] -forwardRate_CamN_bind*y[Cam]*y[Ca_cyt]**2 +reverseRate_CamN_bind*y[CamCa2N] -forwardRate_CamCa2N_bind*y[CamCa2N]*y[Ca_cyt]**2 +reverseRate_CamCa2N_bind*y[CamCa4] -forwardRate_PP2BCam_plus_Ca2__PP2BCamCa2C_reac*y[PP2BCam]*y[Ca_cyt]**2 +reverseRate_PP2BCam_plus_Ca2__PP2BCamCa2C_reac*y[PP2BCamCa2C] -forwardRate_PP2BCam_plus_Ca2__PP2BCamCa2N_reac*y[PP2BCam]*y[Ca_cyt]**2 +reverseRate_PP2BCam_plus_Ca2__PP2BCamCa2N_reac*y[PP2BCamCa2N] -forwardRate_PP2BCamCa2C_plus_Ca2__PP2BCamCa4_reac*y[PP2BCamCa2C]*y[Ca_cyt]**2 +reverseRate_PP2BCamCa2C_plus_Ca2__PP2BCamCa4_reac*y[PP2BCamCa4] -forwardRate_PP2BCamCa2N_plus_Ca2__PP2BCamCa4_reac*y[PP2BCamCa2N]*y[Ca_cyt]**2 +reverseRate_PP2BCamCa2N_plus_Ca2__PP2BCamCa4_reac*y[PP2BCamCa4]
  *                 )/tauCa(y[Ca_cyt], BT_CaBuff, KdB_CaBuff)             # <<<<<<<<<<<<<<
  * 
  *     f[Ca_ER] = -J_CaER*rhoER_CICR/tauCa(y[Ca_ER], BT_CaBuff, KdB_CaBuff)
@@ -9772,7 +9772,7 @@ static int __pyx_f_15Model_FB_cython_func(double __pyx_v_t, double *__pyx_v_y, d
  * 
  *     f[h_CICR] = (a2_CICR *d2_CICR *(y[IP3] +d1_CICR)/(y[IP3] +d3_CICR))*(1 -y[h_CICR]) - a2_CICR *y[Ca_cyt]*y[h_CICR]
  *     f[Ca_cyt] = (J_tot -(y[Ca_cyt] -Cab)/tauCab             # <<<<<<<<<<<<<<
- *                 -forwardRate_CamC_bind*y[Cam]*y[Ca_cyt]**2 +reverseRate_CamC_bind*y[CamCa2C] -forwardRate_CamCa2C_bind*y[CamCa2C]*y[Ca_cyt]**2 +reverseRate_CamCa2C_bind*y[CamCa4] -forwardRate_CamN_bind*y[Cam]*y[Ca_cyt]**2 +reverseRate_CamN_bind*y[CamCa2N] -forwardRate_CamCa2N_bind*y[CamCa2N]*y[Ca_cyt]**2 +reverseRate_CamCa2N_bind*y[CamCa4]
+ *                 -forwardRate_CamC_bind*y[Cam]*y[Ca_cyt]**2 +reverseRate_CamC_bind*y[CamCa2C] -forwardRate_CamCa2C_bind*y[CamCa2C]*y[Ca_cyt]**2 +reverseRate_CamCa2C_bind*y[CamCa4] -forwardRate_CamN_bind*y[Cam]*y[Ca_cyt]**2 +reverseRate_CamN_bind*y[CamCa2N] -forwardRate_CamCa2N_bind*y[CamCa2N]*y[Ca_cyt]**2 +reverseRate_CamCa2N_bind*y[CamCa4] -forwardRate_PP2BCam_plus_Ca2__PP2BCamCa2C_reac*y[PP2BCam]*y[Ca_cyt]**2 +reverseRate_PP2BCam_plus_Ca2__PP2BCamCa2C_reac*y[PP2BCamCa2C] -forwardRate_PP2BCam_plus_Ca2__PP2BCamCa2N_reac*y[PP2BCam]*y[Ca_cyt]**2 +reverseRate_PP2BCam_plus_Ca2__PP2BCamCa2N_reac*y[PP2BCamCa2N] -forwardRate_PP2BCamCa2C_plus_Ca2__PP2BCamCa4_reac*y[PP2BCamCa2C]*y[Ca_cyt]**2 +reverseRate_PP2BCamCa2C_plus_Ca2__PP2BCamCa4_reac*y[PP2BCamCa4] -forwardRate_PP2BCamCa2N_plus_Ca2__PP2BCamCa4_reac*y[PP2BCamCa2N]*y[Ca_cyt]**2 +reverseRate_PP2BCamCa2N_plus_Ca2__PP2BCamCa4_reac*y[PP2BCamCa4]
  *                 )/tauCa(y[Ca_cyt], BT_CaBuff, KdB_CaBuff)
  */
   (__pyx_v_f[_ind_Ca_cyt]) = (__pyx_t_3 / __pyx_t_4);
@@ -9953,22 +9953,22 @@ static int __pyx_f_15Model_FB_cython_func(double __pyx_v_t, double *__pyx_v_y, d
  * 
  *     # dPP1/dt and dI1P/dt #
  *     f[I1P] = 0.#-k11*y[I1P]*y[PP1] + km11*(PP10 - y[PP1]) + vPKA*I10 - vCaN*y[I1P]             # <<<<<<<<<<<<<<
- *     #f[PP1] = -k11*y[I1P]*y[PP1] + km11*(PP10 - y[PP1])
- * 
+ *     f[PP1] = -forwardRate_D32p34_plus_PP1__D32p34pp1_reac*y[D32p34]*y[PP1] +reverseRate_D32p34_plus_PP1__D32p34pp1_reac*y[D32p34PP1]
+ *     # membrane potential
  */
   (__pyx_v_f[_ind_I1P]) = 0.;
 
-  /* "Model_FB.pyx":1725
- *     #f[PP1] = -k11*y[I1P]*y[PP1] + km11*(PP10 - y[PP1])
- * 
- *     f[PP1] = -k11*y[D32p34]*y[PP1] + km11*(PP10 - y[PP1])             # <<<<<<<<<<<<<<
- * 
+  /* "Model_FB.pyx":1723
+ *     # dPP1/dt and dI1P/dt #
+ *     f[I1P] = 0.#-k11*y[I1P]*y[PP1] + km11*(PP10 - y[PP1]) + vPKA*I10 - vCaN*y[I1P]
+ *     f[PP1] = -forwardRate_D32p34_plus_PP1__D32p34pp1_reac*y[D32p34]*y[PP1] +reverseRate_D32p34_plus_PP1__D32p34pp1_reac*y[D32p34PP1]             # <<<<<<<<<<<<<<
  *     # membrane potential
+ *     f[V] = Itotal/Cm
  */
-  (__pyx_v_f[_ind_PP1]) = ((((-__pyx_v_k11) * (__pyx_v_y[_ind_D32p34])) * (__pyx_v_y[_ind_PP1])) + (__pyx_v_km11 * (__pyx_v_PP10 - (__pyx_v_y[_ind_PP1]))));
+  (__pyx_v_f[_ind_PP1]) = ((((-__pyx_v_forwardRate_D32p34_plus_PP1__D32p34pp1_reac) * (__pyx_v_y[_ind_D32p34])) * (__pyx_v_y[_ind_PP1])) + (__pyx_v_reverseRate_D32p34_plus_PP1__D32p34pp1_reac * (__pyx_v_y[_ind_D32p34PP1])));
 
-  /* "Model_FB.pyx":1728
- * 
+  /* "Model_FB.pyx":1725
+ *     f[PP1] = -forwardRate_D32p34_plus_PP1__D32p34pp1_reac*y[D32p34]*y[PP1] +reverseRate_D32p34_plus_PP1__D32p34pp1_reac*y[D32p34PP1]
  *     # membrane potential
  *     f[V] = Itotal/Cm             # <<<<<<<<<<<<<<
  * 
@@ -9982,11 +9982,11 @@ static int __pyx_f_15Model_FB_cython_func(double __pyx_v_t, double *__pyx_v_y, d
     #ifdef WITH_THREAD
     PyGILState_Release(__pyx_gilstate_save);
     #endif
-    {__pyx_filename = __pyx_f[0]; __pyx_lineno = 1728; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+    {__pyx_filename = __pyx_f[0]; __pyx_lineno = 1725; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   }
   (__pyx_v_f[_ind_V]) = (__pyx_v_Itotal / __pyx_v_Cm);
 
-  /* "Model_FB.pyx":1730
+  /* "Model_FB.pyx":1727
  *     f[V] = Itotal/Cm
  * 
  *     if on_CB1R:             # <<<<<<<<<<<<<<
@@ -9996,7 +9996,7 @@ static int __pyx_f_15Model_FB_cython_func(double __pyx_v_t, double *__pyx_v_y, d
   __pyx_t_1 = (__pyx_v_on_CB1R != 0);
   if (__pyx_t_1) {
 
-    /* "Model_FB.pyx":1731
+    /* "Model_FB.pyx":1728
  * 
  *     if on_CB1R:
  *         f[o_CB1R] = Alpha_CB1R *(y[twoAG] +alphaAEACB1*y[AEA]) *c_CB1R - (Beta_CB1R +Gamma_CB1R)*y[o_CB1R]             # <<<<<<<<<<<<<<
@@ -10005,7 +10005,7 @@ static int __pyx_f_15Model_FB_cython_func(double __pyx_v_t, double *__pyx_v_y, d
  */
     (__pyx_v_f[_ind_o_CB1R]) = (((__pyx_v_Alpha_CB1R * ((__pyx_v_y[_ind_twoAG]) + (__pyx_v_alphaAEACB1 * (__pyx_v_y[_ind_AEA])))) * __pyx_v_c_CB1R) - ((__pyx_v_Beta_CB1R + __pyx_v_Gamma_CB1R) * (__pyx_v_y[_ind_o_CB1R])));
 
-    /* "Model_FB.pyx":1732
+    /* "Model_FB.pyx":1729
  *     if on_CB1R:
  *         f[o_CB1R] = Alpha_CB1R *(y[twoAG] +alphaAEACB1*y[AEA]) *c_CB1R - (Beta_CB1R +Gamma_CB1R)*y[o_CB1R]
  *         f[d_CB1R] = -Epsilon_CB1R*y[d_CB1R] + Gamma_CB1R*y[o_CB1R]             # <<<<<<<<<<<<<<
@@ -10014,7 +10014,7 @@ static int __pyx_f_15Model_FB_cython_func(double __pyx_v_t, double *__pyx_v_y, d
  */
     (__pyx_v_f[_ind_d_CB1R]) = (((-__pyx_v_Epsilon_CB1R) * (__pyx_v_y[_ind_d_CB1R])) + (__pyx_v_Gamma_CB1R * (__pyx_v_y[_ind_o_CB1R])));
 
-    /* "Model_FB.pyx":1730
+    /* "Model_FB.pyx":1727
  *     f[V] = Itotal/Cm
  * 
  *     if on_CB1R:             # <<<<<<<<<<<<<<
@@ -10024,7 +10024,7 @@ static int __pyx_f_15Model_FB_cython_func(double __pyx_v_t, double *__pyx_v_y, d
     goto __pyx_L37;
   }
 
-  /* "Model_FB.pyx":1734
+  /* "Model_FB.pyx":1731
  *         f[d_CB1R] = -Epsilon_CB1R*y[d_CB1R] + Gamma_CB1R*y[o_CB1R]
  *     else:
  *         f[o_CB1R] = 0.             # <<<<<<<<<<<<<<
@@ -10034,7 +10034,7 @@ static int __pyx_f_15Model_FB_cython_func(double __pyx_v_t, double *__pyx_v_y, d
   /*else*/ {
     (__pyx_v_f[_ind_o_CB1R]) = 0.;
 
-    /* "Model_FB.pyx":1735
+    /* "Model_FB.pyx":1732
  *     else:
  *         f[o_CB1R] = 0.
  *         f[d_CB1R] = 0.             # <<<<<<<<<<<<<<
@@ -10045,7 +10045,7 @@ static int __pyx_f_15Model_FB_cython_func(double __pyx_v_t, double *__pyx_v_y, d
   }
   __pyx_L37:;
 
-  /* "Model_FB.pyx":1738
+  /* "Model_FB.pyx":1735
  * 
  *     # dBi/dt #
  *     f[B1] = 6*k6gamma2*B0 - 4*k6gamma2*y[B1] - k7gamma*y[B1] - k10*y[B1] + 2*k10*(y[B2] + y[B3] + y[B4])             # <<<<<<<<<<<<<<
@@ -10054,7 +10054,7 @@ static int __pyx_f_15Model_FB_cython_func(double __pyx_v_t, double *__pyx_v_y, d
  */
   (__pyx_v_f[_ind_B1]) = ((((((6.0 * __pyx_v_k6gamma2) * __pyx_v_B0) - ((4.0 * __pyx_v_k6gamma2) * (__pyx_v_y[_ind_B1]))) - (__pyx_v_k7gamma * (__pyx_v_y[_ind_B1]))) - (__pyx_v_k10 * (__pyx_v_y[_ind_B1]))) + ((2.0 * __pyx_v_k10) * (((__pyx_v_y[_ind_B2]) + (__pyx_v_y[_ind_B3])) + (__pyx_v_y[_ind_B4]))));
 
-  /* "Model_FB.pyx":1739
+  /* "Model_FB.pyx":1736
  *     # dBi/dt #
  *     f[B1] = 6*k6gamma2*B0 - 4*k6gamma2*y[B1] - k7gamma*y[B1] - k10*y[B1] + 2*k10*(y[B2] + y[B3] + y[B4])
  *     f[B2] = k7gamma*y[B1] + k6gamma2*y[B1] - 3*k6gamma2*y[B2] - k7gamma*y[B2] - 2*k10*y[B2] + k10*(2*y[B5] + y[B6] + y[B7])             # <<<<<<<<<<<<<<
@@ -10063,7 +10063,7 @@ static int __pyx_f_15Model_FB_cython_func(double __pyx_v_t, double *__pyx_v_y, d
  */
   (__pyx_v_f[_ind_B2]) = ((((((__pyx_v_k7gamma * (__pyx_v_y[_ind_B1])) + (__pyx_v_k6gamma2 * (__pyx_v_y[_ind_B1]))) - ((3.0 * __pyx_v_k6gamma2) * (__pyx_v_y[_ind_B2]))) - (__pyx_v_k7gamma * (__pyx_v_y[_ind_B2]))) - ((2.0 * __pyx_v_k10) * (__pyx_v_y[_ind_B2]))) + (__pyx_v_k10 * (((2.0 * (__pyx_v_y[_ind_B5])) + (__pyx_v_y[_ind_B6])) + (__pyx_v_y[_ind_B7]))));
 
-  /* "Model_FB.pyx":1740
+  /* "Model_FB.pyx":1737
  *     f[B1] = 6*k6gamma2*B0 - 4*k6gamma2*y[B1] - k7gamma*y[B1] - k10*y[B1] + 2*k10*(y[B2] + y[B3] + y[B4])
  *     f[B2] = k7gamma*y[B1] + k6gamma2*y[B1] - 3*k6gamma2*y[B2] - k7gamma*y[B2] - 2*k10*y[B2] + k10*(2*y[B5] + y[B6] + y[B7])
  *     f[B3] = 2*k6gamma2*y[B1] - 2*k7gamma*y[B3] - 2*k6gamma2*y[B3] - 2*k10*y[B3] + k10*(y[B5] + y[B6] + y[B7] + 3*y[B8])             # <<<<<<<<<<<<<<
@@ -10072,7 +10072,7 @@ static int __pyx_f_15Model_FB_cython_func(double __pyx_v_t, double *__pyx_v_y, d
  */
   (__pyx_v_f[_ind_B3]) = ((((((2.0 * __pyx_v_k6gamma2) * (__pyx_v_y[_ind_B1])) - ((2.0 * __pyx_v_k7gamma) * (__pyx_v_y[_ind_B3]))) - ((2.0 * __pyx_v_k6gamma2) * (__pyx_v_y[_ind_B3]))) - ((2.0 * __pyx_v_k10) * (__pyx_v_y[_ind_B3]))) + (__pyx_v_k10 * ((((__pyx_v_y[_ind_B5]) + (__pyx_v_y[_ind_B6])) + (__pyx_v_y[_ind_B7])) + (3.0 * (__pyx_v_y[_ind_B8])))));
 
-  /* "Model_FB.pyx":1741
+  /* "Model_FB.pyx":1738
  *     f[B2] = k7gamma*y[B1] + k6gamma2*y[B1] - 3*k6gamma2*y[B2] - k7gamma*y[B2] - 2*k10*y[B2] + k10*(2*y[B5] + y[B6] + y[B7])
  *     f[B3] = 2*k6gamma2*y[B1] - 2*k7gamma*y[B3] - 2*k6gamma2*y[B3] - 2*k10*y[B3] + k10*(y[B5] + y[B6] + y[B7] + 3*y[B8])
  *     f[B4] = k6gamma2*y[B1] - 2*k7gamma*y[B4] - 2*k6gamma2*y[B4] - 2*k10*y[B4] + k10*(y[B6] + y[B7])             # <<<<<<<<<<<<<<
@@ -10081,7 +10081,7 @@ static int __pyx_f_15Model_FB_cython_func(double __pyx_v_t, double *__pyx_v_y, d
  */
   (__pyx_v_f[_ind_B4]) = (((((__pyx_v_k6gamma2 * (__pyx_v_y[_ind_B1])) - ((2.0 * __pyx_v_k7gamma) * (__pyx_v_y[_ind_B4]))) - ((2.0 * __pyx_v_k6gamma2) * (__pyx_v_y[_ind_B4]))) - ((2.0 * __pyx_v_k10) * (__pyx_v_y[_ind_B4]))) + (__pyx_v_k10 * ((__pyx_v_y[_ind_B6]) + (__pyx_v_y[_ind_B7]))));
 
-  /* "Model_FB.pyx":1742
+  /* "Model_FB.pyx":1739
  *     f[B3] = 2*k6gamma2*y[B1] - 2*k7gamma*y[B3] - 2*k6gamma2*y[B3] - 2*k10*y[B3] + k10*(y[B5] + y[B6] + y[B7] + 3*y[B8])
  *     f[B4] = k6gamma2*y[B1] - 2*k7gamma*y[B4] - 2*k6gamma2*y[B4] - 2*k10*y[B4] + k10*(y[B6] + y[B7])
  *     f[B5] = k7gamma*y[B2] + k7gamma*y[B3] + k6gamma2*y[B2] - k7gamma*y[B5] - 2*k6gamma2*y[B5] - 3*k10*y[B5] + k10*(2*y[B9] + y[B10])             # <<<<<<<<<<<<<<
@@ -10090,7 +10090,7 @@ static int __pyx_f_15Model_FB_cython_func(double __pyx_v_t, double *__pyx_v_y, d
  */
   (__pyx_v_f[_ind_B5]) = (((((((__pyx_v_k7gamma * (__pyx_v_y[_ind_B2])) + (__pyx_v_k7gamma * (__pyx_v_y[_ind_B3]))) + (__pyx_v_k6gamma2 * (__pyx_v_y[_ind_B2]))) - (__pyx_v_k7gamma * (__pyx_v_y[_ind_B5]))) - ((2.0 * __pyx_v_k6gamma2) * (__pyx_v_y[_ind_B5]))) - ((3.0 * __pyx_v_k10) * (__pyx_v_y[_ind_B5]))) + (__pyx_v_k10 * ((2.0 * (__pyx_v_y[_ind_B9])) + (__pyx_v_y[_ind_B10]))));
 
-  /* "Model_FB.pyx":1743
+  /* "Model_FB.pyx":1740
  *     f[B4] = k6gamma2*y[B1] - 2*k7gamma*y[B4] - 2*k6gamma2*y[B4] - 2*k10*y[B4] + k10*(y[B6] + y[B7])
  *     f[B5] = k7gamma*y[B2] + k7gamma*y[B3] + k6gamma2*y[B2] - k7gamma*y[B5] - 2*k6gamma2*y[B5] - 3*k10*y[B5] + k10*(2*y[B9] + y[B10])
  *     f[B6] = k6gamma2*y[B2] + k6gamma2*y[B3]  + 2*k7gamma*y[B4] - k6gamma2*y[B6] - 2*k7gamma*y[B6] - 3*k10*y[B6] + k10*(y[B9] + y[B10] + 2*y[B11])             # <<<<<<<<<<<<<<
@@ -10099,7 +10099,7 @@ static int __pyx_f_15Model_FB_cython_func(double __pyx_v_t, double *__pyx_v_y, d
  */
   (__pyx_v_f[_ind_B6]) = (((((((__pyx_v_k6gamma2 * (__pyx_v_y[_ind_B2])) + (__pyx_v_k6gamma2 * (__pyx_v_y[_ind_B3]))) + ((2.0 * __pyx_v_k7gamma) * (__pyx_v_y[_ind_B4]))) - (__pyx_v_k6gamma2 * (__pyx_v_y[_ind_B6]))) - ((2.0 * __pyx_v_k7gamma) * (__pyx_v_y[_ind_B6]))) - ((3.0 * __pyx_v_k10) * (__pyx_v_y[_ind_B6]))) + (__pyx_v_k10 * (((__pyx_v_y[_ind_B9]) + (__pyx_v_y[_ind_B10])) + (2.0 * (__pyx_v_y[_ind_B11])))));
 
-  /* "Model_FB.pyx":1744
+  /* "Model_FB.pyx":1741
  *     f[B5] = k7gamma*y[B2] + k7gamma*y[B3] + k6gamma2*y[B2] - k7gamma*y[B5] - 2*k6gamma2*y[B5] - 3*k10*y[B5] + k10*(2*y[B9] + y[B10])
  *     f[B6] = k6gamma2*y[B2] + k6gamma2*y[B3]  + 2*k7gamma*y[B4] - k6gamma2*y[B6] - 2*k7gamma*y[B6] - 3*k10*y[B6] + k10*(y[B9] + y[B10] + 2*y[B11])
  *     f[B7] = k6gamma2*y[B2] + k7gamma*y[B3] + 2*k6gamma2*y[B4] - k6gamma2*y[B7] - 2*k7gamma*y[B7] - 3*k10*y[B7] + k10*(y[B9] + y[B10] + 2*y[B11])             # <<<<<<<<<<<<<<
@@ -10108,7 +10108,7 @@ static int __pyx_f_15Model_FB_cython_func(double __pyx_v_t, double *__pyx_v_y, d
  */
   (__pyx_v_f[_ind_B7]) = (((((((__pyx_v_k6gamma2 * (__pyx_v_y[_ind_B2])) + (__pyx_v_k7gamma * (__pyx_v_y[_ind_B3]))) + ((2.0 * __pyx_v_k6gamma2) * (__pyx_v_y[_ind_B4]))) - (__pyx_v_k6gamma2 * (__pyx_v_y[_ind_B7]))) - ((2.0 * __pyx_v_k7gamma) * (__pyx_v_y[_ind_B7]))) - ((3.0 * __pyx_v_k10) * (__pyx_v_y[_ind_B7]))) + (__pyx_v_k10 * (((__pyx_v_y[_ind_B9]) + (__pyx_v_y[_ind_B10])) + (2.0 * (__pyx_v_y[_ind_B11])))));
 
-  /* "Model_FB.pyx":1745
+  /* "Model_FB.pyx":1742
  *     f[B6] = k6gamma2*y[B2] + k6gamma2*y[B3]  + 2*k7gamma*y[B4] - k6gamma2*y[B6] - 2*k7gamma*y[B6] - 3*k10*y[B6] + k10*(y[B9] + y[B10] + 2*y[B11])
  *     f[B7] = k6gamma2*y[B2] + k7gamma*y[B3] + 2*k6gamma2*y[B4] - k6gamma2*y[B7] - 2*k7gamma*y[B7] - 3*k10*y[B7] + k10*(y[B9] + y[B10] + 2*y[B11])
  *     f[B8] = k6gamma2*y[B3] - 3*k7gamma*y[B8] - 3*k10*y[B8] + k10*y[B10]             # <<<<<<<<<<<<<<
@@ -10117,7 +10117,7 @@ static int __pyx_f_15Model_FB_cython_func(double __pyx_v_t, double *__pyx_v_y, d
  */
   (__pyx_v_f[_ind_B8]) = ((((__pyx_v_k6gamma2 * (__pyx_v_y[_ind_B3])) - ((3.0 * __pyx_v_k7gamma) * (__pyx_v_y[_ind_B8]))) - ((3.0 * __pyx_v_k10) * (__pyx_v_y[_ind_B8]))) + (__pyx_v_k10 * (__pyx_v_y[_ind_B10])));
 
-  /* "Model_FB.pyx":1746
+  /* "Model_FB.pyx":1743
  *     f[B7] = k6gamma2*y[B2] + k7gamma*y[B3] + 2*k6gamma2*y[B4] - k6gamma2*y[B7] - 2*k7gamma*y[B7] - 3*k10*y[B7] + k10*(y[B9] + y[B10] + 2*y[B11])
  *     f[B8] = k6gamma2*y[B3] - 3*k7gamma*y[B8] - 3*k10*y[B8] + k10*y[B10]
  *     f[B9] = k7gamma*y[B5] + k6gamma2*y[B5] + k7gamma*y[B6] + k7gamma*y[B7] - k6gamma2*y[B9] - k7gamma*y[B9] - 4*k10*y[B9] + 2*k10*y[B12]             # <<<<<<<<<<<<<<
@@ -10126,7 +10126,7 @@ static int __pyx_f_15Model_FB_cython_func(double __pyx_v_t, double *__pyx_v_y, d
  */
   (__pyx_v_f[_ind_B9]) = ((((((((__pyx_v_k7gamma * (__pyx_v_y[_ind_B5])) + (__pyx_v_k6gamma2 * (__pyx_v_y[_ind_B5]))) + (__pyx_v_k7gamma * (__pyx_v_y[_ind_B6]))) + (__pyx_v_k7gamma * (__pyx_v_y[_ind_B7]))) - (__pyx_v_k6gamma2 * (__pyx_v_y[_ind_B9]))) - (__pyx_v_k7gamma * (__pyx_v_y[_ind_B9]))) - ((4.0 * __pyx_v_k10) * (__pyx_v_y[_ind_B9]))) + ((2.0 * __pyx_v_k10) * (__pyx_v_y[_ind_B12])));
 
-  /* "Model_FB.pyx":1747
+  /* "Model_FB.pyx":1744
  *     f[B8] = k6gamma2*y[B3] - 3*k7gamma*y[B8] - 3*k10*y[B8] + k10*y[B10]
  *     f[B9] = k7gamma*y[B5] + k6gamma2*y[B5] + k7gamma*y[B6] + k7gamma*y[B7] - k6gamma2*y[B9] - k7gamma*y[B9] - 4*k10*y[B9] + 2*k10*y[B12]
  *     f[B10] = k6gamma2*y[B5] + k6gamma2*y[B6] + k7gamma*y[B7] + 3*k7gamma*y[B8] - 2*k7gamma*y[B10] - 4*k10*y[B10] + 2*k10*y[B12]             # <<<<<<<<<<<<<<
@@ -10135,7 +10135,7 @@ static int __pyx_f_15Model_FB_cython_func(double __pyx_v_t, double *__pyx_v_y, d
  */
   (__pyx_v_f[_ind_B10]) = (((((((__pyx_v_k6gamma2 * (__pyx_v_y[_ind_B5])) + (__pyx_v_k6gamma2 * (__pyx_v_y[_ind_B6]))) + (__pyx_v_k7gamma * (__pyx_v_y[_ind_B7]))) + ((3.0 * __pyx_v_k7gamma) * (__pyx_v_y[_ind_B8]))) - ((2.0 * __pyx_v_k7gamma) * (__pyx_v_y[_ind_B10]))) - ((4.0 * __pyx_v_k10) * (__pyx_v_y[_ind_B10]))) + ((2.0 * __pyx_v_k10) * (__pyx_v_y[_ind_B12])));
 
-  /* "Model_FB.pyx":1748
+  /* "Model_FB.pyx":1745
  *     f[B9] = k7gamma*y[B5] + k6gamma2*y[B5] + k7gamma*y[B6] + k7gamma*y[B7] - k6gamma2*y[B9] - k7gamma*y[B9] - 4*k10*y[B9] + 2*k10*y[B12]
  *     f[B10] = k6gamma2*y[B5] + k6gamma2*y[B6] + k7gamma*y[B7] + 3*k7gamma*y[B8] - 2*k7gamma*y[B10] - 4*k10*y[B10] + 2*k10*y[B12]
  *     f[B11] = k7gamma*y[B6] +  k6gamma2*y[B7] - 2*k7gamma*y[B11] - 4*k10*y[B11] + k10*y[B12]             # <<<<<<<<<<<<<<
@@ -10144,7 +10144,7 @@ static int __pyx_f_15Model_FB_cython_func(double __pyx_v_t, double *__pyx_v_y, d
  */
   (__pyx_v_f[_ind_B11]) = (((((__pyx_v_k7gamma * (__pyx_v_y[_ind_B6])) + (__pyx_v_k6gamma2 * (__pyx_v_y[_ind_B7]))) - ((2.0 * __pyx_v_k7gamma) * (__pyx_v_y[_ind_B11]))) - ((4.0 * __pyx_v_k10) * (__pyx_v_y[_ind_B11]))) + (__pyx_v_k10 * (__pyx_v_y[_ind_B12])));
 
-  /* "Model_FB.pyx":1749
+  /* "Model_FB.pyx":1746
  *     f[B10] = k6gamma2*y[B5] + k6gamma2*y[B6] + k7gamma*y[B7] + 3*k7gamma*y[B8] - 2*k7gamma*y[B10] - 4*k10*y[B10] + 2*k10*y[B12]
  *     f[B11] = k7gamma*y[B6] +  k6gamma2*y[B7] - 2*k7gamma*y[B11] - 4*k10*y[B11] + k10*y[B12]
  *     f[B12] = k7gamma*y[B9] + k6gamma2*y[B9] + 2*k7gamma*y[B10] + 2*k7gamma*y[B11] - k7gamma*y[B12] - 5*k10*y[B12] + 6*k10*y[B13]             # <<<<<<<<<<<<<<
@@ -10153,7 +10153,7 @@ static int __pyx_f_15Model_FB_cython_func(double __pyx_v_t, double *__pyx_v_y, d
  */
   (__pyx_v_f[_ind_B12]) = (((((((__pyx_v_k7gamma * (__pyx_v_y[_ind_B9])) + (__pyx_v_k6gamma2 * (__pyx_v_y[_ind_B9]))) + ((2.0 * __pyx_v_k7gamma) * (__pyx_v_y[_ind_B10]))) + ((2.0 * __pyx_v_k7gamma) * (__pyx_v_y[_ind_B11]))) - (__pyx_v_k7gamma * (__pyx_v_y[_ind_B12]))) - ((5.0 * __pyx_v_k10) * (__pyx_v_y[_ind_B12]))) + ((6.0 * __pyx_v_k10) * (__pyx_v_y[_ind_B13])));
 
-  /* "Model_FB.pyx":1750
+  /* "Model_FB.pyx":1747
  *     f[B11] = k7gamma*y[B6] +  k6gamma2*y[B7] - 2*k7gamma*y[B11] - 4*k10*y[B11] + k10*y[B12]
  *     f[B12] = k7gamma*y[B9] + k6gamma2*y[B9] + 2*k7gamma*y[B10] + 2*k7gamma*y[B11] - k7gamma*y[B12] - 5*k10*y[B12] + 6*k10*y[B13]
  *     f[B13] = k7gamma*y[B12] - 6*k10*y[B13]             # <<<<<<<<<<<<<<
@@ -10162,7 +10162,7 @@ static int __pyx_f_15Model_FB_cython_func(double __pyx_v_t, double *__pyx_v_y, d
  */
   (__pyx_v_f[_ind_B13]) = ((__pyx_v_k7gamma * (__pyx_v_y[_ind_B12])) - ((6.0 * __pyx_v_k10) * (__pyx_v_y[_ind_B13])));
 
-  /* "Model_FB.pyx":1754
+  /* "Model_FB.pyx":1751
  *     # ---- Blackwell variables ---- #
  * 
  *     f[Ca] = 0.             # <<<<<<<<<<<<<<
@@ -10171,7 +10171,7 @@ static int __pyx_f_15Model_FB_cython_func(double __pyx_v_t, double *__pyx_v_y, d
  */
   (__pyx_v_f[_ind_Ca]) = 0.;
 
-  /* "Model_FB.pyx":1755
+  /* "Model_FB.pyx":1752
  * 
  *     f[Ca] = 0.
  *     f[pmca] = 0.             # <<<<<<<<<<<<<<
@@ -10180,7 +10180,7 @@ static int __pyx_f_15Model_FB_cython_func(double __pyx_v_t, double *__pyx_v_y, d
  */
   (__pyx_v_f[_ind_pmca]) = 0.;
 
-  /* "Model_FB.pyx":1756
+  /* "Model_FB.pyx":1753
  *     f[Ca] = 0.
  *     f[pmca] = 0.
  *     f[pmcaCa] = 0.             # <<<<<<<<<<<<<<
@@ -10189,7 +10189,7 @@ static int __pyx_f_15Model_FB_cython_func(double __pyx_v_t, double *__pyx_v_y, d
  */
   (__pyx_v_f[_ind_pmcaCa]) = 0.;
 
-  /* "Model_FB.pyx":1757
+  /* "Model_FB.pyx":1754
  *     f[pmca] = 0.
  *     f[pmcaCa] = 0.
  *     f[CaOut] = 0.             # <<<<<<<<<<<<<<
@@ -10198,7 +10198,7 @@ static int __pyx_f_15Model_FB_cython_func(double __pyx_v_t, double *__pyx_v_y, d
  */
   (__pyx_v_f[_ind_CaOut]) = 0.;
 
-  /* "Model_FB.pyx":1758
+  /* "Model_FB.pyx":1755
  *     f[pmcaCa] = 0.
  *     f[CaOut] = 0.
  *     f[ncx] = 0.             # <<<<<<<<<<<<<<
@@ -10207,7 +10207,7 @@ static int __pyx_f_15Model_FB_cython_func(double __pyx_v_t, double *__pyx_v_y, d
  */
   (__pyx_v_f[_ind_ncx]) = 0.;
 
-  /* "Model_FB.pyx":1759
+  /* "Model_FB.pyx":1756
  *     f[CaOut] = 0.
  *     f[ncx] = 0.
  *     f[ncxCa] = 0.             # <<<<<<<<<<<<<<
@@ -10216,7 +10216,7 @@ static int __pyx_f_15Model_FB_cython_func(double __pyx_v_t, double *__pyx_v_y, d
  */
   (__pyx_v_f[_ind_ncxCa]) = 0.;
 
-  /* "Model_FB.pyx":1760
+  /* "Model_FB.pyx":1757
  *     f[ncx] = 0.
  *     f[ncxCa] = 0.
  *     f[Leak] = 0.             # <<<<<<<<<<<<<<
@@ -10225,7 +10225,7 @@ static int __pyx_f_15Model_FB_cython_func(double __pyx_v_t, double *__pyx_v_y, d
  */
   (__pyx_v_f[_ind_Leak]) = 0.;
 
-  /* "Model_FB.pyx":1761
+  /* "Model_FB.pyx":1758
  *     f[ncxCa] = 0.
  *     f[Leak] = 0.
  *     f[CaOutLeak] = 0.             # <<<<<<<<<<<<<<
@@ -10234,7 +10234,7 @@ static int __pyx_f_15Model_FB_cython_func(double __pyx_v_t, double *__pyx_v_y, d
  */
   (__pyx_v_f[_ind_CaOutLeak]) = 0.;
 
-  /* "Model_FB.pyx":1762
+  /* "Model_FB.pyx":1759
  *     f[Leak] = 0.
  *     f[CaOutLeak] = 0.
  *     f[Calbin] = 0.             # <<<<<<<<<<<<<<
@@ -10243,7 +10243,7 @@ static int __pyx_f_15Model_FB_cython_func(double __pyx_v_t, double *__pyx_v_y, d
  */
   (__pyx_v_f[_ind_Calbin]) = 0.;
 
-  /* "Model_FB.pyx":1763
+  /* "Model_FB.pyx":1760
  *     f[CaOutLeak] = 0.
  *     f[Calbin] = 0.
  *     f[CalbinC] = 0.             # <<<<<<<<<<<<<<
@@ -10252,7 +10252,7 @@ static int __pyx_f_15Model_FB_cython_func(double __pyx_v_t, double *__pyx_v_y, d
  */
   (__pyx_v_f[_ind_CalbinC]) = 0.;
 
-  /* "Model_FB.pyx":1764
+  /* "Model_FB.pyx":1761
  *     f[Calbin] = 0.
  *     f[CalbinC] = 0.
  *     f[CamCa4] = forwardRate_CamCa2C_bind*y[CamCa2C]*y[Ca_cyt]**2 -reverseRate_CamCa2C_bind*y[CamCa4] +forwardRate_CamCa2N_bind*y[CamCa2N]*y[Ca_cyt]**2 -reverseRate_CamCa2N_bind*y[CamCa4] -forwardRate_CamCa4_plus_PP2B__PP2BCamCa4_reac*y[CamCa4]*y[PP2B] +reverseRate_CamCa4_plus_PP2B__PP2BCamCa4_reac*y[PP2BCamCa4]             # <<<<<<<<<<<<<<
@@ -10261,7 +10261,7 @@ static int __pyx_f_15Model_FB_cython_func(double __pyx_v_t, double *__pyx_v_y, d
  */
   (__pyx_v_f[_ind_CamCa4]) = (((((((__pyx_v_forwardRate_CamCa2C_bind * (__pyx_v_y[_ind_CamCa2C])) * pow((__pyx_v_y[_ind_Ca_cyt]), 2.0)) - (__pyx_v_reverseRate_CamCa2C_bind * (__pyx_v_y[_ind_CamCa4]))) + ((__pyx_v_forwardRate_CamCa2N_bind * (__pyx_v_y[_ind_CamCa2N])) * pow((__pyx_v_y[_ind_Ca_cyt]), 2.0))) - (__pyx_v_reverseRate_CamCa2N_bind * (__pyx_v_y[_ind_CamCa4]))) - ((__pyx_v_forwardRate_CamCa4_plus_PP2B__PP2BCamCa4_reac * (__pyx_v_y[_ind_CamCa4])) * (__pyx_v_y[_ind_PP2B]))) + (__pyx_v_reverseRate_CamCa4_plus_PP2B__PP2BCamCa4_reac * (__pyx_v_y[_ind_PP2BCamCa4])));
 
-  /* "Model_FB.pyx":1765
+  /* "Model_FB.pyx":1762
  *     f[CalbinC] = 0.
  *     f[CamCa4] = forwardRate_CamCa2C_bind*y[CamCa2C]*y[Ca_cyt]**2 -reverseRate_CamCa2C_bind*y[CamCa4] +forwardRate_CamCa2N_bind*y[CamCa2N]*y[Ca_cyt]**2 -reverseRate_CamCa2N_bind*y[CamCa4] -forwardRate_CamCa4_plus_PP2B__PP2BCamCa4_reac*y[CamCa4]*y[PP2B] +reverseRate_CamCa4_plus_PP2B__PP2BCamCa4_reac*y[PP2BCamCa4]
  *     f[CamCa2N] = forwardRate_CamN_bind*y[Cam]*y[Ca_cyt]**2 -reverseRate_CamN_bind*y[CamCa2N] -forwardRate_CamCa2N_bind*y[CamCa2N]*y[Ca_cyt]**2 +reverseRate_CamCa2N_bind*y[CamCa4]             # <<<<<<<<<<<<<<
@@ -10270,7 +10270,7 @@ static int __pyx_f_15Model_FB_cython_func(double __pyx_v_t, double *__pyx_v_y, d
  */
   (__pyx_v_f[_ind_CamCa2N]) = (((((__pyx_v_forwardRate_CamN_bind * (__pyx_v_y[_ind_Cam])) * pow((__pyx_v_y[_ind_Ca_cyt]), 2.0)) - (__pyx_v_reverseRate_CamN_bind * (__pyx_v_y[_ind_CamCa2N]))) - ((__pyx_v_forwardRate_CamCa2N_bind * (__pyx_v_y[_ind_CamCa2N])) * pow((__pyx_v_y[_ind_Ca_cyt]), 2.0))) + (__pyx_v_reverseRate_CamCa2N_bind * (__pyx_v_y[_ind_CamCa4])));
 
-  /* "Model_FB.pyx":1766
+  /* "Model_FB.pyx":1763
  *     f[CamCa4] = forwardRate_CamCa2C_bind*y[CamCa2C]*y[Ca_cyt]**2 -reverseRate_CamCa2C_bind*y[CamCa4] +forwardRate_CamCa2N_bind*y[CamCa2N]*y[Ca_cyt]**2 -reverseRate_CamCa2N_bind*y[CamCa4] -forwardRate_CamCa4_plus_PP2B__PP2BCamCa4_reac*y[CamCa4]*y[PP2B] +reverseRate_CamCa4_plus_PP2B__PP2BCamCa4_reac*y[PP2BCamCa4]
  *     f[CamCa2N] = forwardRate_CamN_bind*y[Cam]*y[Ca_cyt]**2 -reverseRate_CamN_bind*y[CamCa2N] -forwardRate_CamCa2N_bind*y[CamCa2N]*y[Ca_cyt]**2 +reverseRate_CamCa2N_bind*y[CamCa4]
  *     f[DaDbuf] = 0.             # <<<<<<<<<<<<<<
@@ -10279,7 +10279,7 @@ static int __pyx_f_15Model_FB_cython_func(double __pyx_v_t, double *__pyx_v_y, d
  */
   (__pyx_v_f[_ind_DaDbuf]) = 0.;
 
-  /* "Model_FB.pyx":1767
+  /* "Model_FB.pyx":1764
  *     f[CamCa2N] = forwardRate_CamN_bind*y[Cam]*y[Ca_cyt]**2 -reverseRate_CamN_bind*y[CamCa2N] -forwardRate_CamCa2N_bind*y[CamCa2N]*y[Ca_cyt]**2 +reverseRate_CamCa2N_bind*y[CamCa4]
  *     f[DaDbuf] = 0.
  *     f[Dbuf] = 0.             # <<<<<<<<<<<<<<
@@ -10288,7 +10288,7 @@ static int __pyx_f_15Model_FB_cython_func(double __pyx_v_t, double *__pyx_v_y, d
  */
   (__pyx_v_f[_ind_Dbuf]) = 0.;
 
-  /* "Model_FB.pyx":1768
+  /* "Model_FB.pyx":1765
  *     f[DaDbuf] = 0.
  *     f[Dbuf] = 0.
  *     f[DaOut] = 0.             # <<<<<<<<<<<<<<
@@ -10297,7 +10297,7 @@ static int __pyx_f_15Model_FB_cython_func(double __pyx_v_t, double *__pyx_v_y, d
  */
   (__pyx_v_f[_ind_DaOut]) = 0.;
 
-  /* "Model_FB.pyx":1769
+  /* "Model_FB.pyx":1766
  *     f[Dbuf] = 0.
  *     f[DaOut] = 0.
  *     f[Da] = 0.             # <<<<<<<<<<<<<<
@@ -10306,7 +10306,7 @@ static int __pyx_f_15Model_FB_cython_func(double __pyx_v_t, double *__pyx_v_y, d
  */
   (__pyx_v_f[_ind_Da]) = 0.;
 
-  /* "Model_FB.pyx":1770
+  /* "Model_FB.pyx":1767
  *     f[DaOut] = 0.
  *     f[Da] = 0.
  *     f[DaD1R] = 0.             # <<<<<<<<<<<<<<
@@ -10315,7 +10315,7 @@ static int __pyx_f_15Model_FB_cython_func(double __pyx_v_t, double *__pyx_v_y, d
  */
   (__pyx_v_f[_ind_DaD1R]) = 0.;
 
-  /* "Model_FB.pyx":1771
+  /* "Model_FB.pyx":1768
  *     f[Da] = 0.
  *     f[DaD1R] = 0.
  *     f[Gsabg] = 0.             # <<<<<<<<<<<<<<
@@ -10324,7 +10324,7 @@ static int __pyx_f_15Model_FB_cython_func(double __pyx_v_t, double *__pyx_v_y, d
  */
   (__pyx_v_f[_ind_Gsabg]) = 0.;
 
-  /* "Model_FB.pyx":1772
+  /* "Model_FB.pyx":1769
  *     f[DaD1R] = 0.
  *     f[Gsabg] = 0.
  *     f[DaD1RGs] = 0.             # <<<<<<<<<<<<<<
@@ -10333,7 +10333,7 @@ static int __pyx_f_15Model_FB_cython_func(double __pyx_v_t, double *__pyx_v_y, d
  */
   (__pyx_v_f[_ind_DaD1RGs]) = 0.;
 
-  /* "Model_FB.pyx":1773
+  /* "Model_FB.pyx":1770
  *     f[Gsabg] = 0.
  *     f[DaD1RGs] = 0.
  *     f[D1R] = 0.             # <<<<<<<<<<<<<<
@@ -10342,7 +10342,7 @@ static int __pyx_f_15Model_FB_cython_func(double __pyx_v_t, double *__pyx_v_y, d
  */
   (__pyx_v_f[_ind_D1R]) = 0.;
 
-  /* "Model_FB.pyx":1774
+  /* "Model_FB.pyx":1771
  *     f[DaD1RGs] = 0.
  *     f[D1R] = 0.
  *     f[GsD1R] = 0.             # <<<<<<<<<<<<<<
@@ -10351,7 +10351,7 @@ static int __pyx_f_15Model_FB_cython_func(double __pyx_v_t, double *__pyx_v_y, d
  */
   (__pyx_v_f[_ind_GsD1R]) = 0.;
 
-  /* "Model_FB.pyx":1775
+  /* "Model_FB.pyx":1772
  *     f[D1R] = 0.
  *     f[GsD1R] = 0.
  *     f[GsaGTP] = 0.             # <<<<<<<<<<<<<<
@@ -10360,7 +10360,7 @@ static int __pyx_f_15Model_FB_cython_func(double __pyx_v_t, double *__pyx_v_y, d
  */
   (__pyx_v_f[_ind_GsaGTP]) = 0.;
 
-  /* "Model_FB.pyx":1776
+  /* "Model_FB.pyx":1773
  *     f[GsD1R] = 0.
  *     f[GsaGTP] = 0.
  *     f[Gbg] = 0.             # <<<<<<<<<<<<<<
@@ -10369,7 +10369,7 @@ static int __pyx_f_15Model_FB_cython_func(double __pyx_v_t, double *__pyx_v_y, d
  */
   (__pyx_v_f[_ind_Gbg]) = 0.;
 
-  /* "Model_FB.pyx":1777
+  /* "Model_FB.pyx":1774
  *     f[GsaGTP] = 0.
  *     f[Gbg] = 0.
  *     f[PKAc] = 0.             # <<<<<<<<<<<<<<
@@ -10378,7 +10378,7 @@ static int __pyx_f_15Model_FB_cython_func(double __pyx_v_t, double *__pyx_v_y, d
  */
   (__pyx_v_f[_ind_PKAc]) = 0.;
 
-  /* "Model_FB.pyx":1778
+  /* "Model_FB.pyx":1775
  *     f[Gbg] = 0.
  *     f[PKAc] = 0.
  *     f[PKAcDaD1RGs] = 0.             # <<<<<<<<<<<<<<
@@ -10387,7 +10387,7 @@ static int __pyx_f_15Model_FB_cython_func(double __pyx_v_t, double *__pyx_v_y, d
  */
   (__pyx_v_f[_ind_PKAcDaD1RGs]) = 0.;
 
-  /* "Model_FB.pyx":1779
+  /* "Model_FB.pyx":1776
  *     f[PKAc] = 0.
  *     f[PKAcDaD1RGs] = 0.
  *     f[pDaD1RGs] = 0.             # <<<<<<<<<<<<<<
@@ -10396,7 +10396,7 @@ static int __pyx_f_15Model_FB_cython_func(double __pyx_v_t, double *__pyx_v_y, d
  */
   (__pyx_v_f[_ind_pDaD1RGs]) = 0.;
 
-  /* "Model_FB.pyx":1780
+  /* "Model_FB.pyx":1777
  *     f[PKAcDaD1RGs] = 0.
  *     f[pDaD1RGs] = 0.
  *     f[GluGbuf] = 0.             # <<<<<<<<<<<<<<
@@ -10405,7 +10405,7 @@ static int __pyx_f_15Model_FB_cython_func(double __pyx_v_t, double *__pyx_v_y, d
  */
   (__pyx_v_f[_ind_GluGbuf]) = 0.;
 
-  /* "Model_FB.pyx":1781
+  /* "Model_FB.pyx":1778
  *     f[pDaD1RGs] = 0.
  *     f[GluGbuf] = 0.
  *     f[Gbuf] = 0.             # <<<<<<<<<<<<<<
@@ -10414,7 +10414,7 @@ static int __pyx_f_15Model_FB_cython_func(double __pyx_v_t, double *__pyx_v_y, d
  */
   (__pyx_v_f[_ind_Gbuf]) = 0.;
 
-  /* "Model_FB.pyx":1782
+  /* "Model_FB.pyx":1779
  *     f[GluGbuf] = 0.
  *     f[Gbuf] = 0.
  *     f[Glu_Blackwell] = 0.             # <<<<<<<<<<<<<<
@@ -10423,7 +10423,7 @@ static int __pyx_f_15Model_FB_cython_func(double __pyx_v_t, double *__pyx_v_y, d
  */
   (__pyx_v_f[_ind_Glu]) = 0.;
 
-  /* "Model_FB.pyx":1783
+  /* "Model_FB.pyx":1780
  *     f[Gbuf] = 0.
  *     f[Glu_Blackwell] = 0.
  *     f[GluOut] = 0.             # <<<<<<<<<<<<<<
@@ -10432,7 +10432,7 @@ static int __pyx_f_15Model_FB_cython_func(double __pyx_v_t, double *__pyx_v_y, d
  */
   (__pyx_v_f[_ind_GluOut]) = 0.;
 
-  /* "Model_FB.pyx":1784
+  /* "Model_FB.pyx":1781
  *     f[Glu_Blackwell] = 0.
  *     f[GluOut] = 0.
  *     f[GluMgluR] = 0.             # <<<<<<<<<<<<<<
@@ -10441,7 +10441,7 @@ static int __pyx_f_15Model_FB_cython_func(double __pyx_v_t, double *__pyx_v_y, d
  */
   (__pyx_v_f[_ind_GluMgluR]) = 0.;
 
-  /* "Model_FB.pyx":1785
+  /* "Model_FB.pyx":1782
  *     f[GluOut] = 0.
  *     f[GluMgluR] = 0.
  *     f[GluMgluRdesens] = 0.             # <<<<<<<<<<<<<<
@@ -10450,7 +10450,7 @@ static int __pyx_f_15Model_FB_cython_func(double __pyx_v_t, double *__pyx_v_y, d
  */
   (__pyx_v_f[_ind_GluMgluRdesens]) = 0.;
 
-  /* "Model_FB.pyx":1786
+  /* "Model_FB.pyx":1783
  *     f[GluMgluR] = 0.
  *     f[GluMgluRdesens] = 0.
  *     f[MgluR] = 0.             # <<<<<<<<<<<<<<
@@ -10459,7 +10459,7 @@ static int __pyx_f_15Model_FB_cython_func(double __pyx_v_t, double *__pyx_v_y, d
  */
   (__pyx_v_f[_ind_MgluR]) = 0.;
 
-  /* "Model_FB.pyx":1787
+  /* "Model_FB.pyx":1784
  *     f[GluMgluRdesens] = 0.
  *     f[MgluR] = 0.
  *     f[Gqabg] = 0.             # <<<<<<<<<<<<<<
@@ -10468,7 +10468,7 @@ static int __pyx_f_15Model_FB_cython_func(double __pyx_v_t, double *__pyx_v_y, d
  */
   (__pyx_v_f[_ind_Gqabg]) = 0.;
 
-  /* "Model_FB.pyx":1788
+  /* "Model_FB.pyx":1785
  *     f[MgluR] = 0.
  *     f[Gqabg] = 0.
  *     f[MgluRGq] = 0.             # <<<<<<<<<<<<<<
@@ -10477,7 +10477,7 @@ static int __pyx_f_15Model_FB_cython_func(double __pyx_v_t, double *__pyx_v_y, d
  */
   (__pyx_v_f[_ind_MgluRGq]) = 0.;
 
-  /* "Model_FB.pyx":1789
+  /* "Model_FB.pyx":1786
  *     f[Gqabg] = 0.
  *     f[MgluRGq] = 0.
  *     f[GluMgluRGq] = 0.             # <<<<<<<<<<<<<<
@@ -10486,7 +10486,7 @@ static int __pyx_f_15Model_FB_cython_func(double __pyx_v_t, double *__pyx_v_y, d
  */
   (__pyx_v_f[_ind_GluMgluRGq]) = 0.;
 
-  /* "Model_FB.pyx":1790
+  /* "Model_FB.pyx":1787
  *     f[MgluRGq] = 0.
  *     f[GluMgluRGq] = 0.
  *     f[GqaGTP] = 0.             # <<<<<<<<<<<<<<
@@ -10495,7 +10495,7 @@ static int __pyx_f_15Model_FB_cython_func(double __pyx_v_t, double *__pyx_v_y, d
  */
   (__pyx_v_f[_ind_GqaGTP]) = 0.;
 
-  /* "Model_FB.pyx":1791
+  /* "Model_FB.pyx":1788
  *     f[GluMgluRGq] = 0.
  *     f[GqaGTP] = 0.
  *     f[ACh] = 0.             # <<<<<<<<<<<<<<
@@ -10504,7 +10504,7 @@ static int __pyx_f_15Model_FB_cython_func(double __pyx_v_t, double *__pyx_v_y, d
  */
   (__pyx_v_f[_ind_ACh]) = 0.;
 
-  /* "Model_FB.pyx":1792
+  /* "Model_FB.pyx":1789
  *     f[GqaGTP] = 0.
  *     f[ACh] = 0.
  *     f[m1R] = 0.             # <<<<<<<<<<<<<<
@@ -10513,7 +10513,7 @@ static int __pyx_f_15Model_FB_cython_func(double __pyx_v_t, double *__pyx_v_y, d
  */
   (__pyx_v_f[_ind_m1R]) = 0.;
 
-  /* "Model_FB.pyx":1793
+  /* "Model_FB.pyx":1790
  *     f[ACh] = 0.
  *     f[m1R] = 0.
  *     f[AChm1R] = 0.             # <<<<<<<<<<<<<<
@@ -10522,7 +10522,7 @@ static int __pyx_f_15Model_FB_cython_func(double __pyx_v_t, double *__pyx_v_y, d
  */
   (__pyx_v_f[_ind_AChm1R]) = 0.;
 
-  /* "Model_FB.pyx":1794
+  /* "Model_FB.pyx":1791
  *     f[m1R] = 0.
  *     f[AChm1R] = 0.
  *     f[AChm1RGq] = 0.             # <<<<<<<<<<<<<<
@@ -10531,7 +10531,7 @@ static int __pyx_f_15Model_FB_cython_func(double __pyx_v_t, double *__pyx_v_y, d
  */
   (__pyx_v_f[_ind_AChm1RGq]) = 0.;
 
-  /* "Model_FB.pyx":1795
+  /* "Model_FB.pyx":1792
  *     f[AChm1R] = 0.
  *     f[AChm1RGq] = 0.
  *     f[m1RGq] = 0.             # <<<<<<<<<<<<<<
@@ -10540,7 +10540,7 @@ static int __pyx_f_15Model_FB_cython_func(double __pyx_v_t, double *__pyx_v_y, d
  */
   (__pyx_v_f[_ind_m1RGq]) = 0.;
 
-  /* "Model_FB.pyx":1796
+  /* "Model_FB.pyx":1793
  *     f[AChm1RGq] = 0.
  *     f[m1RGq] = 0.
  *     f[m4R] = 0.             # <<<<<<<<<<<<<<
@@ -10549,7 +10549,7 @@ static int __pyx_f_15Model_FB_cython_func(double __pyx_v_t, double *__pyx_v_y, d
  */
   (__pyx_v_f[_ind_m4R]) = 0.;
 
-  /* "Model_FB.pyx":1797
+  /* "Model_FB.pyx":1794
  *     f[m1RGq] = 0.
  *     f[m4R] = 0.
  *     f[AChm4R] = 0.             # <<<<<<<<<<<<<<
@@ -10558,7 +10558,7 @@ static int __pyx_f_15Model_FB_cython_func(double __pyx_v_t, double *__pyx_v_y, d
  */
   (__pyx_v_f[_ind_AChm4R]) = 0.;
 
-  /* "Model_FB.pyx":1798
+  /* "Model_FB.pyx":1795
  *     f[m4R] = 0.
  *     f[AChm4R] = 0.
  *     f[Giabg] = 0.             # <<<<<<<<<<<<<<
@@ -10567,7 +10567,7 @@ static int __pyx_f_15Model_FB_cython_func(double __pyx_v_t, double *__pyx_v_y, d
  */
   (__pyx_v_f[_ind_Giabg]) = 0.;
 
-  /* "Model_FB.pyx":1799
+  /* "Model_FB.pyx":1796
  *     f[AChm4R] = 0.
  *     f[Giabg] = 0.
  *     f[AChm4RGi] = 0.             # <<<<<<<<<<<<<<
@@ -10576,7 +10576,7 @@ static int __pyx_f_15Model_FB_cython_func(double __pyx_v_t, double *__pyx_v_y, d
  */
   (__pyx_v_f[_ind_AChm4RGi]) = 0.;
 
-  /* "Model_FB.pyx":1800
+  /* "Model_FB.pyx":1797
  *     f[Giabg] = 0.
  *     f[AChm4RGi] = 0.
  *     f[Gim4R] = 0.             # <<<<<<<<<<<<<<
@@ -10585,7 +10585,7 @@ static int __pyx_f_15Model_FB_cython_func(double __pyx_v_t, double *__pyx_v_y, d
  */
   (__pyx_v_f[_ind_Gim4R]) = 0.;
 
-  /* "Model_FB.pyx":1801
+  /* "Model_FB.pyx":1798
  *     f[AChm4RGi] = 0.
  *     f[Gim4R] = 0.
  *     f[GsaGDP] = 0.             # <<<<<<<<<<<<<<
@@ -10594,7 +10594,7 @@ static int __pyx_f_15Model_FB_cython_func(double __pyx_v_t, double *__pyx_v_y, d
  */
   (__pyx_v_f[_ind_GsaGDP]) = 0.;
 
-  /* "Model_FB.pyx":1802
+  /* "Model_FB.pyx":1799
  *     f[Gim4R] = 0.
  *     f[GsaGDP] = 0.
  *     f[GqaGDP] = 0.             # <<<<<<<<<<<<<<
@@ -10603,7 +10603,7 @@ static int __pyx_f_15Model_FB_cython_func(double __pyx_v_t, double *__pyx_v_y, d
  */
   (__pyx_v_f[_ind_GqaGDP]) = 0.;
 
-  /* "Model_FB.pyx":1803
+  /* "Model_FB.pyx":1800
  *     f[GsaGDP] = 0.
  *     f[GqaGDP] = 0.
  *     f[GiaGTP] = 0.             # <<<<<<<<<<<<<<
@@ -10612,7 +10612,7 @@ static int __pyx_f_15Model_FB_cython_func(double __pyx_v_t, double *__pyx_v_y, d
  */
   (__pyx_v_f[_ind_GiaGTP]) = 0.;
 
-  /* "Model_FB.pyx":1804
+  /* "Model_FB.pyx":1801
  *     f[GqaGDP] = 0.
  *     f[GiaGTP] = 0.
  *     f[GiaGDP] = 0.             # <<<<<<<<<<<<<<
@@ -10621,7 +10621,7 @@ static int __pyx_f_15Model_FB_cython_func(double __pyx_v_t, double *__pyx_v_y, d
  */
   (__pyx_v_f[_ind_GiaGDP]) = 0.;
 
-  /* "Model_FB.pyx":1805
+  /* "Model_FB.pyx":1802
  *     f[GiaGTP] = 0.
  *     f[GiaGDP] = 0.
  *     f[AC5] = 0.             # <<<<<<<<<<<<<<
@@ -10630,7 +10630,7 @@ static int __pyx_f_15Model_FB_cython_func(double __pyx_v_t, double *__pyx_v_y, d
  */
   (__pyx_v_f[_ind_AC5]) = 0.;
 
-  /* "Model_FB.pyx":1806
+  /* "Model_FB.pyx":1803
  *     f[GiaGDP] = 0.
  *     f[AC5] = 0.
  *     f[AC5Gsa] = 0.             # <<<<<<<<<<<<<<
@@ -10639,7 +10639,7 @@ static int __pyx_f_15Model_FB_cython_func(double __pyx_v_t, double *__pyx_v_y, d
  */
   (__pyx_v_f[_ind_AC5Gsa]) = 0.;
 
-  /* "Model_FB.pyx":1807
+  /* "Model_FB.pyx":1804
  *     f[AC5] = 0.
  *     f[AC5Gsa] = 0.
  *     f[ATP] = 0.             # <<<<<<<<<<<<<<
@@ -10648,7 +10648,7 @@ static int __pyx_f_15Model_FB_cython_func(double __pyx_v_t, double *__pyx_v_y, d
  */
   (__pyx_v_f[_ind_ATP]) = 0.;
 
-  /* "Model_FB.pyx":1808
+  /* "Model_FB.pyx":1805
  *     f[AC5Gsa] = 0.
  *     f[ATP] = 0.
  *     f[AC5GsaATP] = 0.             # <<<<<<<<<<<<<<
@@ -10657,7 +10657,7 @@ static int __pyx_f_15Model_FB_cython_func(double __pyx_v_t, double *__pyx_v_y, d
  */
   (__pyx_v_f[_ind_AC5GsaATP]) = 0.;
 
-  /* "Model_FB.pyx":1809
+  /* "Model_FB.pyx":1806
  *     f[ATP] = 0.
  *     f[AC5GsaATP] = 0.
  *     f[cAMP] = 0.             # <<<<<<<<<<<<<<
@@ -10666,7 +10666,7 @@ static int __pyx_f_15Model_FB_cython_func(double __pyx_v_t, double *__pyx_v_y, d
  */
   (__pyx_v_f[_ind_cAMP]) = 0.;
 
-  /* "Model_FB.pyx":1810
+  /* "Model_FB.pyx":1807
  *     f[AC5GsaATP] = 0.
  *     f[cAMP] = 0.
  *     f[AC5Gia] = 0.             # <<<<<<<<<<<<<<
@@ -10675,7 +10675,7 @@ static int __pyx_f_15Model_FB_cython_func(double __pyx_v_t, double *__pyx_v_y, d
  */
   (__pyx_v_f[_ind_AC5Gia]) = 0.;
 
-  /* "Model_FB.pyx":1811
+  /* "Model_FB.pyx":1808
  *     f[cAMP] = 0.
  *     f[AC5Gia] = 0.
  *     f[AC5GsaGia] = 0.             # <<<<<<<<<<<<<<
@@ -10684,7 +10684,7 @@ static int __pyx_f_15Model_FB_cython_func(double __pyx_v_t, double *__pyx_v_y, d
  */
   (__pyx_v_f[_ind_AC5GsaGia]) = 0.;
 
-  /* "Model_FB.pyx":1812
+  /* "Model_FB.pyx":1809
  *     f[AC5Gia] = 0.
  *     f[AC5GsaGia] = 0.
  *     f[AC5GsaGiaATP] = 0.             # <<<<<<<<<<<<<<
@@ -10693,7 +10693,7 @@ static int __pyx_f_15Model_FB_cython_func(double __pyx_v_t, double *__pyx_v_y, d
  */
   (__pyx_v_f[_ind_AC5GsaGiaATP]) = 0.;
 
-  /* "Model_FB.pyx":1813
+  /* "Model_FB.pyx":1810
  *     f[AC5GsaGia] = 0.
  *     f[AC5GsaGiaATP] = 0.
  *     f[PDE1] = 0.             # <<<<<<<<<<<<<<
@@ -10702,7 +10702,7 @@ static int __pyx_f_15Model_FB_cython_func(double __pyx_v_t, double *__pyx_v_y, d
  */
   (__pyx_v_f[_ind_PDE1]) = 0.;
 
-  /* "Model_FB.pyx":1814
+  /* "Model_FB.pyx":1811
  *     f[AC5GsaGiaATP] = 0.
  *     f[PDE1] = 0.
  *     f[PDE1CamCa4] = 0.             # <<<<<<<<<<<<<<
@@ -10711,7 +10711,7 @@ static int __pyx_f_15Model_FB_cython_func(double __pyx_v_t, double *__pyx_v_y, d
  */
   (__pyx_v_f[_ind_PDE1CamCa4]) = 0.;
 
-  /* "Model_FB.pyx":1815
+  /* "Model_FB.pyx":1812
  *     f[PDE1] = 0.
  *     f[PDE1CamCa4] = 0.
  *     f[PDE1CamCa4cAMP] = 0.             # <<<<<<<<<<<<<<
@@ -10720,7 +10720,7 @@ static int __pyx_f_15Model_FB_cython_func(double __pyx_v_t, double *__pyx_v_y, d
  */
   (__pyx_v_f[_ind_PDE1CamCa4cAMP]) = 0.;
 
-  /* "Model_FB.pyx":1816
+  /* "Model_FB.pyx":1813
  *     f[PDE1CamCa4] = 0.
  *     f[PDE1CamCa4cAMP] = 0.
  *     f[AMP] = 0.             # <<<<<<<<<<<<<<
@@ -10729,7 +10729,7 @@ static int __pyx_f_15Model_FB_cython_func(double __pyx_v_t, double *__pyx_v_y, d
  */
   (__pyx_v_f[_ind_AMP]) = 0.;
 
-  /* "Model_FB.pyx":1817
+  /* "Model_FB.pyx":1814
  *     f[PDE1CamCa4cAMP] = 0.
  *     f[AMP] = 0.
  *     f[PDE10] = 0.             # <<<<<<<<<<<<<<
@@ -10738,7 +10738,7 @@ static int __pyx_f_15Model_FB_cython_func(double __pyx_v_t, double *__pyx_v_y, d
  */
   (__pyx_v_f[_ind_PDE10]) = 0.;
 
-  /* "Model_FB.pyx":1818
+  /* "Model_FB.pyx":1815
  *     f[AMP] = 0.
  *     f[PDE10] = 0.
  *     f[PDE10cAMP] = 0.             # <<<<<<<<<<<<<<
@@ -10747,7 +10747,7 @@ static int __pyx_f_15Model_FB_cython_func(double __pyx_v_t, double *__pyx_v_y, d
  */
   (__pyx_v_f[_ind_PDE10cAMP]) = 0.;
 
-  /* "Model_FB.pyx":1819
+  /* "Model_FB.pyx":1816
  *     f[PDE10] = 0.
  *     f[PDE10cAMP] = 0.
  *     f[pPDE10] = 0.             # <<<<<<<<<<<<<<
@@ -10756,7 +10756,7 @@ static int __pyx_f_15Model_FB_cython_func(double __pyx_v_t, double *__pyx_v_y, d
  */
   (__pyx_v_f[_ind_pPDE10]) = 0.;
 
-  /* "Model_FB.pyx":1820
+  /* "Model_FB.pyx":1817
  *     f[PDE10cAMP] = 0.
  *     f[pPDE10] = 0.
  *     f[pPDE10cAMP] = 0.             # <<<<<<<<<<<<<<
@@ -10765,7 +10765,7 @@ static int __pyx_f_15Model_FB_cython_func(double __pyx_v_t, double *__pyx_v_y, d
  */
   (__pyx_v_f[_ind_pPDE10cAMP]) = 0.;
 
-  /* "Model_FB.pyx":1821
+  /* "Model_FB.pyx":1818
  *     f[pPDE10] = 0.
  *     f[pPDE10cAMP] = 0.
  *     f[PKAcPDE10] = 0.             # <<<<<<<<<<<<<<
@@ -10774,7 +10774,7 @@ static int __pyx_f_15Model_FB_cython_func(double __pyx_v_t, double *__pyx_v_y, d
  */
   (__pyx_v_f[_ind_PKAcPDE10]) = 0.;
 
-  /* "Model_FB.pyx":1822
+  /* "Model_FB.pyx":1819
  *     f[pPDE10cAMP] = 0.
  *     f[PKAcPDE10] = 0.
  *     f[PKAcPDE10cAMP] = 0.             # <<<<<<<<<<<<<<
@@ -10783,7 +10783,7 @@ static int __pyx_f_15Model_FB_cython_func(double __pyx_v_t, double *__pyx_v_y, d
  */
   (__pyx_v_f[_ind_PKAcPDE10cAMP]) = 0.;
 
-  /* "Model_FB.pyx":1823
+  /* "Model_FB.pyx":1820
  *     f[PKAcPDE10] = 0.
  *     f[PKAcPDE10cAMP] = 0.
  *     f[PP1_Blackwell] = 0.             # <<<<<<<<<<<<<<
@@ -10792,7 +10792,7 @@ static int __pyx_f_15Model_FB_cython_func(double __pyx_v_t, double *__pyx_v_y, d
  */
   (__pyx_v_f[_ind_PP1_Blackwell]) = 0.;
 
-  /* "Model_FB.pyx":1824
+  /* "Model_FB.pyx":1821
  *     f[PKAcPDE10cAMP] = 0.
  *     f[PP1_Blackwell] = 0.
  *     f[pPDE10PP1] = 0.             # <<<<<<<<<<<<<<
@@ -10801,7 +10801,7 @@ static int __pyx_f_15Model_FB_cython_func(double __pyx_v_t, double *__pyx_v_y, d
  */
   (__pyx_v_f[_ind_pPDE10PP1]) = 0.;
 
-  /* "Model_FB.pyx":1825
+  /* "Model_FB.pyx":1822
  *     f[PP1_Blackwell] = 0.
  *     f[pPDE10PP1] = 0.
  *     f[PDE2] = 0.             # <<<<<<<<<<<<<<
@@ -10810,7 +10810,7 @@ static int __pyx_f_15Model_FB_cython_func(double __pyx_v_t, double *__pyx_v_y, d
  */
   (__pyx_v_f[_ind_PDE2]) = 0.;
 
-  /* "Model_FB.pyx":1826
+  /* "Model_FB.pyx":1823
  *     f[pPDE10PP1] = 0.
  *     f[PDE2] = 0.
  *     f[PDE2cAMP] = 0.             # <<<<<<<<<<<<<<
@@ -10819,7 +10819,7 @@ static int __pyx_f_15Model_FB_cython_func(double __pyx_v_t, double *__pyx_v_y, d
  */
   (__pyx_v_f[_ind_PDE2cAMP]) = 0.;
 
-  /* "Model_FB.pyx":1827
+  /* "Model_FB.pyx":1824
  *     f[PDE2] = 0.
  *     f[PDE2cAMP] = 0.
  *     f[PDE2cAMP2] = 0.             # <<<<<<<<<<<<<<
@@ -10828,7 +10828,7 @@ static int __pyx_f_15Model_FB_cython_func(double __pyx_v_t, double *__pyx_v_y, d
  */
   (__pyx_v_f[_ind_PDE2cAMP2]) = 0.;
 
-  /* "Model_FB.pyx":1828
+  /* "Model_FB.pyx":1825
  *     f[PDE2cAMP] = 0.
  *     f[PDE2cAMP2] = 0.
  *     f[PDE4] = 0.             # <<<<<<<<<<<<<<
@@ -10837,7 +10837,7 @@ static int __pyx_f_15Model_FB_cython_func(double __pyx_v_t, double *__pyx_v_y, d
  */
   (__pyx_v_f[_ind_PDE4]) = 0.;
 
-  /* "Model_FB.pyx":1829
+  /* "Model_FB.pyx":1826
  *     f[PDE2cAMP2] = 0.
  *     f[PDE4] = 0.
  *     f[PDE4cAMP] = 0.             # <<<<<<<<<<<<<<
@@ -10846,7 +10846,7 @@ static int __pyx_f_15Model_FB_cython_func(double __pyx_v_t, double *__pyx_v_y, d
  */
   (__pyx_v_f[_ind_PDE4cAMP]) = 0.;
 
-  /* "Model_FB.pyx":1830
+  /* "Model_FB.pyx":1827
  *     f[PDE4] = 0.
  *     f[PDE4cAMP] = 0.
  *     f[pPDE4] = 0.             # <<<<<<<<<<<<<<
@@ -10855,7 +10855,7 @@ static int __pyx_f_15Model_FB_cython_func(double __pyx_v_t, double *__pyx_v_y, d
  */
   (__pyx_v_f[_ind_pPDE4]) = 0.;
 
-  /* "Model_FB.pyx":1831
+  /* "Model_FB.pyx":1828
  *     f[PDE4cAMP] = 0.
  *     f[pPDE4] = 0.
  *     f[pPDE4cAMP] = 0.             # <<<<<<<<<<<<<<
@@ -10864,7 +10864,7 @@ static int __pyx_f_15Model_FB_cython_func(double __pyx_v_t, double *__pyx_v_y, d
  */
   (__pyx_v_f[_ind_pPDE4cAMP]) = 0.;
 
-  /* "Model_FB.pyx":1832
+  /* "Model_FB.pyx":1829
  *     f[pPDE4] = 0.
  *     f[pPDE4cAMP] = 0.
  *     f[PKAcPDE4] = 0.             # <<<<<<<<<<<<<<
@@ -10873,7 +10873,7 @@ static int __pyx_f_15Model_FB_cython_func(double __pyx_v_t, double *__pyx_v_y, d
  */
   (__pyx_v_f[_ind_PKAcPDE4]) = 0.;
 
-  /* "Model_FB.pyx":1833
+  /* "Model_FB.pyx":1830
  *     f[pPDE4cAMP] = 0.
  *     f[PKAcPDE4] = 0.
  *     f[PKAcPDE4cAMP] = 0.             # <<<<<<<<<<<<<<
@@ -10882,7 +10882,7 @@ static int __pyx_f_15Model_FB_cython_func(double __pyx_v_t, double *__pyx_v_y, d
  */
   (__pyx_v_f[_ind_PKAcPDE4cAMP]) = 0.;
 
-  /* "Model_FB.pyx":1834
+  /* "Model_FB.pyx":1831
  *     f[PKAcPDE4] = 0.
  *     f[PKAcPDE4cAMP] = 0.
  *     f[pPDE4PP1] = 0.             # <<<<<<<<<<<<<<
@@ -10891,7 +10891,7 @@ static int __pyx_f_15Model_FB_cython_func(double __pyx_v_t, double *__pyx_v_y, d
  */
   (__pyx_v_f[_ind_pPDE4PP1]) = 0.;
 
-  /* "Model_FB.pyx":1835
+  /* "Model_FB.pyx":1832
  *     f[PKAcPDE4cAMP] = 0.
  *     f[pPDE4PP1] = 0.
  *     f[Plc] = 0.             # <<<<<<<<<<<<<<
@@ -10900,7 +10900,7 @@ static int __pyx_f_15Model_FB_cython_func(double __pyx_v_t, double *__pyx_v_y, d
  */
   (__pyx_v_f[_ind_Plc]) = 0.;
 
-  /* "Model_FB.pyx":1836
+  /* "Model_FB.pyx":1833
  *     f[pPDE4PP1] = 0.
  *     f[Plc] = 0.
  *     f[PlcCa] = 0.             # <<<<<<<<<<<<<<
@@ -10909,7 +10909,7 @@ static int __pyx_f_15Model_FB_cython_func(double __pyx_v_t, double *__pyx_v_y, d
  */
   (__pyx_v_f[_ind_PlcCa]) = 0.;
 
-  /* "Model_FB.pyx":1837
+  /* "Model_FB.pyx":1834
  *     f[Plc] = 0.
  *     f[PlcCa] = 0.
  *     f[PlcCaGqa] = 0.             # <<<<<<<<<<<<<<
@@ -10918,7 +10918,7 @@ static int __pyx_f_15Model_FB_cython_func(double __pyx_v_t, double *__pyx_v_y, d
  */
   (__pyx_v_f[_ind_PlcCaGqa]) = 0.;
 
-  /* "Model_FB.pyx":1838
+  /* "Model_FB.pyx":1835
  *     f[PlcCa] = 0.
  *     f[PlcCaGqa] = 0.
  *     f[PlcGqa] = 0.             # <<<<<<<<<<<<<<
@@ -10927,7 +10927,7 @@ static int __pyx_f_15Model_FB_cython_func(double __pyx_v_t, double *__pyx_v_y, d
  */
   (__pyx_v_f[_ind_PlcGqa]) = 0.;
 
-  /* "Model_FB.pyx":1839
+  /* "Model_FB.pyx":1836
  *     f[PlcCaGqa] = 0.
  *     f[PlcGqa] = 0.
  *     f[Pip2] = 0.             # <<<<<<<<<<<<<<
@@ -10936,7 +10936,7 @@ static int __pyx_f_15Model_FB_cython_func(double __pyx_v_t, double *__pyx_v_y, d
  */
   (__pyx_v_f[_ind_Pip2]) = 0.;
 
-  /* "Model_FB.pyx":1840
+  /* "Model_FB.pyx":1837
  *     f[PlcGqa] = 0.
  *     f[Pip2] = 0.
  *     f[PlcCaPip2] = 0.             # <<<<<<<<<<<<<<
@@ -10945,7 +10945,7 @@ static int __pyx_f_15Model_FB_cython_func(double __pyx_v_t, double *__pyx_v_y, d
  */
   (__pyx_v_f[_ind_PlcCaPip2]) = 0.;
 
-  /* "Model_FB.pyx":1841
+  /* "Model_FB.pyx":1838
  *     f[Pip2] = 0.
  *     f[PlcCaPip2] = 0.
  *     f[Ip3] = 0.             # <<<<<<<<<<<<<<
@@ -10954,7 +10954,7 @@ static int __pyx_f_15Model_FB_cython_func(double __pyx_v_t, double *__pyx_v_y, d
  */
   (__pyx_v_f[_ind_Ip3]) = 0.;
 
-  /* "Model_FB.pyx":1842
+  /* "Model_FB.pyx":1839
  *     f[PlcCaPip2] = 0.
  *     f[Ip3] = 0.
  *     f[Dag] = 0.             # <<<<<<<<<<<<<<
@@ -10963,7 +10963,7 @@ static int __pyx_f_15Model_FB_cython_func(double __pyx_v_t, double *__pyx_v_y, d
  */
   (__pyx_v_f[_ind_Dag]) = 0.;
 
-  /* "Model_FB.pyx":1843
+  /* "Model_FB.pyx":1840
  *     f[Ip3] = 0.
  *     f[Dag] = 0.
  *     f[PlcCaGqaPip2] = 0.             # <<<<<<<<<<<<<<
@@ -10972,7 +10972,7 @@ static int __pyx_f_15Model_FB_cython_func(double __pyx_v_t, double *__pyx_v_y, d
  */
   (__pyx_v_f[_ind_PlcCaGqaPip2]) = 0.;
 
-  /* "Model_FB.pyx":1844
+  /* "Model_FB.pyx":1841
  *     f[Dag] = 0.
  *     f[PlcCaGqaPip2] = 0.
  *     f[Dgl] = 0.             # <<<<<<<<<<<<<<
@@ -10981,7 +10981,7 @@ static int __pyx_f_15Model_FB_cython_func(double __pyx_v_t, double *__pyx_v_y, d
  */
   (__pyx_v_f[_ind_Dgl]) = 0.;
 
-  /* "Model_FB.pyx":1845
+  /* "Model_FB.pyx":1842
  *     f[PlcCaGqaPip2] = 0.
  *     f[Dgl] = 0.
  *     f[CaDgl] = 0.             # <<<<<<<<<<<<<<
@@ -10990,7 +10990,7 @@ static int __pyx_f_15Model_FB_cython_func(double __pyx_v_t, double *__pyx_v_y, d
  */
   (__pyx_v_f[_ind_CaDgl]) = 0.;
 
-  /* "Model_FB.pyx":1846
+  /* "Model_FB.pyx":1843
  *     f[Dgl] = 0.
  *     f[CaDgl] = 0.
  *     f[DagCaDgl] = 0.             # <<<<<<<<<<<<<<
@@ -10999,7 +10999,7 @@ static int __pyx_f_15Model_FB_cython_func(double __pyx_v_t, double *__pyx_v_y, d
  */
   (__pyx_v_f[_ind_DagCaDgl]) = 0.;
 
-  /* "Model_FB.pyx":1847
+  /* "Model_FB.pyx":1844
  *     f[CaDgl] = 0.
  *     f[DagCaDgl] = 0.
  *     f[two_ag] = 0.             # <<<<<<<<<<<<<<
@@ -11008,7 +11008,7 @@ static int __pyx_f_15Model_FB_cython_func(double __pyx_v_t, double *__pyx_v_y, d
  */
   (__pyx_v_f[_ind_two_ag]) = 0.;
 
-  /* "Model_FB.pyx":1848
+  /* "Model_FB.pyx":1845
  *     f[DagCaDgl] = 0.
  *     f[two_ag] = 0.
  *     f[Ip3degrad] = 0.             # <<<<<<<<<<<<<<
@@ -11017,7 +11017,7 @@ static int __pyx_f_15Model_FB_cython_func(double __pyx_v_t, double *__pyx_v_y, d
  */
   (__pyx_v_f[_ind_Ip3degrad]) = 0.;
 
-  /* "Model_FB.pyx":1849
+  /* "Model_FB.pyx":1846
  *     f[two_ag] = 0.
  *     f[Ip3degrad] = 0.
  *     f[PIkinase] = 0.             # <<<<<<<<<<<<<<
@@ -11026,7 +11026,7 @@ static int __pyx_f_15Model_FB_cython_func(double __pyx_v_t, double *__pyx_v_y, d
  */
   (__pyx_v_f[_ind_PIkinase]) = 0.;
 
-  /* "Model_FB.pyx":1850
+  /* "Model_FB.pyx":1847
  *     f[Ip3degrad] = 0.
  *     f[PIkinase] = 0.
  *     f[Ip3degPIk] = 0.             # <<<<<<<<<<<<<<
@@ -11035,7 +11035,7 @@ static int __pyx_f_15Model_FB_cython_func(double __pyx_v_t, double *__pyx_v_y, d
  */
   (__pyx_v_f[_ind_Ip3degPIk]) = 0.;
 
-  /* "Model_FB.pyx":1851
+  /* "Model_FB.pyx":1848
  *     f[PIkinase] = 0.
  *     f[Ip3degPIk] = 0.
  *     f[two_agDegrad] = 0.             # <<<<<<<<<<<<<<
@@ -11044,7 +11044,7 @@ static int __pyx_f_15Model_FB_cython_func(double __pyx_v_t, double *__pyx_v_y, d
  */
   (__pyx_v_f[_ind_two_agDegrad]) = 0.;
 
-  /* "Model_FB.pyx":1852
+  /* "Model_FB.pyx":1849
  *     f[Ip3degPIk] = 0.
  *     f[two_agDegrad] = 0.
  *     f[DagK] = 0.             # <<<<<<<<<<<<<<
@@ -11053,7 +11053,7 @@ static int __pyx_f_15Model_FB_cython_func(double __pyx_v_t, double *__pyx_v_y, d
  */
   (__pyx_v_f[_ind_DagK]) = 0.;
 
-  /* "Model_FB.pyx":1853
+  /* "Model_FB.pyx":1850
  *     f[two_agDegrad] = 0.
  *     f[DagK] = 0.
  *     f[DagKdag] = 0.             # <<<<<<<<<<<<<<
@@ -11062,7 +11062,7 @@ static int __pyx_f_15Model_FB_cython_func(double __pyx_v_t, double *__pyx_v_y, d
  */
   (__pyx_v_f[_ind_DagKdag]) = 0.;
 
-  /* "Model_FB.pyx":1854
+  /* "Model_FB.pyx":1851
  *     f[DagK] = 0.
  *     f[DagKdag] = 0.
  *     f[PA] = 0.             # <<<<<<<<<<<<<<
@@ -11071,7 +11071,7 @@ static int __pyx_f_15Model_FB_cython_func(double __pyx_v_t, double *__pyx_v_y, d
  */
   (__pyx_v_f[_ind_PA]) = 0.;
 
-  /* "Model_FB.pyx":1855
+  /* "Model_FB.pyx":1852
  *     f[DagKdag] = 0.
  *     f[PA] = 0.
  *     f[Pkc] = 0.             # <<<<<<<<<<<<<<
@@ -11080,7 +11080,7 @@ static int __pyx_f_15Model_FB_cython_func(double __pyx_v_t, double *__pyx_v_y, d
  */
   (__pyx_v_f[_ind_Pkc]) = 0.;
 
-  /* "Model_FB.pyx":1856
+  /* "Model_FB.pyx":1853
  *     f[PA] = 0.
  *     f[Pkc] = 0.
  *     f[PkcCa] = 0.             # <<<<<<<<<<<<<<
@@ -11089,7 +11089,7 @@ static int __pyx_f_15Model_FB_cython_func(double __pyx_v_t, double *__pyx_v_y, d
  */
   (__pyx_v_f[_ind_PkcCa]) = 0.;
 
-  /* "Model_FB.pyx":1857
+  /* "Model_FB.pyx":1854
  *     f[Pkc] = 0.
  *     f[PkcCa] = 0.
  *     f[PkcCaDag] = 0.             # <<<<<<<<<<<<<<
@@ -11098,7 +11098,7 @@ static int __pyx_f_15Model_FB_cython_func(double __pyx_v_t, double *__pyx_v_y, d
  */
   (__pyx_v_f[_ind_PkcCaDag]) = 0.;
 
-  /* "Model_FB.pyx":1858
+  /* "Model_FB.pyx":1855
  *     f[PkcCa] = 0.
  *     f[PkcCaDag] = 0.
  *     f[PKA] = 0.             # <<<<<<<<<<<<<<
@@ -11107,7 +11107,7 @@ static int __pyx_f_15Model_FB_cython_func(double __pyx_v_t, double *__pyx_v_y, d
  */
   (__pyx_v_f[_ind_PKA]) = 0.;
 
-  /* "Model_FB.pyx":1859
+  /* "Model_FB.pyx":1856
  *     f[PkcCaDag] = 0.
  *     f[PKA] = 0.
  *     f[PKAcAMP2] = 0.             # <<<<<<<<<<<<<<
@@ -11116,98 +11116,98 @@ static int __pyx_f_15Model_FB_cython_func(double __pyx_v_t, double *__pyx_v_y, d
  */
   (__pyx_v_f[_ind_PKAcAMP2]) = 0.;
 
-  /* "Model_FB.pyx":1860
+  /* "Model_FB.pyx":1857
  *     f[PKA] = 0.
  *     f[PKAcAMP2] = 0.
  *     f[PKAcAMP4] = 0.             # <<<<<<<<<<<<<<
  *     f[PKAr] = 0.
- *     f[Cam] = -forwardRate_CamC_bind*y[Cam]*y[Ca_cyt]**2 +reverseRate_CamC_bind*y[CamCa2C] -forwardRate_CamN_bind*y[Cam]*y[Ca_cyt]**2 +reverseRate_CamN_bind*y[CamCa2N]
+ *     f[Cam] = -forwardRate_CamC_bind*y[Cam]*y[Ca_cyt]**2 +reverseRate_CamC_bind*y[CamCa2C] -forwardRate_CamN_bind*y[Cam]*y[Ca_cyt]**2 +reverseRate_CamN_bind*y[CamCa2N] -forwardRate_Cam_plus_PP2B__PP2BCam_reac*y[Cam]*y[PP2B] +reverseRate_Cam_plus_PP2B__PP2BCam_reac*y[PP2BCam]
  */
   (__pyx_v_f[_ind_PKAcAMP4]) = 0.;
 
-  /* "Model_FB.pyx":1861
+  /* "Model_FB.pyx":1858
  *     f[PKAcAMP2] = 0.
  *     f[PKAcAMP4] = 0.
  *     f[PKAr] = 0.             # <<<<<<<<<<<<<<
- *     f[Cam] = -forwardRate_CamC_bind*y[Cam]*y[Ca_cyt]**2 +reverseRate_CamC_bind*y[CamCa2C] -forwardRate_CamN_bind*y[Cam]*y[Ca_cyt]**2 +reverseRate_CamN_bind*y[CamCa2N]
+ *     f[Cam] = -forwardRate_CamC_bind*y[Cam]*y[Ca_cyt]**2 +reverseRate_CamC_bind*y[CamCa2C] -forwardRate_CamN_bind*y[Cam]*y[Ca_cyt]**2 +reverseRate_CamN_bind*y[CamCa2N] -forwardRate_Cam_plus_PP2B__PP2BCam_reac*y[Cam]*y[PP2B] +reverseRate_Cam_plus_PP2B__PP2BCam_reac*y[PP2BCam]
  *     f[PP2B] = -forwardRate_CamCa4_plus_PP2B__PP2BCamCa4_reac*y[CamCa4]*y[PP2B] +reverseRate_CamCa4_plus_PP2B__PP2BCamCa4_reac*y[PP2BCamCa4]
  */
   (__pyx_v_f[_ind_PKAr]) = 0.;
 
-  /* "Model_FB.pyx":1862
+  /* "Model_FB.pyx":1859
  *     f[PKAcAMP4] = 0.
  *     f[PKAr] = 0.
- *     f[Cam] = -forwardRate_CamC_bind*y[Cam]*y[Ca_cyt]**2 +reverseRate_CamC_bind*y[CamCa2C] -forwardRate_CamN_bind*y[Cam]*y[Ca_cyt]**2 +reverseRate_CamN_bind*y[CamCa2N]             # <<<<<<<<<<<<<<
+ *     f[Cam] = -forwardRate_CamC_bind*y[Cam]*y[Ca_cyt]**2 +reverseRate_CamC_bind*y[CamCa2C] -forwardRate_CamN_bind*y[Cam]*y[Ca_cyt]**2 +reverseRate_CamN_bind*y[CamCa2N] -forwardRate_Cam_plus_PP2B__PP2BCam_reac*y[Cam]*y[PP2B] +reverseRate_Cam_plus_PP2B__PP2BCam_reac*y[PP2BCam]             # <<<<<<<<<<<<<<
  *     f[PP2B] = -forwardRate_CamCa4_plus_PP2B__PP2BCamCa4_reac*y[CamCa4]*y[PP2B] +reverseRate_CamCa4_plus_PP2B__PP2BCamCa4_reac*y[PP2BCamCa4]
- *     f[PP2BCam] = 0.
+ *     f[PP2BCam] = forwardRate_Cam_plus_PP2B__PP2BCam_reac*y[Cam]*y[PP2B] -reverseRate_Cam_plus_PP2B__PP2BCam_reac*y[PP2BCam] -forwardRate_PP2BCam_plus_Ca2__PP2BCamCa2C_reac*y[PP2BCam]*y[Ca_cyt]**2 +reverseRate_PP2BCam_plus_Ca2__PP2BCamCa2C_reac*y[PP2BCamCa2C] -forwardRate_PP2BCam_plus_Ca2__PP2BCamCa2N_reac*y[PP2BCam]*y[Ca_cyt]**2 +reverseRate_PP2BCam_plus_Ca2__PP2BCamCa2N_reac*y[PP2BCamCa2N]
  */
-  (__pyx_v_f[_ind_Cam]) = ((((((-__pyx_v_forwardRate_CamC_bind) * (__pyx_v_y[_ind_Cam])) * pow((__pyx_v_y[_ind_Ca_cyt]), 2.0)) + (__pyx_v_reverseRate_CamC_bind * (__pyx_v_y[_ind_CamCa2C]))) - ((__pyx_v_forwardRate_CamN_bind * (__pyx_v_y[_ind_Cam])) * pow((__pyx_v_y[_ind_Ca_cyt]), 2.0))) + (__pyx_v_reverseRate_CamN_bind * (__pyx_v_y[_ind_CamCa2N])));
+  (__pyx_v_f[_ind_Cam]) = ((((((((-__pyx_v_forwardRate_CamC_bind) * (__pyx_v_y[_ind_Cam])) * pow((__pyx_v_y[_ind_Ca_cyt]), 2.0)) + (__pyx_v_reverseRate_CamC_bind * (__pyx_v_y[_ind_CamCa2C]))) - ((__pyx_v_forwardRate_CamN_bind * (__pyx_v_y[_ind_Cam])) * pow((__pyx_v_y[_ind_Ca_cyt]), 2.0))) + (__pyx_v_reverseRate_CamN_bind * (__pyx_v_y[_ind_CamCa2N]))) - ((__pyx_v_forwardRate_Cam_plus_PP2B__PP2BCam_reac * (__pyx_v_y[_ind_Cam])) * (__pyx_v_y[_ind_PP2B]))) + (__pyx_v_reverseRate_Cam_plus_PP2B__PP2BCam_reac * (__pyx_v_y[_ind_PP2BCam])));
 
-  /* "Model_FB.pyx":1863
+  /* "Model_FB.pyx":1860
  *     f[PKAr] = 0.
- *     f[Cam] = -forwardRate_CamC_bind*y[Cam]*y[Ca_cyt]**2 +reverseRate_CamC_bind*y[CamCa2C] -forwardRate_CamN_bind*y[Cam]*y[Ca_cyt]**2 +reverseRate_CamN_bind*y[CamCa2N]
+ *     f[Cam] = -forwardRate_CamC_bind*y[Cam]*y[Ca_cyt]**2 +reverseRate_CamC_bind*y[CamCa2C] -forwardRate_CamN_bind*y[Cam]*y[Ca_cyt]**2 +reverseRate_CamN_bind*y[CamCa2N] -forwardRate_Cam_plus_PP2B__PP2BCam_reac*y[Cam]*y[PP2B] +reverseRate_Cam_plus_PP2B__PP2BCam_reac*y[PP2BCam]
  *     f[PP2B] = -forwardRate_CamCa4_plus_PP2B__PP2BCamCa4_reac*y[CamCa4]*y[PP2B] +reverseRate_CamCa4_plus_PP2B__PP2BCamCa4_reac*y[PP2BCamCa4]             # <<<<<<<<<<<<<<
- *     f[PP2BCam] = 0.
- *     f[CamCa2C] = forwardRate_CamC_bind*y[Cam]*y[Ca_cyt]**2 -reverseRate_CamC_bind*y[CamCa2C] -forwardRate_CamCa2C_bind*y[CamCa2C]*y[Ca_cyt]**2 +reverseRate_CamCa2C_bind*y[CamCa4]
+ *     f[PP2BCam] = forwardRate_Cam_plus_PP2B__PP2BCam_reac*y[Cam]*y[PP2B] -reverseRate_Cam_plus_PP2B__PP2BCam_reac*y[PP2BCam] -forwardRate_PP2BCam_plus_Ca2__PP2BCamCa2C_reac*y[PP2BCam]*y[Ca_cyt]**2 +reverseRate_PP2BCam_plus_Ca2__PP2BCamCa2C_reac*y[PP2BCamCa2C] -forwardRate_PP2BCam_plus_Ca2__PP2BCamCa2N_reac*y[PP2BCam]*y[Ca_cyt]**2 +reverseRate_PP2BCam_plus_Ca2__PP2BCamCa2N_reac*y[PP2BCamCa2N]
+ *     f[CamCa2C] = forwardRate_CamC_bind*y[Cam]*y[Ca_cyt]**2 -reverseRate_CamC_bind*y[CamCa2C] -forwardRate_CamCa2C_bind*y[CamCa2C]*y[Ca_cyt]**2 +reverseRate_CamCa2C_bind*y[CamCa4] -forwardRate_CamCa2C_plus_PP2B__PP2BCamCa2C_reac*y[CamCa2C]*y[PP2B] +reverseRate_CamCa2C_plus_PP2B__PP2BCamCa2C_reac*y[PP2BCamCa2C]
  */
   (__pyx_v_f[_ind_PP2B]) = ((((-__pyx_v_forwardRate_CamCa4_plus_PP2B__PP2BCamCa4_reac) * (__pyx_v_y[_ind_CamCa4])) * (__pyx_v_y[_ind_PP2B])) + (__pyx_v_reverseRate_CamCa4_plus_PP2B__PP2BCamCa4_reac * (__pyx_v_y[_ind_PP2BCamCa4])));
 
+  /* "Model_FB.pyx":1861
+ *     f[Cam] = -forwardRate_CamC_bind*y[Cam]*y[Ca_cyt]**2 +reverseRate_CamC_bind*y[CamCa2C] -forwardRate_CamN_bind*y[Cam]*y[Ca_cyt]**2 +reverseRate_CamN_bind*y[CamCa2N] -forwardRate_Cam_plus_PP2B__PP2BCam_reac*y[Cam]*y[PP2B] +reverseRate_Cam_plus_PP2B__PP2BCam_reac*y[PP2BCam]
+ *     f[PP2B] = -forwardRate_CamCa4_plus_PP2B__PP2BCamCa4_reac*y[CamCa4]*y[PP2B] +reverseRate_CamCa4_plus_PP2B__PP2BCamCa4_reac*y[PP2BCamCa4]
+ *     f[PP2BCam] = forwardRate_Cam_plus_PP2B__PP2BCam_reac*y[Cam]*y[PP2B] -reverseRate_Cam_plus_PP2B__PP2BCam_reac*y[PP2BCam] -forwardRate_PP2BCam_plus_Ca2__PP2BCamCa2C_reac*y[PP2BCam]*y[Ca_cyt]**2 +reverseRate_PP2BCam_plus_Ca2__PP2BCamCa2C_reac*y[PP2BCamCa2C] -forwardRate_PP2BCam_plus_Ca2__PP2BCamCa2N_reac*y[PP2BCam]*y[Ca_cyt]**2 +reverseRate_PP2BCam_plus_Ca2__PP2BCamCa2N_reac*y[PP2BCamCa2N]             # <<<<<<<<<<<<<<
+ *     f[CamCa2C] = forwardRate_CamC_bind*y[Cam]*y[Ca_cyt]**2 -reverseRate_CamC_bind*y[CamCa2C] -forwardRate_CamCa2C_bind*y[CamCa2C]*y[Ca_cyt]**2 +reverseRate_CamCa2C_bind*y[CamCa4] -forwardRate_CamCa2C_plus_PP2B__PP2BCamCa2C_reac*y[CamCa2C]*y[PP2B] +reverseRate_CamCa2C_plus_PP2B__PP2BCamCa2C_reac*y[PP2BCamCa2C]
+ *     f[PP2BCamCa2C] = forwardRate_CamCa2C_plus_PP2B__PP2BCamCa2C_reac*y[CamCa2C]*y[PP2B] -reverseRate_CamCa2C_plus_PP2B__PP2BCamCa2C_reac*y[PP2BCamCa2C] +forwardRate_PP2BCam_plus_Ca2__PP2BCamCa2C_reac*y[PP2BCam]*y[Ca_cyt]**2 -reverseRate_PP2BCam_plus_Ca2__PP2BCamCa2C_reac*y[PP2BCamCa2C] -forwardRate_PP2BCamCa2C_plus_Ca2__PP2BCamCa4_reac*y[PP2BCamCa2C]*y[Ca_cyt]**2 +reverseRate_PP2BCamCa2C_plus_Ca2__PP2BCamCa4_reac*y[PP2BCamCa4]
+ */
+  (__pyx_v_f[_ind_PP2BCam]) = (((((((__pyx_v_forwardRate_Cam_plus_PP2B__PP2BCam_reac * (__pyx_v_y[_ind_Cam])) * (__pyx_v_y[_ind_PP2B])) - (__pyx_v_reverseRate_Cam_plus_PP2B__PP2BCam_reac * (__pyx_v_y[_ind_PP2BCam]))) - ((__pyx_v_forwardRate_PP2BCam_plus_Ca2__PP2BCamCa2C_reac * (__pyx_v_y[_ind_PP2BCam])) * pow((__pyx_v_y[_ind_Ca_cyt]), 2.0))) + (__pyx_v_reverseRate_PP2BCam_plus_Ca2__PP2BCamCa2C_reac * (__pyx_v_y[_ind_PP2BCamCa2C]))) - ((__pyx_v_forwardRate_PP2BCam_plus_Ca2__PP2BCamCa2N_reac * (__pyx_v_y[_ind_PP2BCam])) * pow((__pyx_v_y[_ind_Ca_cyt]), 2.0))) + (__pyx_v_reverseRate_PP2BCam_plus_Ca2__PP2BCamCa2N_reac * (__pyx_v_y[_ind_PP2BCamCa2N])));
+
+  /* "Model_FB.pyx":1862
+ *     f[PP2B] = -forwardRate_CamCa4_plus_PP2B__PP2BCamCa4_reac*y[CamCa4]*y[PP2B] +reverseRate_CamCa4_plus_PP2B__PP2BCamCa4_reac*y[PP2BCamCa4]
+ *     f[PP2BCam] = forwardRate_Cam_plus_PP2B__PP2BCam_reac*y[Cam]*y[PP2B] -reverseRate_Cam_plus_PP2B__PP2BCam_reac*y[PP2BCam] -forwardRate_PP2BCam_plus_Ca2__PP2BCamCa2C_reac*y[PP2BCam]*y[Ca_cyt]**2 +reverseRate_PP2BCam_plus_Ca2__PP2BCamCa2C_reac*y[PP2BCamCa2C] -forwardRate_PP2BCam_plus_Ca2__PP2BCamCa2N_reac*y[PP2BCam]*y[Ca_cyt]**2 +reverseRate_PP2BCam_plus_Ca2__PP2BCamCa2N_reac*y[PP2BCamCa2N]
+ *     f[CamCa2C] = forwardRate_CamC_bind*y[Cam]*y[Ca_cyt]**2 -reverseRate_CamC_bind*y[CamCa2C] -forwardRate_CamCa2C_bind*y[CamCa2C]*y[Ca_cyt]**2 +reverseRate_CamCa2C_bind*y[CamCa4] -forwardRate_CamCa2C_plus_PP2B__PP2BCamCa2C_reac*y[CamCa2C]*y[PP2B] +reverseRate_CamCa2C_plus_PP2B__PP2BCamCa2C_reac*y[PP2BCamCa2C]             # <<<<<<<<<<<<<<
+ *     f[PP2BCamCa2C] = forwardRate_CamCa2C_plus_PP2B__PP2BCamCa2C_reac*y[CamCa2C]*y[PP2B] -reverseRate_CamCa2C_plus_PP2B__PP2BCamCa2C_reac*y[PP2BCamCa2C] +forwardRate_PP2BCam_plus_Ca2__PP2BCamCa2C_reac*y[PP2BCam]*y[Ca_cyt]**2 -reverseRate_PP2BCam_plus_Ca2__PP2BCamCa2C_reac*y[PP2BCamCa2C] -forwardRate_PP2BCamCa2C_plus_Ca2__PP2BCamCa4_reac*y[PP2BCamCa2C]*y[Ca_cyt]**2 +reverseRate_PP2BCamCa2C_plus_Ca2__PP2BCamCa4_reac*y[PP2BCamCa4]
+ *     f[PP2BCamCa2N] = forwardRate_CamCa2N_plus_PP2B__PP2BCamCa2N_reac*y[CamCa2N]*y[PP2B] -reverseRate_CamCa2N_plus_PP2B__PP2BCamCa2N_reac*y[PP2BCamCa2N] +forwardRate_PP2BCam_plus_Ca2__PP2BCamCa2N_reac*y[PP2BCam]*y[Ca_cyt]**2 -reverseRate_PP2BCam_plus_Ca2__PP2BCamCa2N_reac*y[PP2BCamCa2N] -forwardRate_PP2BCamCa2N_plus_Ca2__PP2BCamCa4_reac*y[PP2BCamCa2N]*y[Ca_cyt]**2 +reverseRate_PP2BCamCa2N_plus_Ca2__PP2BCamCa4_reac*y[PP2BCamCa4]
+ */
+  (__pyx_v_f[_ind_CamCa2C]) = (((((((__pyx_v_forwardRate_CamC_bind * (__pyx_v_y[_ind_Cam])) * pow((__pyx_v_y[_ind_Ca_cyt]), 2.0)) - (__pyx_v_reverseRate_CamC_bind * (__pyx_v_y[_ind_CamCa2C]))) - ((__pyx_v_forwardRate_CamCa2C_bind * (__pyx_v_y[_ind_CamCa2C])) * pow((__pyx_v_y[_ind_Ca_cyt]), 2.0))) + (__pyx_v_reverseRate_CamCa2C_bind * (__pyx_v_y[_ind_CamCa4]))) - ((__pyx_v_forwardRate_CamCa2C_plus_PP2B__PP2BCamCa2C_reac * (__pyx_v_y[_ind_CamCa2C])) * (__pyx_v_y[_ind_PP2B]))) + (__pyx_v_reverseRate_CamCa2C_plus_PP2B__PP2BCamCa2C_reac * (__pyx_v_y[_ind_PP2BCamCa2C])));
+
+  /* "Model_FB.pyx":1863
+ *     f[PP2BCam] = forwardRate_Cam_plus_PP2B__PP2BCam_reac*y[Cam]*y[PP2B] -reverseRate_Cam_plus_PP2B__PP2BCam_reac*y[PP2BCam] -forwardRate_PP2BCam_plus_Ca2__PP2BCamCa2C_reac*y[PP2BCam]*y[Ca_cyt]**2 +reverseRate_PP2BCam_plus_Ca2__PP2BCamCa2C_reac*y[PP2BCamCa2C] -forwardRate_PP2BCam_plus_Ca2__PP2BCamCa2N_reac*y[PP2BCam]*y[Ca_cyt]**2 +reverseRate_PP2BCam_plus_Ca2__PP2BCamCa2N_reac*y[PP2BCamCa2N]
+ *     f[CamCa2C] = forwardRate_CamC_bind*y[Cam]*y[Ca_cyt]**2 -reverseRate_CamC_bind*y[CamCa2C] -forwardRate_CamCa2C_bind*y[CamCa2C]*y[Ca_cyt]**2 +reverseRate_CamCa2C_bind*y[CamCa4] -forwardRate_CamCa2C_plus_PP2B__PP2BCamCa2C_reac*y[CamCa2C]*y[PP2B] +reverseRate_CamCa2C_plus_PP2B__PP2BCamCa2C_reac*y[PP2BCamCa2C]
+ *     f[PP2BCamCa2C] = forwardRate_CamCa2C_plus_PP2B__PP2BCamCa2C_reac*y[CamCa2C]*y[PP2B] -reverseRate_CamCa2C_plus_PP2B__PP2BCamCa2C_reac*y[PP2BCamCa2C] +forwardRate_PP2BCam_plus_Ca2__PP2BCamCa2C_reac*y[PP2BCam]*y[Ca_cyt]**2 -reverseRate_PP2BCam_plus_Ca2__PP2BCamCa2C_reac*y[PP2BCamCa2C] -forwardRate_PP2BCamCa2C_plus_Ca2__PP2BCamCa4_reac*y[PP2BCamCa2C]*y[Ca_cyt]**2 +reverseRate_PP2BCamCa2C_plus_Ca2__PP2BCamCa4_reac*y[PP2BCamCa4]             # <<<<<<<<<<<<<<
+ *     f[PP2BCamCa2N] = forwardRate_CamCa2N_plus_PP2B__PP2BCamCa2N_reac*y[CamCa2N]*y[PP2B] -reverseRate_CamCa2N_plus_PP2B__PP2BCamCa2N_reac*y[PP2BCamCa2N] +forwardRate_PP2BCam_plus_Ca2__PP2BCamCa2N_reac*y[PP2BCam]*y[Ca_cyt]**2 -reverseRate_PP2BCam_plus_Ca2__PP2BCamCa2N_reac*y[PP2BCamCa2N] -forwardRate_PP2BCamCa2N_plus_Ca2__PP2BCamCa4_reac*y[PP2BCamCa2N]*y[Ca_cyt]**2 +reverseRate_PP2BCamCa2N_plus_Ca2__PP2BCamCa4_reac*y[PP2BCamCa4]
+ *     f[PP2BCamCa4] = forwardRate_CamCa4_plus_PP2B__PP2BCamCa4_reac*y[CamCa4]*y[PP2B] -reverseRate_CamCa4_plus_PP2B__PP2BCamCa4_reac*y[PP2BCamCa4] +forwardRate_PP2BCamCa2C_plus_Ca2__PP2BCamCa4_reac*y[PP2BCamCa2C]*y[Ca_cyt]**2 -reverseRate_PP2BCamCa2C_plus_Ca2__PP2BCamCa4_reac*y[PP2BCamCa4] +forwardRate_PP2BCamCa2N_plus_Ca2__PP2BCamCa4_reac*y[PP2BCamCa2N]*y[Ca_cyt]**2 -reverseRate_PP2BCamCa2N_plus_Ca2__PP2BCamCa4_reac*y[PP2BCamCa4] -forwardRate_D32p34_plus_PP2BCamCa4__D32p34PP2BCamCa4_reac*y[D32p34]*y[PP2BCamCa4] +reverseRate_D32p34_plus_PP2BCamCa4__D32p34PP2BCamCa4_reac*y[D32p34PP2BCamCa4] +forwardRate_D32p34PP2BCamCa4__PP2BCamCa4_plus_D32_reac*y[D32p34PP2BCamCa4] -forwardRate_D32p34PP1_plus_PP2BCamCa4__D32p34PP1PP2BCamCa4_reac*y[D32p34PP1]*y[PP2BCamCa4] +reverseRate_D32p34PP1_plus_PP2BCamCa4__D32p34PP1PP2BCamCa4_reac*y[D32p34PP1PP2BCamCa4] +forwardRate_D32p34PP1PP2BCamCa4__PP1_plus_PP2BCamCa4_plus_D32_reac*y[D32p34PP1PP2BCamCa4]
+ */
+  (__pyx_v_f[_ind_PP2BCamCa2C]) = (((((((__pyx_v_forwardRate_CamCa2C_plus_PP2B__PP2BCamCa2C_reac * (__pyx_v_y[_ind_CamCa2C])) * (__pyx_v_y[_ind_PP2B])) - (__pyx_v_reverseRate_CamCa2C_plus_PP2B__PP2BCamCa2C_reac * (__pyx_v_y[_ind_PP2BCamCa2C]))) + ((__pyx_v_forwardRate_PP2BCam_plus_Ca2__PP2BCamCa2C_reac * (__pyx_v_y[_ind_PP2BCam])) * pow((__pyx_v_y[_ind_Ca_cyt]), 2.0))) - (__pyx_v_reverseRate_PP2BCam_plus_Ca2__PP2BCamCa2C_reac * (__pyx_v_y[_ind_PP2BCamCa2C]))) - ((__pyx_v_forwardRate_PP2BCamCa2C_plus_Ca2__PP2BCamCa4_reac * (__pyx_v_y[_ind_PP2BCamCa2C])) * pow((__pyx_v_y[_ind_Ca_cyt]), 2.0))) + (__pyx_v_reverseRate_PP2BCamCa2C_plus_Ca2__PP2BCamCa4_reac * (__pyx_v_y[_ind_PP2BCamCa4])));
+
   /* "Model_FB.pyx":1864
- *     f[Cam] = -forwardRate_CamC_bind*y[Cam]*y[Ca_cyt]**2 +reverseRate_CamC_bind*y[CamCa2C] -forwardRate_CamN_bind*y[Cam]*y[Ca_cyt]**2 +reverseRate_CamN_bind*y[CamCa2N]
- *     f[PP2B] = -forwardRate_CamCa4_plus_PP2B__PP2BCamCa4_reac*y[CamCa4]*y[PP2B] +reverseRate_CamCa4_plus_PP2B__PP2BCamCa4_reac*y[PP2BCamCa4]
- *     f[PP2BCam] = 0.             # <<<<<<<<<<<<<<
- *     f[CamCa2C] = forwardRate_CamC_bind*y[Cam]*y[Ca_cyt]**2 -reverseRate_CamC_bind*y[CamCa2C] -forwardRate_CamCa2C_bind*y[CamCa2C]*y[Ca_cyt]**2 +reverseRate_CamCa2C_bind*y[CamCa4]
- *     f[PP2BCamCa2C] = 0.
- */
-  (__pyx_v_f[_ind_PP2BCam]) = 0.;
-
-  /* "Model_FB.pyx":1865
- *     f[PP2B] = -forwardRate_CamCa4_plus_PP2B__PP2BCamCa4_reac*y[CamCa4]*y[PP2B] +reverseRate_CamCa4_plus_PP2B__PP2BCamCa4_reac*y[PP2BCamCa4]
- *     f[PP2BCam] = 0.
- *     f[CamCa2C] = forwardRate_CamC_bind*y[Cam]*y[Ca_cyt]**2 -reverseRate_CamC_bind*y[CamCa2C] -forwardRate_CamCa2C_bind*y[CamCa2C]*y[Ca_cyt]**2 +reverseRate_CamCa2C_bind*y[CamCa4]             # <<<<<<<<<<<<<<
- *     f[PP2BCamCa2C] = 0.
- *     f[PP2BCamCa2N] = 0.
- */
-  (__pyx_v_f[_ind_CamCa2C]) = (((((__pyx_v_forwardRate_CamC_bind * (__pyx_v_y[_ind_Cam])) * pow((__pyx_v_y[_ind_Ca_cyt]), 2.0)) - (__pyx_v_reverseRate_CamC_bind * (__pyx_v_y[_ind_CamCa2C]))) - ((__pyx_v_forwardRate_CamCa2C_bind * (__pyx_v_y[_ind_CamCa2C])) * pow((__pyx_v_y[_ind_Ca_cyt]), 2.0))) + (__pyx_v_reverseRate_CamCa2C_bind * (__pyx_v_y[_ind_CamCa4])));
-
-  /* "Model_FB.pyx":1866
- *     f[PP2BCam] = 0.
- *     f[CamCa2C] = forwardRate_CamC_bind*y[Cam]*y[Ca_cyt]**2 -reverseRate_CamC_bind*y[CamCa2C] -forwardRate_CamCa2C_bind*y[CamCa2C]*y[Ca_cyt]**2 +reverseRate_CamCa2C_bind*y[CamCa4]
- *     f[PP2BCamCa2C] = 0.             # <<<<<<<<<<<<<<
- *     f[PP2BCamCa2N] = 0.
- *     f[PP2BCamCa4] = forwardRate_CamCa4_plus_PP2B__PP2BCamCa4_reac*y[CamCa4]*y[PP2B] -reverseRate_CamCa4_plus_PP2B__PP2BCamCa4_reac*y[PP2BCamCa4]
- */
-  (__pyx_v_f[_ind_PP2BCamCa2C]) = 0.;
-
-  /* "Model_FB.pyx":1867
- *     f[CamCa2C] = forwardRate_CamC_bind*y[Cam]*y[Ca_cyt]**2 -reverseRate_CamC_bind*y[CamCa2C] -forwardRate_CamCa2C_bind*y[CamCa2C]*y[Ca_cyt]**2 +reverseRate_CamCa2C_bind*y[CamCa4]
- *     f[PP2BCamCa2C] = 0.
- *     f[PP2BCamCa2N] = 0.             # <<<<<<<<<<<<<<
- *     f[PP2BCamCa4] = forwardRate_CamCa4_plus_PP2B__PP2BCamCa4_reac*y[CamCa4]*y[PP2B] -reverseRate_CamCa4_plus_PP2B__PP2BCamCa4_reac*y[PP2BCamCa4]
+ *     f[CamCa2C] = forwardRate_CamC_bind*y[Cam]*y[Ca_cyt]**2 -reverseRate_CamC_bind*y[CamCa2C] -forwardRate_CamCa2C_bind*y[CamCa2C]*y[Ca_cyt]**2 +reverseRate_CamCa2C_bind*y[CamCa4] -forwardRate_CamCa2C_plus_PP2B__PP2BCamCa2C_reac*y[CamCa2C]*y[PP2B] +reverseRate_CamCa2C_plus_PP2B__PP2BCamCa2C_reac*y[PP2BCamCa2C]
+ *     f[PP2BCamCa2C] = forwardRate_CamCa2C_plus_PP2B__PP2BCamCa2C_reac*y[CamCa2C]*y[PP2B] -reverseRate_CamCa2C_plus_PP2B__PP2BCamCa2C_reac*y[PP2BCamCa2C] +forwardRate_PP2BCam_plus_Ca2__PP2BCamCa2C_reac*y[PP2BCam]*y[Ca_cyt]**2 -reverseRate_PP2BCam_plus_Ca2__PP2BCamCa2C_reac*y[PP2BCamCa2C] -forwardRate_PP2BCamCa2C_plus_Ca2__PP2BCamCa4_reac*y[PP2BCamCa2C]*y[Ca_cyt]**2 +reverseRate_PP2BCamCa2C_plus_Ca2__PP2BCamCa4_reac*y[PP2BCamCa4]
+ *     f[PP2BCamCa2N] = forwardRate_CamCa2N_plus_PP2B__PP2BCamCa2N_reac*y[CamCa2N]*y[PP2B] -reverseRate_CamCa2N_plus_PP2B__PP2BCamCa2N_reac*y[PP2BCamCa2N] +forwardRate_PP2BCam_plus_Ca2__PP2BCamCa2N_reac*y[PP2BCam]*y[Ca_cyt]**2 -reverseRate_PP2BCam_plus_Ca2__PP2BCamCa2N_reac*y[PP2BCamCa2N] -forwardRate_PP2BCamCa2N_plus_Ca2__PP2BCamCa4_reac*y[PP2BCamCa2N]*y[Ca_cyt]**2 +reverseRate_PP2BCamCa2N_plus_Ca2__PP2BCamCa4_reac*y[PP2BCamCa4]             # <<<<<<<<<<<<<<
+ *     f[PP2BCamCa4] = forwardRate_CamCa4_plus_PP2B__PP2BCamCa4_reac*y[CamCa4]*y[PP2B] -reverseRate_CamCa4_plus_PP2B__PP2BCamCa4_reac*y[PP2BCamCa4] +forwardRate_PP2BCamCa2C_plus_Ca2__PP2BCamCa4_reac*y[PP2BCamCa2C]*y[Ca_cyt]**2 -reverseRate_PP2BCamCa2C_plus_Ca2__PP2BCamCa4_reac*y[PP2BCamCa4] +forwardRate_PP2BCamCa2N_plus_Ca2__PP2BCamCa4_reac*y[PP2BCamCa2N]*y[Ca_cyt]**2 -reverseRate_PP2BCamCa2N_plus_Ca2__PP2BCamCa4_reac*y[PP2BCamCa4] -forwardRate_D32p34_plus_PP2BCamCa4__D32p34PP2BCamCa4_reac*y[D32p34]*y[PP2BCamCa4] +reverseRate_D32p34_plus_PP2BCamCa4__D32p34PP2BCamCa4_reac*y[D32p34PP2BCamCa4] +forwardRate_D32p34PP2BCamCa4__PP2BCamCa4_plus_D32_reac*y[D32p34PP2BCamCa4] -forwardRate_D32p34PP1_plus_PP2BCamCa4__D32p34PP1PP2BCamCa4_reac*y[D32p34PP1]*y[PP2BCamCa4] +reverseRate_D32p34PP1_plus_PP2BCamCa4__D32p34PP1PP2BCamCa4_reac*y[D32p34PP1PP2BCamCa4] +forwardRate_D32p34PP1PP2BCamCa4__PP1_plus_PP2BCamCa4_plus_D32_reac*y[D32p34PP1PP2BCamCa4]
  *     f[PKAcPP2AB56d] = 0.
  */
-  (__pyx_v_f[_ind_PP2BCamCa2N]) = 0.;
+  (__pyx_v_f[_ind_PP2BCamCa2N]) = (((((((__pyx_v_forwardRate_CamCa2N_plus_PP2B__PP2BCamCa2N_reac * (__pyx_v_y[_ind_CamCa2N])) * (__pyx_v_y[_ind_PP2B])) - (__pyx_v_reverseRate_CamCa2N_plus_PP2B__PP2BCamCa2N_reac * (__pyx_v_y[_ind_PP2BCamCa2N]))) + ((__pyx_v_forwardRate_PP2BCam_plus_Ca2__PP2BCamCa2N_reac * (__pyx_v_y[_ind_PP2BCam])) * pow((__pyx_v_y[_ind_Ca_cyt]), 2.0))) - (__pyx_v_reverseRate_PP2BCam_plus_Ca2__PP2BCamCa2N_reac * (__pyx_v_y[_ind_PP2BCamCa2N]))) - ((__pyx_v_forwardRate_PP2BCamCa2N_plus_Ca2__PP2BCamCa4_reac * (__pyx_v_y[_ind_PP2BCamCa2N])) * pow((__pyx_v_y[_ind_Ca_cyt]), 2.0))) + (__pyx_v_reverseRate_PP2BCamCa2N_plus_Ca2__PP2BCamCa4_reac * (__pyx_v_y[_ind_PP2BCamCa4])));
 
-  /* "Model_FB.pyx":1868
- *     f[PP2BCamCa2C] = 0.
- *     f[PP2BCamCa2N] = 0.
- *     f[PP2BCamCa4] = forwardRate_CamCa4_plus_PP2B__PP2BCamCa4_reac*y[CamCa4]*y[PP2B] -reverseRate_CamCa4_plus_PP2B__PP2BCamCa4_reac*y[PP2BCamCa4]             # <<<<<<<<<<<<<<
+  /* "Model_FB.pyx":1865
+ *     f[PP2BCamCa2C] = forwardRate_CamCa2C_plus_PP2B__PP2BCamCa2C_reac*y[CamCa2C]*y[PP2B] -reverseRate_CamCa2C_plus_PP2B__PP2BCamCa2C_reac*y[PP2BCamCa2C] +forwardRate_PP2BCam_plus_Ca2__PP2BCamCa2C_reac*y[PP2BCam]*y[Ca_cyt]**2 -reverseRate_PP2BCam_plus_Ca2__PP2BCamCa2C_reac*y[PP2BCamCa2C] -forwardRate_PP2BCamCa2C_plus_Ca2__PP2BCamCa4_reac*y[PP2BCamCa2C]*y[Ca_cyt]**2 +reverseRate_PP2BCamCa2C_plus_Ca2__PP2BCamCa4_reac*y[PP2BCamCa4]
+ *     f[PP2BCamCa2N] = forwardRate_CamCa2N_plus_PP2B__PP2BCamCa2N_reac*y[CamCa2N]*y[PP2B] -reverseRate_CamCa2N_plus_PP2B__PP2BCamCa2N_reac*y[PP2BCamCa2N] +forwardRate_PP2BCam_plus_Ca2__PP2BCamCa2N_reac*y[PP2BCam]*y[Ca_cyt]**2 -reverseRate_PP2BCam_plus_Ca2__PP2BCamCa2N_reac*y[PP2BCamCa2N] -forwardRate_PP2BCamCa2N_plus_Ca2__PP2BCamCa4_reac*y[PP2BCamCa2N]*y[Ca_cyt]**2 +reverseRate_PP2BCamCa2N_plus_Ca2__PP2BCamCa4_reac*y[PP2BCamCa4]
+ *     f[PP2BCamCa4] = forwardRate_CamCa4_plus_PP2B__PP2BCamCa4_reac*y[CamCa4]*y[PP2B] -reverseRate_CamCa4_plus_PP2B__PP2BCamCa4_reac*y[PP2BCamCa4] +forwardRate_PP2BCamCa2C_plus_Ca2__PP2BCamCa4_reac*y[PP2BCamCa2C]*y[Ca_cyt]**2 -reverseRate_PP2BCamCa2C_plus_Ca2__PP2BCamCa4_reac*y[PP2BCamCa4] +forwardRate_PP2BCamCa2N_plus_Ca2__PP2BCamCa4_reac*y[PP2BCamCa2N]*y[Ca_cyt]**2 -reverseRate_PP2BCamCa2N_plus_Ca2__PP2BCamCa4_reac*y[PP2BCamCa4] -forwardRate_D32p34_plus_PP2BCamCa4__D32p34PP2BCamCa4_reac*y[D32p34]*y[PP2BCamCa4] +reverseRate_D32p34_plus_PP2BCamCa4__D32p34PP2BCamCa4_reac*y[D32p34PP2BCamCa4] +forwardRate_D32p34PP2BCamCa4__PP2BCamCa4_plus_D32_reac*y[D32p34PP2BCamCa4] -forwardRate_D32p34PP1_plus_PP2BCamCa4__D32p34PP1PP2BCamCa4_reac*y[D32p34PP1]*y[PP2BCamCa4] +reverseRate_D32p34PP1_plus_PP2BCamCa4__D32p34PP1PP2BCamCa4_reac*y[D32p34PP1PP2BCamCa4] +forwardRate_D32p34PP1PP2BCamCa4__PP1_plus_PP2BCamCa4_plus_D32_reac*y[D32p34PP1PP2BCamCa4]             # <<<<<<<<<<<<<<
  *     f[PKAcPP2AB56d] = 0.
  *     f[pPP2A] = 0.
  */
-  (__pyx_v_f[_ind_PP2BCamCa4]) = (((__pyx_v_forwardRate_CamCa4_plus_PP2B__PP2BCamCa4_reac * (__pyx_v_y[_ind_CamCa4])) * (__pyx_v_y[_ind_PP2B])) - (__pyx_v_reverseRate_CamCa4_plus_PP2B__PP2BCamCa4_reac * (__pyx_v_y[_ind_PP2BCamCa4])));
+  (__pyx_v_f[_ind_PP2BCamCa4]) = (((((((((((((__pyx_v_forwardRate_CamCa4_plus_PP2B__PP2BCamCa4_reac * (__pyx_v_y[_ind_CamCa4])) * (__pyx_v_y[_ind_PP2B])) - (__pyx_v_reverseRate_CamCa4_plus_PP2B__PP2BCamCa4_reac * (__pyx_v_y[_ind_PP2BCamCa4]))) + ((__pyx_v_forwardRate_PP2BCamCa2C_plus_Ca2__PP2BCamCa4_reac * (__pyx_v_y[_ind_PP2BCamCa2C])) * pow((__pyx_v_y[_ind_Ca_cyt]), 2.0))) - (__pyx_v_reverseRate_PP2BCamCa2C_plus_Ca2__PP2BCamCa4_reac * (__pyx_v_y[_ind_PP2BCamCa4]))) + ((__pyx_v_forwardRate_PP2BCamCa2N_plus_Ca2__PP2BCamCa4_reac * (__pyx_v_y[_ind_PP2BCamCa2N])) * pow((__pyx_v_y[_ind_Ca_cyt]), 2.0))) - (__pyx_v_reverseRate_PP2BCamCa2N_plus_Ca2__PP2BCamCa4_reac * (__pyx_v_y[_ind_PP2BCamCa4]))) - ((__pyx_v_forwardRate_D32p34_plus_PP2BCamCa4__D32p34PP2BCamCa4_reac * (__pyx_v_y[_ind_D32p34])) * (__pyx_v_y[_ind_PP2BCamCa4]))) + (__pyx_v_reverseRate_D32p34_plus_PP2BCamCa4__D32p34PP2BCamCa4_reac * (__pyx_v_y[_ind_D32p34PP2BCamCa4]))) + (__pyx_v_forwardRate_D32p34PP2BCamCa4__PP2BCamCa4_plus_D32_reac * (__pyx_v_y[_ind_D32p34PP2BCamCa4]))) - ((__pyx_v_forwardRate_D32p34PP1_plus_PP2BCamCa4__D32p34PP1PP2BCamCa4_reac * (__pyx_v_y[_ind_D32p34PP1])) * (__pyx_v_y[_ind_PP2BCamCa4]))) + (__pyx_v_reverseRate_D32p34PP1_plus_PP2BCamCa4__D32p34PP1PP2BCamCa4_reac * (__pyx_v_y[_ind_D32p34PP1PP2BCamCa4]))) + (__pyx_v_forwardRate_D32p34PP1PP2BCamCa4__PP1_plus_PP2BCamCa4_plus_D32_reac * (__pyx_v_y[_ind_D32p34PP1PP2BCamCa4])));
 
-  /* "Model_FB.pyx":1869
- *     f[PP2BCamCa2N] = 0.
- *     f[PP2BCamCa4] = forwardRate_CamCa4_plus_PP2B__PP2BCamCa4_reac*y[CamCa4]*y[PP2B] -reverseRate_CamCa4_plus_PP2B__PP2BCamCa4_reac*y[PP2BCamCa4]
+  /* "Model_FB.pyx":1866
+ *     f[PP2BCamCa2N] = forwardRate_CamCa2N_plus_PP2B__PP2BCamCa2N_reac*y[CamCa2N]*y[PP2B] -reverseRate_CamCa2N_plus_PP2B__PP2BCamCa2N_reac*y[PP2BCamCa2N] +forwardRate_PP2BCam_plus_Ca2__PP2BCamCa2N_reac*y[PP2BCam]*y[Ca_cyt]**2 -reverseRate_PP2BCam_plus_Ca2__PP2BCamCa2N_reac*y[PP2BCamCa2N] -forwardRate_PP2BCamCa2N_plus_Ca2__PP2BCamCa4_reac*y[PP2BCamCa2N]*y[Ca_cyt]**2 +reverseRate_PP2BCamCa2N_plus_Ca2__PP2BCamCa4_reac*y[PP2BCamCa4]
+ *     f[PP2BCamCa4] = forwardRate_CamCa4_plus_PP2B__PP2BCamCa4_reac*y[CamCa4]*y[PP2B] -reverseRate_CamCa4_plus_PP2B__PP2BCamCa4_reac*y[PP2BCamCa4] +forwardRate_PP2BCamCa2C_plus_Ca2__PP2BCamCa4_reac*y[PP2BCamCa2C]*y[Ca_cyt]**2 -reverseRate_PP2BCamCa2C_plus_Ca2__PP2BCamCa4_reac*y[PP2BCamCa4] +forwardRate_PP2BCamCa2N_plus_Ca2__PP2BCamCa4_reac*y[PP2BCamCa2N]*y[Ca_cyt]**2 -reverseRate_PP2BCamCa2N_plus_Ca2__PP2BCamCa4_reac*y[PP2BCamCa4] -forwardRate_D32p34_plus_PP2BCamCa4__D32p34PP2BCamCa4_reac*y[D32p34]*y[PP2BCamCa4] +reverseRate_D32p34_plus_PP2BCamCa4__D32p34PP2BCamCa4_reac*y[D32p34PP2BCamCa4] +forwardRate_D32p34PP2BCamCa4__PP2BCamCa4_plus_D32_reac*y[D32p34PP2BCamCa4] -forwardRate_D32p34PP1_plus_PP2BCamCa4__D32p34PP1PP2BCamCa4_reac*y[D32p34PP1]*y[PP2BCamCa4] +reverseRate_D32p34PP1_plus_PP2BCamCa4__D32p34PP1PP2BCamCa4_reac*y[D32p34PP1PP2BCamCa4] +forwardRate_D32p34PP1PP2BCamCa4__PP1_plus_PP2BCamCa4_plus_D32_reac*y[D32p34PP1PP2BCamCa4]
  *     f[PKAcPP2AB56d] = 0.             # <<<<<<<<<<<<<<
  *     f[pPP2A] = 0.
  *     f[PP2ABPR72] = 0.
  */
   (__pyx_v_f[_ind_PKAcPP2AB56d]) = 0.;
 
-  /* "Model_FB.pyx":1870
- *     f[PP2BCamCa4] = forwardRate_CamCa4_plus_PP2B__PP2BCamCa4_reac*y[CamCa4]*y[PP2B] -reverseRate_CamCa4_plus_PP2B__PP2BCamCa4_reac*y[PP2BCamCa4]
+  /* "Model_FB.pyx":1867
+ *     f[PP2BCamCa4] = forwardRate_CamCa4_plus_PP2B__PP2BCamCa4_reac*y[CamCa4]*y[PP2B] -reverseRate_CamCa4_plus_PP2B__PP2BCamCa4_reac*y[PP2BCamCa4] +forwardRate_PP2BCamCa2C_plus_Ca2__PP2BCamCa4_reac*y[PP2BCamCa2C]*y[Ca_cyt]**2 -reverseRate_PP2BCamCa2C_plus_Ca2__PP2BCamCa4_reac*y[PP2BCamCa4] +forwardRate_PP2BCamCa2N_plus_Ca2__PP2BCamCa4_reac*y[PP2BCamCa2N]*y[Ca_cyt]**2 -reverseRate_PP2BCamCa2N_plus_Ca2__PP2BCamCa4_reac*y[PP2BCamCa4] -forwardRate_D32p34_plus_PP2BCamCa4__D32p34PP2BCamCa4_reac*y[D32p34]*y[PP2BCamCa4] +reverseRate_D32p34_plus_PP2BCamCa4__D32p34PP2BCamCa4_reac*y[D32p34PP2BCamCa4] +forwardRate_D32p34PP2BCamCa4__PP2BCamCa4_plus_D32_reac*y[D32p34PP2BCamCa4] -forwardRate_D32p34PP1_plus_PP2BCamCa4__D32p34PP1PP2BCamCa4_reac*y[D32p34PP1]*y[PP2BCamCa4] +reverseRate_D32p34PP1_plus_PP2BCamCa4__D32p34PP1PP2BCamCa4_reac*y[D32p34PP1PP2BCamCa4] +forwardRate_D32p34PP1PP2BCamCa4__PP1_plus_PP2BCamCa4_plus_D32_reac*y[D32p34PP1PP2BCamCa4]
  *     f[PKAcPP2AB56d] = 0.
  *     f[pPP2A] = 0.             # <<<<<<<<<<<<<<
  *     f[PP2ABPR72] = 0.
@@ -11215,89 +11215,89 @@ static int __pyx_f_15Model_FB_cython_func(double __pyx_v_t, double *__pyx_v_y, d
  */
   (__pyx_v_f[_ind_pPP2A]) = 0.;
 
-  /* "Model_FB.pyx":1871
+  /* "Model_FB.pyx":1868
  *     f[PKAcPP2AB56d] = 0.
  *     f[pPP2A] = 0.
  *     f[PP2ABPR72] = 0.             # <<<<<<<<<<<<<<
  *     f[PP2Acal] = 0.
- *     f[D32] = 0.
+ *     f[D32] = forwardRate_D32p34PP2BCamCa4__PP2BCamCa4_plus_D32_reac*y[D32p34PP2BCamCa4] +forwardRate_D32p34PP1PP2BCamCa4__PP1_plus_PP2BCamCa4_plus_D32_reac*y[D32p34PP1PP2BCamCa4]
  */
   (__pyx_v_f[_ind_PP2ABPR72]) = 0.;
 
-  /* "Model_FB.pyx":1872
+  /* "Model_FB.pyx":1869
  *     f[pPP2A] = 0.
  *     f[PP2ABPR72] = 0.
  *     f[PP2Acal] = 0.             # <<<<<<<<<<<<<<
- *     f[D32] = 0.
+ *     f[D32] = forwardRate_D32p34PP2BCamCa4__PP2BCamCa4_plus_D32_reac*y[D32p34PP2BCamCa4] +forwardRate_D32p34PP1PP2BCamCa4__PP1_plus_PP2BCamCa4_plus_D32_reac*y[D32p34PP1PP2BCamCa4]
  *     f[D32PKAc] = 0.
  */
   (__pyx_v_f[_ind_PP2Acal]) = 0.;
 
-  /* "Model_FB.pyx":1873
+  /* "Model_FB.pyx":1870
  *     f[PP2ABPR72] = 0.
  *     f[PP2Acal] = 0.
- *     f[D32] = 0.             # <<<<<<<<<<<<<<
+ *     f[D32] = forwardRate_D32p34PP2BCamCa4__PP2BCamCa4_plus_D32_reac*y[D32p34PP2BCamCa4] +forwardRate_D32p34PP1PP2BCamCa4__PP1_plus_PP2BCamCa4_plus_D32_reac*y[D32p34PP1PP2BCamCa4]             # <<<<<<<<<<<<<<
  *     f[D32PKAc] = 0.
- *     f[D32p34] = -forwardRate_D32p34_plus_PP2BCamCa4__D32p34PP2BCamCa4_reac*y[D32p34]*y[PP2BCamCa4] +reverseRate_D32p34_plus_PP2BCamCa4__D32p34PP2BCamCa4_reac*y[D32p34PP2BCamCa4]
+ *     f[D32p34] = -forwardRate_D32p34_plus_PP1__D32p34pp1_reac*y[D32p34]*y[PP1] +reverseRate_D32p34_plus_PP1__D32p34pp1_reac*y[D32p34PP1] -forwardRate_D32p34_plus_PP2BCamCa4__D32p34PP2BCamCa4_reac*y[D32p34]*y[PP2BCamCa4] +reverseRate_D32p34_plus_PP2BCamCa4__D32p34PP2BCamCa4_reac*y[D32p34PP2BCamCa4]
  */
-  (__pyx_v_f[_ind_D32]) = 0.;
+  (__pyx_v_f[_ind_D32]) = ((__pyx_v_forwardRate_D32p34PP2BCamCa4__PP2BCamCa4_plus_D32_reac * (__pyx_v_y[_ind_D32p34PP2BCamCa4])) + (__pyx_v_forwardRate_D32p34PP1PP2BCamCa4__PP1_plus_PP2BCamCa4_plus_D32_reac * (__pyx_v_y[_ind_D32p34PP1PP2BCamCa4])));
 
-  /* "Model_FB.pyx":1874
+  /* "Model_FB.pyx":1871
  *     f[PP2Acal] = 0.
- *     f[D32] = 0.
+ *     f[D32] = forwardRate_D32p34PP2BCamCa4__PP2BCamCa4_plus_D32_reac*y[D32p34PP2BCamCa4] +forwardRate_D32p34PP1PP2BCamCa4__PP1_plus_PP2BCamCa4_plus_D32_reac*y[D32p34PP1PP2BCamCa4]
  *     f[D32PKAc] = 0.             # <<<<<<<<<<<<<<
- *     f[D32p34] = -forwardRate_D32p34_plus_PP2BCamCa4__D32p34PP2BCamCa4_reac*y[D32p34]*y[PP2BCamCa4] +reverseRate_D32p34_plus_PP2BCamCa4__D32p34PP2BCamCa4_reac*y[D32p34PP2BCamCa4]
- *     f[D32p34PP1] = 0.
+ *     f[D32p34] = -forwardRate_D32p34_plus_PP1__D32p34pp1_reac*y[D32p34]*y[PP1] +reverseRate_D32p34_plus_PP1__D32p34pp1_reac*y[D32p34PP1] -forwardRate_D32p34_plus_PP2BCamCa4__D32p34PP2BCamCa4_reac*y[D32p34]*y[PP2BCamCa4] +reverseRate_D32p34_plus_PP2BCamCa4__D32p34PP2BCamCa4_reac*y[D32p34PP2BCamCa4]
+ *     f[D32p34PP1] = forwardRate_D32p34_plus_PP1__D32p34pp1_reac*y[D32p34]*y[PP1] -reverseRate_D32p34_plus_PP1__D32p34pp1_reac*y[D32p34PP1] -forwardRate_D32p34PP1_plus_PP2BCamCa4__D32p34PP1PP2BCamCa4_reac*y[D32p34PP1]*y[PP2BCamCa4] +reverseRate_D32p34PP1_plus_PP2BCamCa4__D32p34PP1PP2BCamCa4_reac*y[D32p34PP1PP2BCamCa4]
  */
   (__pyx_v_f[_ind_D32PKAc]) = 0.;
 
-  /* "Model_FB.pyx":1875
- *     f[D32] = 0.
+  /* "Model_FB.pyx":1872
+ *     f[D32] = forwardRate_D32p34PP2BCamCa4__PP2BCamCa4_plus_D32_reac*y[D32p34PP2BCamCa4] +forwardRate_D32p34PP1PP2BCamCa4__PP1_plus_PP2BCamCa4_plus_D32_reac*y[D32p34PP1PP2BCamCa4]
  *     f[D32PKAc] = 0.
- *     f[D32p34] = -forwardRate_D32p34_plus_PP2BCamCa4__D32p34PP2BCamCa4_reac*y[D32p34]*y[PP2BCamCa4] +reverseRate_D32p34_plus_PP2BCamCa4__D32p34PP2BCamCa4_reac*y[D32p34PP2BCamCa4]             # <<<<<<<<<<<<<<
- *     f[D32p34PP1] = 0.
+ *     f[D32p34] = -forwardRate_D32p34_plus_PP1__D32p34pp1_reac*y[D32p34]*y[PP1] +reverseRate_D32p34_plus_PP1__D32p34pp1_reac*y[D32p34PP1] -forwardRate_D32p34_plus_PP2BCamCa4__D32p34PP2BCamCa4_reac*y[D32p34]*y[PP2BCamCa4] +reverseRate_D32p34_plus_PP2BCamCa4__D32p34PP2BCamCa4_reac*y[D32p34PP2BCamCa4]             # <<<<<<<<<<<<<<
+ *     f[D32p34PP1] = forwardRate_D32p34_plus_PP1__D32p34pp1_reac*y[D32p34]*y[PP1] -reverseRate_D32p34_plus_PP1__D32p34pp1_reac*y[D32p34PP1] -forwardRate_D32p34PP1_plus_PP2BCamCa4__D32p34PP1PP2BCamCa4_reac*y[D32p34PP1]*y[PP2BCamCa4] +reverseRate_D32p34PP1_plus_PP2BCamCa4__D32p34PP1PP2BCamCa4_reac*y[D32p34PP1PP2BCamCa4]
  *     f[D32p34PP2BCamCa4] = forwardRate_D32p34_plus_PP2BCamCa4__D32p34PP2BCamCa4_reac*y[D32p34]*y[PP2BCamCa4] -reverseRate_D32p34_plus_PP2BCamCa4__D32p34PP2BCamCa4_reac*y[D32p34PP2BCamCa4]
  */
-  (__pyx_v_f[_ind_D32p34]) = ((((-__pyx_v_forwardRate_D32p34_plus_PP2BCamCa4__D32p34PP2BCamCa4_reac) * (__pyx_v_y[_ind_D32p34])) * (__pyx_v_y[_ind_PP2BCamCa4])) + (__pyx_v_reverseRate_D32p34_plus_PP2BCamCa4__D32p34PP2BCamCa4_reac * (__pyx_v_y[_ind_D32p34PP2BCamCa4])));
+  (__pyx_v_f[_ind_D32p34]) = ((((((-__pyx_v_forwardRate_D32p34_plus_PP1__D32p34pp1_reac) * (__pyx_v_y[_ind_D32p34])) * (__pyx_v_y[_ind_PP1])) + (__pyx_v_reverseRate_D32p34_plus_PP1__D32p34pp1_reac * (__pyx_v_y[_ind_D32p34PP1]))) - ((__pyx_v_forwardRate_D32p34_plus_PP2BCamCa4__D32p34PP2BCamCa4_reac * (__pyx_v_y[_ind_D32p34])) * (__pyx_v_y[_ind_PP2BCamCa4]))) + (__pyx_v_reverseRate_D32p34_plus_PP2BCamCa4__D32p34PP2BCamCa4_reac * (__pyx_v_y[_ind_D32p34PP2BCamCa4])));
 
-  /* "Model_FB.pyx":1876
+  /* "Model_FB.pyx":1873
  *     f[D32PKAc] = 0.
- *     f[D32p34] = -forwardRate_D32p34_plus_PP2BCamCa4__D32p34PP2BCamCa4_reac*y[D32p34]*y[PP2BCamCa4] +reverseRate_D32p34_plus_PP2BCamCa4__D32p34PP2BCamCa4_reac*y[D32p34PP2BCamCa4]
- *     f[D32p34PP1] = 0.             # <<<<<<<<<<<<<<
+ *     f[D32p34] = -forwardRate_D32p34_plus_PP1__D32p34pp1_reac*y[D32p34]*y[PP1] +reverseRate_D32p34_plus_PP1__D32p34pp1_reac*y[D32p34PP1] -forwardRate_D32p34_plus_PP2BCamCa4__D32p34PP2BCamCa4_reac*y[D32p34]*y[PP2BCamCa4] +reverseRate_D32p34_plus_PP2BCamCa4__D32p34PP2BCamCa4_reac*y[D32p34PP2BCamCa4]
+ *     f[D32p34PP1] = forwardRate_D32p34_plus_PP1__D32p34pp1_reac*y[D32p34]*y[PP1] -reverseRate_D32p34_plus_PP1__D32p34pp1_reac*y[D32p34PP1] -forwardRate_D32p34PP1_plus_PP2BCamCa4__D32p34PP1PP2BCamCa4_reac*y[D32p34PP1]*y[PP2BCamCa4] +reverseRate_D32p34PP1_plus_PP2BCamCa4__D32p34PP1PP2BCamCa4_reac*y[D32p34PP1PP2BCamCa4]             # <<<<<<<<<<<<<<
  *     f[D32p34PP2BCamCa4] = forwardRate_D32p34_plus_PP2BCamCa4__D32p34PP2BCamCa4_reac*y[D32p34]*y[PP2BCamCa4] -reverseRate_D32p34_plus_PP2BCamCa4__D32p34PP2BCamCa4_reac*y[D32p34PP2BCamCa4]
- *     f[D32p34PP1PP2BCamCa4] = 0.
+ *     f[D32p34PP1PP2BCamCa4] = forwardRate_D32p34PP1_plus_PP2BCamCa4__D32p34PP1PP2BCamCa4_reac*y[D32p34PP1]*y[PP2BCamCa4] -reverseRate_D32p34PP1_plus_PP2BCamCa4__D32p34PP1PP2BCamCa4_reac*y[D32p34PP1PP2BCamCa4] -forwardRate_D32p34PP1PP2BCamCa4__PP1_plus_PP2BCamCa4_plus_D32_reac*y[D32p34PP1PP2BCamCa4]
  */
-  (__pyx_v_f[_ind_D32p34PP1]) = 0.;
+  (__pyx_v_f[_ind_D32p34PP1]) = (((((__pyx_v_forwardRate_D32p34_plus_PP1__D32p34pp1_reac * (__pyx_v_y[_ind_D32p34])) * (__pyx_v_y[_ind_PP1])) - (__pyx_v_reverseRate_D32p34_plus_PP1__D32p34pp1_reac * (__pyx_v_y[_ind_D32p34PP1]))) - ((__pyx_v_forwardRate_D32p34PP1_plus_PP2BCamCa4__D32p34PP1PP2BCamCa4_reac * (__pyx_v_y[_ind_D32p34PP1])) * (__pyx_v_y[_ind_PP2BCamCa4]))) + (__pyx_v_reverseRate_D32p34PP1_plus_PP2BCamCa4__D32p34PP1PP2BCamCa4_reac * (__pyx_v_y[_ind_D32p34PP1PP2BCamCa4])));
 
-  /* "Model_FB.pyx":1877
- *     f[D32p34] = -forwardRate_D32p34_plus_PP2BCamCa4__D32p34PP2BCamCa4_reac*y[D32p34]*y[PP2BCamCa4] +reverseRate_D32p34_plus_PP2BCamCa4__D32p34PP2BCamCa4_reac*y[D32p34PP2BCamCa4]
- *     f[D32p34PP1] = 0.
+  /* "Model_FB.pyx":1874
+ *     f[D32p34] = -forwardRate_D32p34_plus_PP1__D32p34pp1_reac*y[D32p34]*y[PP1] +reverseRate_D32p34_plus_PP1__D32p34pp1_reac*y[D32p34PP1] -forwardRate_D32p34_plus_PP2BCamCa4__D32p34PP2BCamCa4_reac*y[D32p34]*y[PP2BCamCa4] +reverseRate_D32p34_plus_PP2BCamCa4__D32p34PP2BCamCa4_reac*y[D32p34PP2BCamCa4]
+ *     f[D32p34PP1] = forwardRate_D32p34_plus_PP1__D32p34pp1_reac*y[D32p34]*y[PP1] -reverseRate_D32p34_plus_PP1__D32p34pp1_reac*y[D32p34PP1] -forwardRate_D32p34PP1_plus_PP2BCamCa4__D32p34PP1PP2BCamCa4_reac*y[D32p34PP1]*y[PP2BCamCa4] +reverseRate_D32p34PP1_plus_PP2BCamCa4__D32p34PP1PP2BCamCa4_reac*y[D32p34PP1PP2BCamCa4]
  *     f[D32p34PP2BCamCa4] = forwardRate_D32p34_plus_PP2BCamCa4__D32p34PP2BCamCa4_reac*y[D32p34]*y[PP2BCamCa4] -reverseRate_D32p34_plus_PP2BCamCa4__D32p34PP2BCamCa4_reac*y[D32p34PP2BCamCa4]             # <<<<<<<<<<<<<<
- *     f[D32p34PP1PP2BCamCa4] = 0.
+ *     f[D32p34PP1PP2BCamCa4] = forwardRate_D32p34PP1_plus_PP2BCamCa4__D32p34PP1PP2BCamCa4_reac*y[D32p34PP1]*y[PP2BCamCa4] -reverseRate_D32p34PP1_plus_PP2BCamCa4__D32p34PP1PP2BCamCa4_reac*y[D32p34PP1PP2BCamCa4] -forwardRate_D32p34PP1PP2BCamCa4__PP1_plus_PP2BCamCa4_plus_D32_reac*y[D32p34PP1PP2BCamCa4]
  *     f[D32p34PP2ABPR72] = 0.
  */
   (__pyx_v_f[_ind_D32p34PP2BCamCa4]) = (((__pyx_v_forwardRate_D32p34_plus_PP2BCamCa4__D32p34PP2BCamCa4_reac * (__pyx_v_y[_ind_D32p34])) * (__pyx_v_y[_ind_PP2BCamCa4])) - (__pyx_v_reverseRate_D32p34_plus_PP2BCamCa4__D32p34PP2BCamCa4_reac * (__pyx_v_y[_ind_D32p34PP2BCamCa4])));
 
-  /* "Model_FB.pyx":1878
- *     f[D32p34PP1] = 0.
+  /* "Model_FB.pyx":1875
+ *     f[D32p34PP1] = forwardRate_D32p34_plus_PP1__D32p34pp1_reac*y[D32p34]*y[PP1] -reverseRate_D32p34_plus_PP1__D32p34pp1_reac*y[D32p34PP1] -forwardRate_D32p34PP1_plus_PP2BCamCa4__D32p34PP1PP2BCamCa4_reac*y[D32p34PP1]*y[PP2BCamCa4] +reverseRate_D32p34PP1_plus_PP2BCamCa4__D32p34PP1PP2BCamCa4_reac*y[D32p34PP1PP2BCamCa4]
  *     f[D32p34PP2BCamCa4] = forwardRate_D32p34_plus_PP2BCamCa4__D32p34PP2BCamCa4_reac*y[D32p34]*y[PP2BCamCa4] -reverseRate_D32p34_plus_PP2BCamCa4__D32p34PP2BCamCa4_reac*y[D32p34PP2BCamCa4]
- *     f[D32p34PP1PP2BCamCa4] = 0.             # <<<<<<<<<<<<<<
+ *     f[D32p34PP1PP2BCamCa4] = forwardRate_D32p34PP1_plus_PP2BCamCa4__D32p34PP1PP2BCamCa4_reac*y[D32p34PP1]*y[PP2BCamCa4] -reverseRate_D32p34PP1_plus_PP2BCamCa4__D32p34PP1PP2BCamCa4_reac*y[D32p34PP1PP2BCamCa4] -forwardRate_D32p34PP1PP2BCamCa4__PP1_plus_PP2BCamCa4_plus_D32_reac*y[D32p34PP1PP2BCamCa4]             # <<<<<<<<<<<<<<
  *     f[D32p34PP2ABPR72] = 0.
  *     f[D32p34PP2AB56d] = 0.
  */
-  (__pyx_v_f[_ind_D32p34PP1PP2BCamCa4]) = 0.;
+  (__pyx_v_f[_ind_D32p34PP1PP2BCamCa4]) = ((((__pyx_v_forwardRate_D32p34PP1_plus_PP2BCamCa4__D32p34PP1PP2BCamCa4_reac * (__pyx_v_y[_ind_D32p34PP1])) * (__pyx_v_y[_ind_PP2BCamCa4])) - (__pyx_v_reverseRate_D32p34PP1_plus_PP2BCamCa4__D32p34PP1PP2BCamCa4_reac * (__pyx_v_y[_ind_D32p34PP1PP2BCamCa4]))) - (__pyx_v_forwardRate_D32p34PP1PP2BCamCa4__PP1_plus_PP2BCamCa4_plus_D32_reac * (__pyx_v_y[_ind_D32p34PP1PP2BCamCa4])));
 
-  /* "Model_FB.pyx":1879
+  /* "Model_FB.pyx":1876
  *     f[D32p34PP2BCamCa4] = forwardRate_D32p34_plus_PP2BCamCa4__D32p34PP2BCamCa4_reac*y[D32p34]*y[PP2BCamCa4] -reverseRate_D32p34_plus_PP2BCamCa4__D32p34PP2BCamCa4_reac*y[D32p34PP2BCamCa4]
- *     f[D32p34PP1PP2BCamCa4] = 0.
+ *     f[D32p34PP1PP2BCamCa4] = forwardRate_D32p34PP1_plus_PP2BCamCa4__D32p34PP1PP2BCamCa4_reac*y[D32p34PP1]*y[PP2BCamCa4] -reverseRate_D32p34PP1_plus_PP2BCamCa4__D32p34PP1PP2BCamCa4_reac*y[D32p34PP1PP2BCamCa4] -forwardRate_D32p34PP1PP2BCamCa4__PP1_plus_PP2BCamCa4_plus_D32_reac*y[D32p34PP1PP2BCamCa4]
  *     f[D32p34PP2ABPR72] = 0.             # <<<<<<<<<<<<<<
  *     f[D32p34PP2AB56d] = 0.
  *     f[D32p34PP1PP2ABPR72] = 0.
  */
   (__pyx_v_f[_ind_D32p34PP2ABPR72]) = 0.;
 
-  /* "Model_FB.pyx":1880
- *     f[D32p34PP1PP2BCamCa4] = 0.
+  /* "Model_FB.pyx":1877
+ *     f[D32p34PP1PP2BCamCa4] = forwardRate_D32p34PP1_plus_PP2BCamCa4__D32p34PP1PP2BCamCa4_reac*y[D32p34PP1]*y[PP2BCamCa4] -reverseRate_D32p34PP1_plus_PP2BCamCa4__D32p34PP1PP2BCamCa4_reac*y[D32p34PP1PP2BCamCa4] -forwardRate_D32p34PP1PP2BCamCa4__PP1_plus_PP2BCamCa4_plus_D32_reac*y[D32p34PP1PP2BCamCa4]
  *     f[D32p34PP2ABPR72] = 0.
  *     f[D32p34PP2AB56d] = 0.             # <<<<<<<<<<<<<<
  *     f[D32p34PP1PP2ABPR72] = 0.
@@ -11305,7 +11305,7 @@ static int __pyx_f_15Model_FB_cython_func(double __pyx_v_t, double *__pyx_v_y, d
  */
   (__pyx_v_f[_ind_D32p34PP2AB56d]) = 0.;
 
-  /* "Model_FB.pyx":1881
+  /* "Model_FB.pyx":1878
  *     f[D32p34PP2ABPR72] = 0.
  *     f[D32p34PP2AB56d] = 0.
  *     f[D32p34PP1PP2ABPR72] = 0.             # <<<<<<<<<<<<<<
@@ -11314,7 +11314,7 @@ static int __pyx_f_15Model_FB_cython_func(double __pyx_v_t, double *__pyx_v_y, d
  */
   (__pyx_v_f[_ind_D32p34PP1PP2ABPR72]) = 0.;
 
-  /* "Model_FB.pyx":1882
+  /* "Model_FB.pyx":1879
  *     f[D32p34PP2AB56d] = 0.
  *     f[D32p34PP1PP2ABPR72] = 0.
  *     f[D32p34PP1PP2AB56d] = 0.             # <<<<<<<<<<<<<<
@@ -11323,7 +11323,7 @@ static int __pyx_f_15Model_FB_cython_func(double __pyx_v_t, double *__pyx_v_y, d
  */
   (__pyx_v_f[_ind_D32p34PP1PP2AB56d]) = 0.;
 
-  /* "Model_FB.pyx":1883
+  /* "Model_FB.pyx":1880
  *     f[D32p34PP1PP2ABPR72] = 0.
  *     f[D32p34PP1PP2AB56d] = 0.
  *     f[PP2AB56d] = 0.             # <<<<<<<<<<<<<<
@@ -11332,7 +11332,7 @@ static int __pyx_f_15Model_FB_cython_func(double __pyx_v_t, double *__pyx_v_y, d
  */
   (__pyx_v_f[_ind_PP2AB56d]) = 0.;
 
-  /* "Model_FB.pyx":1884
+  /* "Model_FB.pyx":1881
  *     f[D32p34PP1PP2AB56d] = 0.
  *     f[PP2AB56d] = 0.
  *     f[Cdk5] = 0.             # <<<<<<<<<<<<<<
@@ -11341,7 +11341,7 @@ static int __pyx_f_15Model_FB_cython_func(double __pyx_v_t, double *__pyx_v_y, d
  */
   (__pyx_v_f[_ind_Cdk5]) = 0.;
 
-  /* "Model_FB.pyx":1885
+  /* "Model_FB.pyx":1882
  *     f[PP2AB56d] = 0.
  *     f[Cdk5] = 0.
  *     f[Cdk5D32] = 0.             # <<<<<<<<<<<<<<
@@ -11350,7 +11350,7 @@ static int __pyx_f_15Model_FB_cython_func(double __pyx_v_t, double *__pyx_v_y, d
  */
   (__pyx_v_f[_ind_Cdk5D32]) = 0.;
 
-  /* "Model_FB.pyx":1886
+  /* "Model_FB.pyx":1883
  *     f[Cdk5] = 0.
  *     f[Cdk5D32] = 0.
  *     f[D32p75] = 0.             # <<<<<<<<<<<<<<
@@ -11359,7 +11359,7 @@ static int __pyx_f_15Model_FB_cython_func(double __pyx_v_t, double *__pyx_v_y, d
  */
   (__pyx_v_f[_ind_D32p75]) = 0.;
 
-  /* "Model_FB.pyx":1887
+  /* "Model_FB.pyx":1884
  *     f[Cdk5D32] = 0.
  *     f[D32p75] = 0.
  *     f[D32p75PKAc] = 0.             # <<<<<<<<<<<<<<
@@ -11368,7 +11368,7 @@ static int __pyx_f_15Model_FB_cython_func(double __pyx_v_t, double *__pyx_v_y, d
  */
   (__pyx_v_f[_ind_D32p75PKAc]) = 0.;
 
-  /* "Model_FB.pyx":1888
+  /* "Model_FB.pyx":1885
  *     f[D32p75] = 0.
  *     f[D32p75PKAc] = 0.
  *     f[D32p75pPP2A] = 0.             # <<<<<<<<<<<<<<
@@ -11377,7 +11377,7 @@ static int __pyx_f_15Model_FB_cython_func(double __pyx_v_t, double *__pyx_v_y, d
  */
   (__pyx_v_f[_ind_D32p75pPP2A]) = 0.;
 
-  /* "Model_FB.pyx":1889
+  /* "Model_FB.pyx":1886
  *     f[D32p75PKAc] = 0.
  *     f[D32p75pPP2A] = 0.
  *     f[D32p75PP2ABPR72] = 0.             # <<<<<<<<<<<<<<
@@ -11386,7 +11386,7 @@ static int __pyx_f_15Model_FB_cython_func(double __pyx_v_t, double *__pyx_v_y, d
  */
   (__pyx_v_f[_ind_D32p75PP2ABPR72]) = 0.;
 
-  /* "Model_FB.pyx":1890
+  /* "Model_FB.pyx":1887
  *     f[D32p75pPP2A] = 0.
  *     f[D32p75PP2ABPR72] = 0.
  *     f[D32p75PP2AB56d] = 0.             # <<<<<<<<<<<<<<
@@ -11395,7 +11395,7 @@ static int __pyx_f_15Model_FB_cython_func(double __pyx_v_t, double *__pyx_v_y, d
  */
   (__pyx_v_f[_ind_D32p75PP2AB56d]) = 0.;
 
-  /* "Model_FB.pyx":1891
+  /* "Model_FB.pyx":1888
  *     f[D32p75PP2ABPR72] = 0.
  *     f[D32p75PP2AB56d] = 0.
  *     f[D32p75PP2Acal] = 0.             # <<<<<<<<<<<<<<
@@ -11404,7 +11404,7 @@ static int __pyx_f_15Model_FB_cython_func(double __pyx_v_t, double *__pyx_v_y, d
  */
   (__pyx_v_f[_ind_D32p75PP2Acal]) = 0.;
 
-  /* "Model_FB.pyx":1892
+  /* "Model_FB.pyx":1889
  *     f[D32p75PP2AB56d] = 0.
  *     f[D32p75PP2Acal] = 0.
  *     f[CK] = 0.             # <<<<<<<<<<<<<<
@@ -11413,7 +11413,7 @@ static int __pyx_f_15Model_FB_cython_func(double __pyx_v_t, double *__pyx_v_y, d
  */
   (__pyx_v_f[_ind_CK]) = 0.;
 
-  /* "Model_FB.pyx":1893
+  /* "Model_FB.pyx":1890
  *     f[D32p75PP2Acal] = 0.
  *     f[CK] = 0.
  *     f[CKCamCa4] = 0.             # <<<<<<<<<<<<<<
@@ -11422,7 +11422,7 @@ static int __pyx_f_15Model_FB_cython_func(double __pyx_v_t, double *__pyx_v_y, d
  */
   (__pyx_v_f[_ind_CKCamCa4]) = 0.;
 
-  /* "Model_FB.pyx":1894
+  /* "Model_FB.pyx":1891
  *     f[CK] = 0.
  *     f[CKCamCa4] = 0.
  *     f[CKpCamCa4] = 0.             # <<<<<<<<<<<<<<
@@ -11431,7 +11431,7 @@ static int __pyx_f_15Model_FB_cython_func(double __pyx_v_t, double *__pyx_v_y, d
  */
   (__pyx_v_f[_ind_CKpCamCa4]) = 0.;
 
-  /* "Model_FB.pyx":1895
+  /* "Model_FB.pyx":1892
  *     f[CKCamCa4] = 0.
  *     f[CKpCamCa4] = 0.
  *     f[CKp] = 0.             # <<<<<<<<<<<<<<
@@ -11440,7 +11440,7 @@ static int __pyx_f_15Model_FB_cython_func(double __pyx_v_t, double *__pyx_v_y, d
  */
   (__pyx_v_f[_ind_CKp]) = 0.;
 
-  /* "Model_FB.pyx":1896
+  /* "Model_FB.pyx":1893
  *     f[CKpCamCa4] = 0.
  *     f[CKp] = 0.
  *     f[CKpPP1] = 0.             # <<<<<<<<<<<<<<
@@ -11449,7 +11449,7 @@ static int __pyx_f_15Model_FB_cython_func(double __pyx_v_t, double *__pyx_v_y, d
  */
   (__pyx_v_f[_ind_CKpPP1]) = 0.;
 
-  /* "Model_FB.pyx":1897
+  /* "Model_FB.pyx":1894
  *     f[CKp] = 0.
  *     f[CKpPP1] = 0.
  *     f[CKpCamCa4PP1] = 0.             # <<<<<<<<<<<<<<
@@ -11458,7 +11458,7 @@ static int __pyx_f_15Model_FB_cython_func(double __pyx_v_t, double *__pyx_v_y, d
  */
   (__pyx_v_f[_ind_CKpCamCa4PP1]) = 0.;
 
-  /* "Model_FB.pyx":1898
+  /* "Model_FB.pyx":1895
  *     f[CKpPP1] = 0.
  *     f[CKpCamCa4PP1] = 0.
  *     f[Dgl_CKCamCa4] = 0.             # <<<<<<<<<<<<<<
@@ -11467,7 +11467,7 @@ static int __pyx_f_15Model_FB_cython_func(double __pyx_v_t, double *__pyx_v_y, d
  */
   (__pyx_v_f[_ind_Dgl_CKCamCa4]) = 0.;
 
-  /* "Model_FB.pyx":1899
+  /* "Model_FB.pyx":1896
  *     f[CKpCamCa4PP1] = 0.
  *     f[Dgl_CKCamCa4] = 0.
  *     f[pDgl] = 0.             # <<<<<<<<<<<<<<
@@ -11476,7 +11476,7 @@ static int __pyx_f_15Model_FB_cython_func(double __pyx_v_t, double *__pyx_v_y, d
  */
   (__pyx_v_f[_ind_pDgl]) = 0.;
 
-  /* "Model_FB.pyx":1900
+  /* "Model_FB.pyx":1897
  *     f[Dgl_CKCamCa4] = 0.
  *     f[pDgl] = 0.
  *     f[Dgl_CKpCamCa4] = 0.             # <<<<<<<<<<<<<<
@@ -11485,7 +11485,7 @@ static int __pyx_f_15Model_FB_cython_func(double __pyx_v_t, double *__pyx_v_y, d
  */
   (__pyx_v_f[_ind_Dgl_CKpCamCa4]) = 0.;
 
-  /* "Model_FB.pyx":1901
+  /* "Model_FB.pyx":1898
  *     f[pDgl] = 0.
  *     f[Dgl_CKpCamCa4] = 0.
  *     f[CaDgl_CKpCamCa4] = 0.             # <<<<<<<<<<<<<<
@@ -11494,7 +11494,7 @@ static int __pyx_f_15Model_FB_cython_func(double __pyx_v_t, double *__pyx_v_y, d
  */
   (__pyx_v_f[_ind_CaDgl_CKpCamCa4]) = 0.;
 
-  /* "Model_FB.pyx":1902
+  /* "Model_FB.pyx":1899
  *     f[Dgl_CKpCamCa4] = 0.
  *     f[CaDgl_CKpCamCa4] = 0.
  *     f[CapDgl] = 0.             # <<<<<<<<<<<<<<
@@ -11503,7 +11503,7 @@ static int __pyx_f_15Model_FB_cython_func(double __pyx_v_t, double *__pyx_v_y, d
  */
   (__pyx_v_f[_ind_CapDgl]) = 0.;
 
-  /* "Model_FB.pyx":1903
+  /* "Model_FB.pyx":1900
  *     f[CaDgl_CKpCamCa4] = 0.
  *     f[CapDgl] = 0.
  *     f[Dgl_CKp] = 0.             # <<<<<<<<<<<<<<
@@ -11512,7 +11512,7 @@ static int __pyx_f_15Model_FB_cython_func(double __pyx_v_t, double *__pyx_v_y, d
  */
   (__pyx_v_f[_ind_Dgl_CKp]) = 0.;
 
-  /* "Model_FB.pyx":1904
+  /* "Model_FB.pyx":1901
  *     f[CapDgl] = 0.
  *     f[Dgl_CKp] = 0.
  *     f[DagCapDgl] = 0.             # <<<<<<<<<<<<<<
@@ -11521,7 +11521,7 @@ static int __pyx_f_15Model_FB_cython_func(double __pyx_v_t, double *__pyx_v_y, d
  */
   (__pyx_v_f[_ind_DagCapDgl]) = 0.;
 
-  /* "Model_FB.pyx":1905
+  /* "Model_FB.pyx":1902
  *     f[Dgl_CKp] = 0.
  *     f[DagCapDgl] = 0.
  *     f[AKAR3] = 0.             # <<<<<<<<<<<<<<
@@ -11530,7 +11530,7 @@ static int __pyx_f_15Model_FB_cython_func(double __pyx_v_t, double *__pyx_v_y, d
  */
   (__pyx_v_f[_ind_AKAR3]) = 0.;
 
-  /* "Model_FB.pyx":1906
+  /* "Model_FB.pyx":1903
  *     f[DagCapDgl] = 0.
  *     f[AKAR3] = 0.
  *     f[PKAcAKAR3] = 0.             # <<<<<<<<<<<<<<
@@ -11539,7 +11539,7 @@ static int __pyx_f_15Model_FB_cython_func(double __pyx_v_t, double *__pyx_v_y, d
  */
   (__pyx_v_f[_ind_PKAcAKAR3]) = 0.;
 
-  /* "Model_FB.pyx":1907
+  /* "Model_FB.pyx":1904
  *     f[AKAR3] = 0.
  *     f[PKAcAKAR3] = 0.
  *     f[pAKAR3] = 0.             # <<<<<<<<<<<<<<
@@ -11548,7 +11548,7 @@ static int __pyx_f_15Model_FB_cython_func(double __pyx_v_t, double *__pyx_v_y, d
  */
   (__pyx_v_f[_ind_pAKAR3]) = 0.;
 
-  /* "Model_FB.pyx":1908
+  /* "Model_FB.pyx":1905
  *     f[PKAcAKAR3] = 0.
  *     f[pAKAR3] = 0.
  *     f[PP1pAKAR3] = 0.             # <<<<<<<<<<<<<<
@@ -11557,7 +11557,7 @@ static int __pyx_f_15Model_FB_cython_func(double __pyx_v_t, double *__pyx_v_y, d
  */
   (__pyx_v_f[_ind_PP1pAKAR3]) = 0.;
 
-  /* "Model_FB.pyx":1909
+  /* "Model_FB.pyx":1906
  *     f[pAKAR3] = 0.
  *     f[PP1pAKAR3] = 0.
  *     f[AC1] = 0.             # <<<<<<<<<<<<<<
@@ -11566,7 +11566,7 @@ static int __pyx_f_15Model_FB_cython_func(double __pyx_v_t, double *__pyx_v_y, d
  */
   (__pyx_v_f[_ind_AC1]) = 0.;
 
-  /* "Model_FB.pyx":1910
+  /* "Model_FB.pyx":1907
  *     f[PP1pAKAR3] = 0.
  *     f[AC1] = 0.
  *     f[AC1Gsa] = 0.             # <<<<<<<<<<<<<<
@@ -11575,7 +11575,7 @@ static int __pyx_f_15Model_FB_cython_func(double __pyx_v_t, double *__pyx_v_y, d
  */
   (__pyx_v_f[_ind_AC1Gsa]) = 0.;
 
-  /* "Model_FB.pyx":1911
+  /* "Model_FB.pyx":1908
  *     f[AC1] = 0.
  *     f[AC1Gsa] = 0.
  *     f[AC1GsaCamCa4] = 0.             # <<<<<<<<<<<<<<
@@ -11584,7 +11584,7 @@ static int __pyx_f_15Model_FB_cython_func(double __pyx_v_t, double *__pyx_v_y, d
  */
   (__pyx_v_f[_ind_AC1GsaCamCa4]) = 0.;
 
-  /* "Model_FB.pyx":1912
+  /* "Model_FB.pyx":1909
  *     f[AC1Gsa] = 0.
  *     f[AC1GsaCamCa4] = 0.
  *     f[AC1GsaCamCa4ATP] = 0.             # <<<<<<<<<<<<<<
@@ -11593,7 +11593,7 @@ static int __pyx_f_15Model_FB_cython_func(double __pyx_v_t, double *__pyx_v_y, d
  */
   (__pyx_v_f[_ind_AC1GsaCamCa4ATP]) = 0.;
 
-  /* "Model_FB.pyx":1913
+  /* "Model_FB.pyx":1910
  *     f[AC1GsaCamCa4] = 0.
  *     f[AC1GsaCamCa4ATP] = 0.
  *     f[AC1CamCa4] = 0.             # <<<<<<<<<<<<<<
@@ -11602,7 +11602,7 @@ static int __pyx_f_15Model_FB_cython_func(double __pyx_v_t, double *__pyx_v_y, d
  */
   (__pyx_v_f[_ind_AC1CamCa4]) = 0.;
 
-  /* "Model_FB.pyx":1914
+  /* "Model_FB.pyx":1911
  *     f[AC1GsaCamCa4ATP] = 0.
  *     f[AC1CamCa4] = 0.
  *     f[AC1CamCa4ATP] = 0.             # <<<<<<<<<<<<<<
@@ -11611,7 +11611,7 @@ static int __pyx_f_15Model_FB_cython_func(double __pyx_v_t, double *__pyx_v_y, d
  */
   (__pyx_v_f[_ind_AC1CamCa4ATP]) = 0.;
 
-  /* "Model_FB.pyx":1918
+  /* "Model_FB.pyx":1915
  * 
  * 
  *     gsl_vector_free(LTPwin_tab)             # <<<<<<<<<<<<<<
@@ -11620,7 +11620,7 @@ static int __pyx_f_15Model_FB_cython_func(double __pyx_v_t, double *__pyx_v_y, d
  */
   gsl_vector_free(__pyx_v_LTPwin_tab);
 
-  /* "Model_FB.pyx":1919
+  /* "Model_FB.pyx":1916
  * 
  *     gsl_vector_free(LTPwin_tab)
  *     gsl_vector_free(minf_caL13_tab)             # <<<<<<<<<<<<<<
@@ -11629,7 +11629,7 @@ static int __pyx_f_15Model_FB_cython_func(double __pyx_v_t, double *__pyx_v_y, d
  */
   gsl_vector_free(__pyx_v_minf_caL13_tab);
 
-  /* "Model_FB.pyx":1920
+  /* "Model_FB.pyx":1917
  *     gsl_vector_free(LTPwin_tab)
  *     gsl_vector_free(minf_caL13_tab)
  *     gsl_vector_free(hinf_caL13_tab)             # <<<<<<<<<<<<<<
@@ -11638,7 +11638,7 @@ static int __pyx_f_15Model_FB_cython_func(double __pyx_v_t, double *__pyx_v_y, d
  */
   gsl_vector_free(__pyx_v_hinf_caL13_tab);
 
-  /* "Model_FB.pyx":1921
+  /* "Model_FB.pyx":1918
  *     gsl_vector_free(minf_caL13_tab)
  *     gsl_vector_free(hinf_caL13_tab)
  *     gsl_vector_free(mtau_caL13_tab)             # <<<<<<<<<<<<<<
@@ -11647,7 +11647,7 @@ static int __pyx_f_15Model_FB_cython_func(double __pyx_v_t, double *__pyx_v_y, d
  */
   gsl_vector_free(__pyx_v_mtau_caL13_tab);
 
-  /* "Model_FB.pyx":1922
+  /* "Model_FB.pyx":1919
  *     gsl_vector_free(hinf_caL13_tab)
  *     gsl_vector_free(mtau_caL13_tab)
  *     gsl_vector_free(B_NMDA_tab)             # <<<<<<<<<<<<<<
@@ -11656,7 +11656,7 @@ static int __pyx_f_15Model_FB_cython_func(double __pyx_v_t, double *__pyx_v_y, d
  */
   gsl_vector_free(__pyx_v_B_NMDA_tab);
 
-  /* "Model_FB.pyx":1924
+  /* "Model_FB.pyx":1921
  *     gsl_vector_free(B_NMDA_tab)
  * 
  *     return GSL_SUCCESS             # <<<<<<<<<<<<<<
@@ -11682,7 +11682,7 @@ static int __pyx_f_15Model_FB_cython_func(double __pyx_v_t, double *__pyx_v_y, d
   return __pyx_r;
 }
 
-/* "Model_FB.pyx":1930
+/* "Model_FB.pyx":1927
  * # %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% #
  * 
  * def main(init_array, params_array, nb_eq, t_start, t_end, time_step, h_step = 1e-6, rel_err = 1e-7, abs_err = 1e-7): # Function which can be call in python             # <<<<<<<<<<<<<<
@@ -11739,27 +11739,27 @@ static PyObject *__pyx_pw_15Model_FB_cython_1main(PyObject *__pyx_self, PyObject
         case  1:
         if (likely((values[1] = PyDict_GetItem(__pyx_kwds, __pyx_n_s_params_array)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("main", 0, 6, 9, 1); {__pyx_filename = __pyx_f[0]; __pyx_lineno = 1930; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
+          __Pyx_RaiseArgtupleInvalid("main", 0, 6, 9, 1); {__pyx_filename = __pyx_f[0]; __pyx_lineno = 1927; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
         }
         case  2:
         if (likely((values[2] = PyDict_GetItem(__pyx_kwds, __pyx_n_s_nb_eq)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("main", 0, 6, 9, 2); {__pyx_filename = __pyx_f[0]; __pyx_lineno = 1930; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
+          __Pyx_RaiseArgtupleInvalid("main", 0, 6, 9, 2); {__pyx_filename = __pyx_f[0]; __pyx_lineno = 1927; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
         }
         case  3:
         if (likely((values[3] = PyDict_GetItem(__pyx_kwds, __pyx_n_s_t_start)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("main", 0, 6, 9, 3); {__pyx_filename = __pyx_f[0]; __pyx_lineno = 1930; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
+          __Pyx_RaiseArgtupleInvalid("main", 0, 6, 9, 3); {__pyx_filename = __pyx_f[0]; __pyx_lineno = 1927; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
         }
         case  4:
         if (likely((values[4] = PyDict_GetItem(__pyx_kwds, __pyx_n_s_t_end)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("main", 0, 6, 9, 4); {__pyx_filename = __pyx_f[0]; __pyx_lineno = 1930; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
+          __Pyx_RaiseArgtupleInvalid("main", 0, 6, 9, 4); {__pyx_filename = __pyx_f[0]; __pyx_lineno = 1927; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
         }
         case  5:
         if (likely((values[5] = PyDict_GetItem(__pyx_kwds, __pyx_n_s_time_step)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("main", 0, 6, 9, 5); {__pyx_filename = __pyx_f[0]; __pyx_lineno = 1930; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
+          __Pyx_RaiseArgtupleInvalid("main", 0, 6, 9, 5); {__pyx_filename = __pyx_f[0]; __pyx_lineno = 1927; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
         }
         case  6:
         if (kw_args > 0) {
@@ -11778,7 +11778,7 @@ static PyObject *__pyx_pw_15Model_FB_cython_1main(PyObject *__pyx_self, PyObject
         }
       }
       if (unlikely(kw_args > 0)) {
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "main") < 0)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 1930; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "main") < 0)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 1927; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
       }
     } else {
       switch (PyTuple_GET_SIZE(__pyx_args)) {
@@ -11807,7 +11807,7 @@ static PyObject *__pyx_pw_15Model_FB_cython_1main(PyObject *__pyx_self, PyObject
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("main", 0, 6, 9, PyTuple_GET_SIZE(__pyx_args)); {__pyx_filename = __pyx_f[0]; __pyx_lineno = 1930; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
+  __Pyx_RaiseArgtupleInvalid("main", 0, 6, 9, PyTuple_GET_SIZE(__pyx_args)); {__pyx_filename = __pyx_f[0]; __pyx_lineno = 1927; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
   __pyx_L3_error:;
   __Pyx_AddTraceback("Model_FB_cython.main", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
@@ -11868,17 +11868,17 @@ static PyObject *__pyx_pf_15Model_FB_cython_main(CYTHON_UNUSED PyObject *__pyx_s
   __pyx_pybuffernd_res.data = NULL;
   __pyx_pybuffernd_res.rcbuffer = &__pyx_pybuffer_res;
 
-  /* "Model_FB.pyx":1936
+  /* "Model_FB.pyx":1933
  * # --------------------------------------------------------------------------  #
  * 
  *     cdef int len_init = int(len(init_array)) # Length of the list of init             # <<<<<<<<<<<<<<
  * 
  *     # allocate number * sizeof(double) bytes of memory
  */
-  __pyx_t_1 = PyObject_Length(__pyx_v_init_array); if (unlikely(__pyx_t_1 == -1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 1936; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_t_1 = PyObject_Length(__pyx_v_init_array); if (unlikely(__pyx_t_1 == -1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 1933; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __pyx_v_len_init = ((int)__pyx_t_1);
 
-  /* "Model_FB.pyx":1939
+  /* "Model_FB.pyx":1936
  * 
  *     # allocate number * sizeof(double) bytes of memory
  *     cdef double *init_list = <double *>malloc((len_init) * sizeof(double))             # <<<<<<<<<<<<<<
@@ -11887,7 +11887,7 @@ static PyObject *__pyx_pf_15Model_FB_cython_main(CYTHON_UNUSED PyObject *__pyx_s
  */
   __pyx_v_init_list = ((double *)malloc((__pyx_v_len_init * (sizeof(double)))));
 
-  /* "Model_FB.pyx":1940
+  /* "Model_FB.pyx":1937
  *     # allocate number * sizeof(double) bytes of memory
  *     cdef double *init_list = <double *>malloc((len_init) * sizeof(double))
  *     if not init_list: # If allocation doesn't work             # <<<<<<<<<<<<<<
@@ -11897,16 +11897,16 @@ static PyObject *__pyx_pf_15Model_FB_cython_main(CYTHON_UNUSED PyObject *__pyx_s
   __pyx_t_2 = ((!(__pyx_v_init_list != 0)) != 0);
   if (__pyx_t_2) {
 
-    /* "Model_FB.pyx":1941
+    /* "Model_FB.pyx":1938
  *     cdef double *init_list = <double *>malloc((len_init) * sizeof(double))
  *     if not init_list: # If allocation doesn't work
  *         raise MemoryError()             # <<<<<<<<<<<<<<
  * 
  *     cdef int l
  */
-    PyErr_NoMemory(); {__pyx_filename = __pyx_f[0]; __pyx_lineno = 1941; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+    PyErr_NoMemory(); {__pyx_filename = __pyx_f[0]; __pyx_lineno = 1938; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
 
-    /* "Model_FB.pyx":1940
+    /* "Model_FB.pyx":1937
  *     # allocate number * sizeof(double) bytes of memory
  *     cdef double *init_list = <double *>malloc((len_init) * sizeof(double))
  *     if not init_list: # If allocation doesn't work             # <<<<<<<<<<<<<<
@@ -11915,7 +11915,7 @@ static PyObject *__pyx_pf_15Model_FB_cython_main(CYTHON_UNUSED PyObject *__pyx_s
  */
   }
 
-  /* "Model_FB.pyx":1944
+  /* "Model_FB.pyx":1941
  * 
  *     cdef int l
  *     for l from 0 <= l < len_init: # Fill the rest of the array of initialisation             # <<<<<<<<<<<<<<
@@ -11925,54 +11925,54 @@ static PyObject *__pyx_pf_15Model_FB_cython_main(CYTHON_UNUSED PyObject *__pyx_s
   __pyx_t_3 = __pyx_v_len_init;
   for (__pyx_v_l = 0; __pyx_v_l < __pyx_t_3; __pyx_v_l++) {
 
-    /* "Model_FB.pyx":1945
+    /* "Model_FB.pyx":1942
  *     cdef int l
  *     for l from 0 <= l < len_init: # Fill the rest of the array of initialisation
  *         init_list[l] = init_array[l]             # <<<<<<<<<<<<<<
  * 
  *     # Initialisation of time computed
  */
-    __pyx_t_4 = __Pyx_GetItemInt(__pyx_v_init_array, __pyx_v_l, int, 1, __Pyx_PyInt_From_int, 0, 1, 1); if (unlikely(__pyx_t_4 == NULL)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 1945; __pyx_clineno = __LINE__; goto __pyx_L1_error;};
+    __pyx_t_4 = __Pyx_GetItemInt(__pyx_v_init_array, __pyx_v_l, int, 1, __Pyx_PyInt_From_int, 0, 1, 1); if (unlikely(__pyx_t_4 == NULL)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 1942; __pyx_clineno = __LINE__; goto __pyx_L1_error;};
     __Pyx_GOTREF(__pyx_t_4);
-    __pyx_t_5 = __pyx_PyFloat_AsDouble(__pyx_t_4); if (unlikely((__pyx_t_5 == (double)-1) && PyErr_Occurred())) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 1945; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+    __pyx_t_5 = __pyx_PyFloat_AsDouble(__pyx_t_4); if (unlikely((__pyx_t_5 == (double)-1) && PyErr_Occurred())) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 1942; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
     (__pyx_v_init_list[__pyx_v_l]) = __pyx_t_5;
   }
 
-  /* "Model_FB.pyx":1948
+  /* "Model_FB.pyx":1945
  * 
  *     # Initialisation of time computed
  *     cdef double t = t_start             # <<<<<<<<<<<<<<
  * 
  *     cdef int status # Status of the solving
  */
-  __pyx_t_5 = __pyx_PyFloat_AsDouble(__pyx_v_t_start); if (unlikely((__pyx_t_5 == (double)-1) && PyErr_Occurred())) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 1948; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_t_5 = __pyx_PyFloat_AsDouble(__pyx_v_t_start); if (unlikely((__pyx_t_5 == (double)-1) && PyErr_Occurred())) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 1945; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __pyx_v_t = __pyx_t_5;
 
-  /* "Model_FB.pyx":1958
+  /* "Model_FB.pyx":1955
  * # --------------------------------------------------------------------------  #
  * 
  *     cdef int nb_ode = int(nb_eq) # Number of equation             # <<<<<<<<<<<<<<
  * 
  * # ------------------------ EXTRA PARAMS ----------------------------------  #
  */
-  __pyx_t_4 = PyNumber_Int(__pyx_v_nb_eq); if (unlikely(!__pyx_t_4)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 1958; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_t_4 = PyNumber_Int(__pyx_v_nb_eq); if (unlikely(!__pyx_t_4)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 1955; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_GOTREF(__pyx_t_4);
-  __pyx_t_3 = __Pyx_PyInt_As_int(__pyx_t_4); if (unlikely((__pyx_t_3 == (int)-1) && PyErr_Occurred())) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 1958; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_t_3 = __Pyx_PyInt_As_int(__pyx_t_4); if (unlikely((__pyx_t_3 == (int)-1) && PyErr_Occurred())) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 1955; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
   __pyx_v_nb_ode = __pyx_t_3;
 
-  /* "Model_FB.pyx":1961
+  /* "Model_FB.pyx":1958
  * 
  * # ------------------------ EXTRA PARAMS ----------------------------------  #
  *     cdef int len_params = int(len(params_array)) # Length of the list of params             # <<<<<<<<<<<<<<
  * 
  *     # allocate number * sizeof(double) bytes of memory
  */
-  __pyx_t_1 = PyObject_Length(__pyx_v_params_array); if (unlikely(__pyx_t_1 == -1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 1961; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_t_1 = PyObject_Length(__pyx_v_params_array); if (unlikely(__pyx_t_1 == -1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 1958; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __pyx_v_len_params = ((int)__pyx_t_1);
 
-  /* "Model_FB.pyx":1964
+  /* "Model_FB.pyx":1961
  * 
  *     # allocate number * sizeof(double) bytes of memory
  *     cdef double *extra_params = <double *>malloc((len_params) * sizeof(double))             # <<<<<<<<<<<<<<
@@ -11981,7 +11981,7 @@ static PyObject *__pyx_pf_15Model_FB_cython_main(CYTHON_UNUSED PyObject *__pyx_s
  */
   __pyx_v_extra_params = ((double *)malloc((__pyx_v_len_params * (sizeof(double)))));
 
-  /* "Model_FB.pyx":1965
+  /* "Model_FB.pyx":1962
  *     # allocate number * sizeof(double) bytes of memory
  *     cdef double *extra_params = <double *>malloc((len_params) * sizeof(double))
  *     if not extra_params: # If allocation doesn't work             # <<<<<<<<<<<<<<
@@ -11991,16 +11991,16 @@ static PyObject *__pyx_pf_15Model_FB_cython_main(CYTHON_UNUSED PyObject *__pyx_s
   __pyx_t_2 = ((!(__pyx_v_extra_params != 0)) != 0);
   if (__pyx_t_2) {
 
-    /* "Model_FB.pyx":1966
+    /* "Model_FB.pyx":1963
  *     cdef double *extra_params = <double *>malloc((len_params) * sizeof(double))
  *     if not extra_params: # If allocation doesn't work
  *         raise MemoryError()             # <<<<<<<<<<<<<<
  * 
  *     cdef int j
  */
-    PyErr_NoMemory(); {__pyx_filename = __pyx_f[0]; __pyx_lineno = 1966; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+    PyErr_NoMemory(); {__pyx_filename = __pyx_f[0]; __pyx_lineno = 1963; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
 
-    /* "Model_FB.pyx":1965
+    /* "Model_FB.pyx":1962
  *     # allocate number * sizeof(double) bytes of memory
  *     cdef double *extra_params = <double *>malloc((len_params) * sizeof(double))
  *     if not extra_params: # If allocation doesn't work             # <<<<<<<<<<<<<<
@@ -12009,7 +12009,7 @@ static PyObject *__pyx_pf_15Model_FB_cython_main(CYTHON_UNUSED PyObject *__pyx_s
  */
   }
 
-  /* "Model_FB.pyx":1969
+  /* "Model_FB.pyx":1966
  * 
  *     cdef int j
  *     for j from 0 <= j < len_params: # Fill the rest of the array of parameters             # <<<<<<<<<<<<<<
@@ -12019,56 +12019,56 @@ static PyObject *__pyx_pf_15Model_FB_cython_main(CYTHON_UNUSED PyObject *__pyx_s
   __pyx_t_3 = __pyx_v_len_params;
   for (__pyx_v_j = 0; __pyx_v_j < __pyx_t_3; __pyx_v_j++) {
 
-    /* "Model_FB.pyx":1970
+    /* "Model_FB.pyx":1967
  *     cdef int j
  *     for j from 0 <= j < len_params: # Fill the rest of the array of parameters
  *         extra_params[j] = params_array[j]             # <<<<<<<<<<<<<<
  * 
  * # --------------------------------------------------------------------------  #
  */
-    __pyx_t_4 = __Pyx_GetItemInt(__pyx_v_params_array, __pyx_v_j, int, 1, __Pyx_PyInt_From_int, 0, 1, 1); if (unlikely(__pyx_t_4 == NULL)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 1970; __pyx_clineno = __LINE__; goto __pyx_L1_error;};
+    __pyx_t_4 = __Pyx_GetItemInt(__pyx_v_params_array, __pyx_v_j, int, 1, __Pyx_PyInt_From_int, 0, 1, 1); if (unlikely(__pyx_t_4 == NULL)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 1967; __pyx_clineno = __LINE__; goto __pyx_L1_error;};
     __Pyx_GOTREF(__pyx_t_4);
-    __pyx_t_5 = __pyx_PyFloat_AsDouble(__pyx_t_4); if (unlikely((__pyx_t_5 == (double)-1) && PyErr_Occurred())) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 1970; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+    __pyx_t_5 = __pyx_PyFloat_AsDouble(__pyx_t_4); if (unlikely((__pyx_t_5 == (double)-1) && PyErr_Occurred())) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 1967; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
     (__pyx_v_extra_params[__pyx_v_j]) = __pyx_t_5;
   }
 
-  /* "Model_FB.pyx":1975
+  /* "Model_FB.pyx":1972
  * 
  *     cdef int nb_time_step # nb_time_step
  *     nb_time_step = int((t_end -t_start) / time_step)             # <<<<<<<<<<<<<<
  *     #printf("%d \n", nb_time_step)
  * 
  */
-  __pyx_t_4 = PyNumber_Subtract(__pyx_v_t_end, __pyx_v_t_start); if (unlikely(!__pyx_t_4)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 1975; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_t_4 = PyNumber_Subtract(__pyx_v_t_end, __pyx_v_t_start); if (unlikely(!__pyx_t_4)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 1972; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_GOTREF(__pyx_t_4);
-  __pyx_t_6 = __Pyx_PyNumber_Divide(__pyx_t_4, __pyx_v_time_step); if (unlikely(!__pyx_t_6)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 1975; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_t_6 = __Pyx_PyNumber_Divide(__pyx_t_4, __pyx_v_time_step); if (unlikely(!__pyx_t_6)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 1972; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_GOTREF(__pyx_t_6);
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-  __pyx_t_4 = PyNumber_Int(__pyx_t_6); if (unlikely(!__pyx_t_4)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 1975; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_t_4 = PyNumber_Int(__pyx_t_6); if (unlikely(!__pyx_t_4)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 1972; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_GOTREF(__pyx_t_4);
   __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
-  __pyx_t_3 = __Pyx_PyInt_As_int(__pyx_t_4); if (unlikely((__pyx_t_3 == (int)-1) && PyErr_Occurred())) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 1975; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_t_3 = __Pyx_PyInt_As_int(__pyx_t_4); if (unlikely((__pyx_t_3 == (int)-1) && PyErr_Occurred())) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 1972; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
   __pyx_v_nb_time_step = __pyx_t_3;
 
-  /* "Model_FB.pyx":1981
+  /* "Model_FB.pyx":1978
  *     # Initialisation of an empty np.ndarray #
  *     #    cdef np.ndarray[np.float64_t, ndim = 2] res = np.zeros((t_end+1, nb_ode+1), dtype=np.float64)
  *     cdef np.ndarray[np.float64_t, ndim = 2] res = np.zeros((nb_time_step+1, nb_ode+1), dtype=np.float64)             # <<<<<<<<<<<<<<
  * 
  * 
  */
-  __pyx_t_4 = __Pyx_GetModuleGlobalName(__pyx_n_s_np); if (unlikely(!__pyx_t_4)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 1981; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_t_4 = __Pyx_GetModuleGlobalName(__pyx_n_s_np); if (unlikely(!__pyx_t_4)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 1978; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_GOTREF(__pyx_t_4);
-  __pyx_t_6 = __Pyx_PyObject_GetAttrStr(__pyx_t_4, __pyx_n_s_zeros); if (unlikely(!__pyx_t_6)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 1981; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_t_6 = __Pyx_PyObject_GetAttrStr(__pyx_t_4, __pyx_n_s_zeros); if (unlikely(!__pyx_t_6)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 1978; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_GOTREF(__pyx_t_6);
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-  __pyx_t_4 = __Pyx_PyInt_From_long((__pyx_v_nb_time_step + 1)); if (unlikely(!__pyx_t_4)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 1981; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_t_4 = __Pyx_PyInt_From_long((__pyx_v_nb_time_step + 1)); if (unlikely(!__pyx_t_4)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 1978; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_GOTREF(__pyx_t_4);
-  __pyx_t_7 = __Pyx_PyInt_From_long((__pyx_v_nb_ode + 1)); if (unlikely(!__pyx_t_7)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 1981; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_t_7 = __Pyx_PyInt_From_long((__pyx_v_nb_ode + 1)); if (unlikely(!__pyx_t_7)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 1978; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_GOTREF(__pyx_t_7);
-  __pyx_t_8 = PyTuple_New(2); if (unlikely(!__pyx_t_8)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 1981; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_t_8 = PyTuple_New(2); if (unlikely(!__pyx_t_8)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 1978; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_GOTREF(__pyx_t_8);
   __Pyx_GIVEREF(__pyx_t_4);
   PyTuple_SET_ITEM(__pyx_t_8, 0, __pyx_t_4);
@@ -12076,32 +12076,32 @@ static PyObject *__pyx_pf_15Model_FB_cython_main(CYTHON_UNUSED PyObject *__pyx_s
   PyTuple_SET_ITEM(__pyx_t_8, 1, __pyx_t_7);
   __pyx_t_4 = 0;
   __pyx_t_7 = 0;
-  __pyx_t_7 = PyTuple_New(1); if (unlikely(!__pyx_t_7)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 1981; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_t_7 = PyTuple_New(1); if (unlikely(!__pyx_t_7)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 1978; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_GOTREF(__pyx_t_7);
   __Pyx_GIVEREF(__pyx_t_8);
   PyTuple_SET_ITEM(__pyx_t_7, 0, __pyx_t_8);
   __pyx_t_8 = 0;
-  __pyx_t_8 = PyDict_New(); if (unlikely(!__pyx_t_8)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 1981; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_t_8 = PyDict_New(); if (unlikely(!__pyx_t_8)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 1978; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_GOTREF(__pyx_t_8);
-  __pyx_t_4 = __Pyx_GetModuleGlobalName(__pyx_n_s_np); if (unlikely(!__pyx_t_4)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 1981; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_t_4 = __Pyx_GetModuleGlobalName(__pyx_n_s_np); if (unlikely(!__pyx_t_4)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 1978; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_GOTREF(__pyx_t_4);
-  __pyx_t_9 = __Pyx_PyObject_GetAttrStr(__pyx_t_4, __pyx_n_s_float64); if (unlikely(!__pyx_t_9)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 1981; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_t_9 = __Pyx_PyObject_GetAttrStr(__pyx_t_4, __pyx_n_s_float64); if (unlikely(!__pyx_t_9)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 1978; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_GOTREF(__pyx_t_9);
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-  if (PyDict_SetItem(__pyx_t_8, __pyx_n_s_dtype, __pyx_t_9) < 0) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 1981; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  if (PyDict_SetItem(__pyx_t_8, __pyx_n_s_dtype, __pyx_t_9) < 0) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 1978; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
-  __pyx_t_9 = __Pyx_PyObject_Call(__pyx_t_6, __pyx_t_7, __pyx_t_8); if (unlikely(!__pyx_t_9)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 1981; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_t_9 = __Pyx_PyObject_Call(__pyx_t_6, __pyx_t_7, __pyx_t_8); if (unlikely(!__pyx_t_9)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 1978; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_GOTREF(__pyx_t_9);
   __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
   __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
   __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
-  if (!(likely(((__pyx_t_9) == Py_None) || likely(__Pyx_TypeTest(__pyx_t_9, __pyx_ptype_5numpy_ndarray))))) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 1981; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  if (!(likely(((__pyx_t_9) == Py_None) || likely(__Pyx_TypeTest(__pyx_t_9, __pyx_ptype_5numpy_ndarray))))) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 1978; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __pyx_t_10 = ((PyArrayObject *)__pyx_t_9);
   {
     __Pyx_BufFmt_StackElem __pyx_stack[1];
     if (unlikely(__Pyx_GetBufferAndValidate(&__pyx_pybuffernd_res.rcbuffer->pybuffer, (PyObject*)__pyx_t_10, &__Pyx_TypeInfo_nn___pyx_t_5numpy_float64_t, PyBUF_FORMAT| PyBUF_STRIDES| PyBUF_WRITABLE, 2, 0, __pyx_stack) == -1)) {
       __pyx_v_res = ((PyArrayObject *)Py_None); __Pyx_INCREF(Py_None); __pyx_pybuffernd_res.rcbuffer->pybuffer.buf = NULL;
-      {__pyx_filename = __pyx_f[0]; __pyx_lineno = 1981; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+      {__pyx_filename = __pyx_f[0]; __pyx_lineno = 1978; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
     } else {__pyx_pybuffernd_res.diminfo[0].strides = __pyx_pybuffernd_res.rcbuffer->pybuffer.strides[0]; __pyx_pybuffernd_res.diminfo[0].shape = __pyx_pybuffernd_res.rcbuffer->pybuffer.shape[0]; __pyx_pybuffernd_res.diminfo[1].strides = __pyx_pybuffernd_res.rcbuffer->pybuffer.strides[1]; __pyx_pybuffernd_res.diminfo[1].shape = __pyx_pybuffernd_res.rcbuffer->pybuffer.shape[1];
     }
   }
@@ -12109,7 +12109,7 @@ static PyObject *__pyx_pf_15Model_FB_cython_main(CYTHON_UNUSED PyObject *__pyx_s
   __pyx_v_res = ((PyArrayObject *)__pyx_t_9);
   __pyx_t_9 = 0;
 
-  /* "Model_FB.pyx":1992
+  /* "Model_FB.pyx":1989
  * 
  *     cdef gsl_odeiv2_system sys
  *     sys.function = func             # <<<<<<<<<<<<<<
@@ -12118,7 +12118,7 @@ static PyObject *__pyx_pf_15Model_FB_cython_main(CYTHON_UNUSED PyObject *__pyx_s
  */
   __pyx_v_sys.function = __pyx_f_15Model_FB_cython_func;
 
-  /* "Model_FB.pyx":1993
+  /* "Model_FB.pyx":1990
  *     cdef gsl_odeiv2_system sys
  *     sys.function = func
  *     sys.jacobian = NULL             # <<<<<<<<<<<<<<
@@ -12127,7 +12127,7 @@ static PyObject *__pyx_pf_15Model_FB_cython_main(CYTHON_UNUSED PyObject *__pyx_s
  */
   __pyx_v_sys.jacobian = NULL;
 
-  /* "Model_FB.pyx":1994
+  /* "Model_FB.pyx":1991
  *     sys.function = func
  *     sys.jacobian = NULL
  *     sys.dimension = nb_ode             # <<<<<<<<<<<<<<
@@ -12136,7 +12136,7 @@ static PyObject *__pyx_pf_15Model_FB_cython_main(CYTHON_UNUSED PyObject *__pyx_s
  */
   __pyx_v_sys.dimension = __pyx_v_nb_ode;
 
-  /* "Model_FB.pyx":1995
+  /* "Model_FB.pyx":1992
  *     sys.jacobian = NULL
  *     sys.dimension = nb_ode
  *     sys.params = <void*> extra_params             # <<<<<<<<<<<<<<
@@ -12145,18 +12145,18 @@ static PyObject *__pyx_pf_15Model_FB_cython_main(CYTHON_UNUSED PyObject *__pyx_s
  */
   __pyx_v_sys.params = ((void *)__pyx_v_extra_params);
 
-  /* "Model_FB.pyx":2000
+  /* "Model_FB.pyx":1997
  *     d = gsl_odeiv2_driver_alloc_y_new(
  *         &sys, gsl_odeiv2_step_rk8pd,
  *         h_step, abs_err, rel_err)             # <<<<<<<<<<<<<<
  * 
  *     for i from 0 <= i <= nb_time_step:
  */
-  __pyx_t_5 = __pyx_PyFloat_AsDouble(__pyx_v_h_step); if (unlikely((__pyx_t_5 == (double)-1) && PyErr_Occurred())) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 2000; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
-  __pyx_t_11 = __pyx_PyFloat_AsDouble(__pyx_v_abs_err); if (unlikely((__pyx_t_11 == (double)-1) && PyErr_Occurred())) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 2000; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
-  __pyx_t_12 = __pyx_PyFloat_AsDouble(__pyx_v_rel_err); if (unlikely((__pyx_t_12 == (double)-1) && PyErr_Occurred())) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 2000; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_t_5 = __pyx_PyFloat_AsDouble(__pyx_v_h_step); if (unlikely((__pyx_t_5 == (double)-1) && PyErr_Occurred())) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 1997; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_t_11 = __pyx_PyFloat_AsDouble(__pyx_v_abs_err); if (unlikely((__pyx_t_11 == (double)-1) && PyErr_Occurred())) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 1997; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_t_12 = __pyx_PyFloat_AsDouble(__pyx_v_rel_err); if (unlikely((__pyx_t_12 == (double)-1) && PyErr_Occurred())) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 1997; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
 
-  /* "Model_FB.pyx":1998
+  /* "Model_FB.pyx":1995
  * 
  *     cdef gsl_odeiv2_driver * d
  *     d = gsl_odeiv2_driver_alloc_y_new(             # <<<<<<<<<<<<<<
@@ -12165,7 +12165,7 @@ static PyObject *__pyx_pf_15Model_FB_cython_main(CYTHON_UNUSED PyObject *__pyx_s
  */
   __pyx_v_d = gsl_odeiv2_driver_alloc_y_new((&__pyx_v_sys), gsl_odeiv2_step_rk8pd, __pyx_t_5, __pyx_t_11, __pyx_t_12);
 
-  /* "Model_FB.pyx":2002
+  /* "Model_FB.pyx":1999
  *         h_step, abs_err, rel_err)
  * 
  *     for i from 0 <= i <= nb_time_step:             # <<<<<<<<<<<<<<
@@ -12175,26 +12175,26 @@ static PyObject *__pyx_pf_15Model_FB_cython_main(CYTHON_UNUSED PyObject *__pyx_s
   __pyx_t_3 = __pyx_v_nb_time_step;
   for (__pyx_v_i = 0; __pyx_v_i <= __pyx_t_3; __pyx_v_i++) {
 
-    /* "Model_FB.pyx":2003
+    /* "Model_FB.pyx":2000
  * 
  *     for i from 0 <= i <= nb_time_step:
  *         ti = t_start + i * time_step # Time to compute             # <<<<<<<<<<<<<<
  * 
  *         status = gsl_odeiv2_driver_apply (d, &t, ti, init_list)
  */
-    __pyx_t_9 = PyInt_FromSsize_t(__pyx_v_i); if (unlikely(!__pyx_t_9)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 2003; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+    __pyx_t_9 = PyInt_FromSsize_t(__pyx_v_i); if (unlikely(!__pyx_t_9)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 2000; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
     __Pyx_GOTREF(__pyx_t_9);
-    __pyx_t_8 = PyNumber_Multiply(__pyx_t_9, __pyx_v_time_step); if (unlikely(!__pyx_t_8)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 2003; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+    __pyx_t_8 = PyNumber_Multiply(__pyx_t_9, __pyx_v_time_step); if (unlikely(!__pyx_t_8)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 2000; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
     __Pyx_GOTREF(__pyx_t_8);
     __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
-    __pyx_t_9 = PyNumber_Add(__pyx_v_t_start, __pyx_t_8); if (unlikely(!__pyx_t_9)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 2003; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+    __pyx_t_9 = PyNumber_Add(__pyx_v_t_start, __pyx_t_8); if (unlikely(!__pyx_t_9)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 2000; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
     __Pyx_GOTREF(__pyx_t_9);
     __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
-    __pyx_t_12 = __pyx_PyFloat_AsDouble(__pyx_t_9); if (unlikely((__pyx_t_12 == (double)-1) && PyErr_Occurred())) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 2003; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+    __pyx_t_12 = __pyx_PyFloat_AsDouble(__pyx_t_9); if (unlikely((__pyx_t_12 == (double)-1) && PyErr_Occurred())) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 2000; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
     __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
     __pyx_v_ti = __pyx_t_12;
 
-    /* "Model_FB.pyx":2005
+    /* "Model_FB.pyx":2002
  *         ti = t_start + i * time_step # Time to compute
  * 
  *         status = gsl_odeiv2_driver_apply (d, &t, ti, init_list)             # <<<<<<<<<<<<<<
@@ -12203,7 +12203,7 @@ static PyObject *__pyx_pf_15Model_FB_cython_main(CYTHON_UNUSED PyObject *__pyx_s
  */
     __pyx_v_status = gsl_odeiv2_driver_apply(__pyx_v_d, (&__pyx_v_t), __pyx_v_ti, __pyx_v_init_list);
 
-    /* "Model_FB.pyx":2007
+    /* "Model_FB.pyx":2004
  *         status = gsl_odeiv2_driver_apply (d, &t, ti, init_list)
  * 
  *         if (status != GSL_SUCCESS):             # <<<<<<<<<<<<<<
@@ -12213,22 +12213,22 @@ static PyObject *__pyx_pf_15Model_FB_cython_main(CYTHON_UNUSED PyObject *__pyx_s
     __pyx_t_2 = ((__pyx_v_status != __pyx_e_10cython_gsl_GSL_SUCCESS) != 0);
     if (__pyx_t_2) {
 
-      /* "Model_FB.pyx":2008
+      /* "Model_FB.pyx":2005
  * 
  *         if (status != GSL_SUCCESS):
  *             print("error, return value=%d\n" % status)             # <<<<<<<<<<<<<<
  *             break
  * 
  */
-      __pyx_t_9 = __Pyx_PyInt_From_int(__pyx_v_status); if (unlikely(!__pyx_t_9)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 2008; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+      __pyx_t_9 = __Pyx_PyInt_From_int(__pyx_v_status); if (unlikely(!__pyx_t_9)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 2005; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
       __Pyx_GOTREF(__pyx_t_9);
-      __pyx_t_8 = __Pyx_PyString_Format(__pyx_kp_s_error_return_value_d, __pyx_t_9); if (unlikely(!__pyx_t_8)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 2008; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+      __pyx_t_8 = __Pyx_PyString_Format(__pyx_kp_s_error_return_value_d, __pyx_t_9); if (unlikely(!__pyx_t_8)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 2005; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
       __Pyx_GOTREF(__pyx_t_8);
       __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
-      if (__Pyx_PrintOne(0, __pyx_t_8) < 0) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 2008; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+      if (__Pyx_PrintOne(0, __pyx_t_8) < 0) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 2005; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
       __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
 
-      /* "Model_FB.pyx":2009
+      /* "Model_FB.pyx":2006
  *         if (status != GSL_SUCCESS):
  *             print("error, return value=%d\n" % status)
  *             break             # <<<<<<<<<<<<<<
@@ -12237,7 +12237,7 @@ static PyObject *__pyx_pf_15Model_FB_cython_main(CYTHON_UNUSED PyObject *__pyx_s
  */
       goto __pyx_L10_break;
 
-      /* "Model_FB.pyx":2007
+      /* "Model_FB.pyx":2004
  *         status = gsl_odeiv2_driver_apply (d, &t, ti, init_list)
  * 
  *         if (status != GSL_SUCCESS):             # <<<<<<<<<<<<<<
@@ -12246,7 +12246,7 @@ static PyObject *__pyx_pf_15Model_FB_cython_main(CYTHON_UNUSED PyObject *__pyx_s
  */
     }
 
-    /* "Model_FB.pyx":2014
+    /* "Model_FB.pyx":2011
  * 
  * # --------------------- Fill the array of result ---------------------------  #
  *         res[i,0] = t             # <<<<<<<<<<<<<<
@@ -12266,11 +12266,11 @@ static PyObject *__pyx_pf_15Model_FB_cython_main(CYTHON_UNUSED PyObject *__pyx_s
     } else if (unlikely(__pyx_t_14 >= __pyx_pybuffernd_res.diminfo[1].shape)) __pyx_t_15 = 1;
     if (unlikely(__pyx_t_15 != -1)) {
       __Pyx_RaiseBufferIndexError(__pyx_t_15);
-      {__pyx_filename = __pyx_f[0]; __pyx_lineno = 2014; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+      {__pyx_filename = __pyx_f[0]; __pyx_lineno = 2011; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
     }
     *__Pyx_BufPtrStrided2d(__pyx_t_5numpy_float64_t *, __pyx_pybuffernd_res.rcbuffer->pybuffer.buf, __pyx_t_13, __pyx_pybuffernd_res.diminfo[0].strides, __pyx_t_14, __pyx_pybuffernd_res.diminfo[1].strides) = __pyx_v_t;
 
-    /* "Model_FB.pyx":2016
+    /* "Model_FB.pyx":2013
  *         res[i,0] = t
  * 
  *         for m_it from 0 <= m_it < len_init: # Fill the rest of the array of parameters             # <<<<<<<<<<<<<<
@@ -12280,7 +12280,7 @@ static PyObject *__pyx_pf_15Model_FB_cython_main(CYTHON_UNUSED PyObject *__pyx_s
     __pyx_t_15 = __pyx_v_len_init;
     for (__pyx_v_m_it = 0; __pyx_v_m_it < __pyx_t_15; __pyx_v_m_it++) {
 
-      /* "Model_FB.pyx":2017
+      /* "Model_FB.pyx":2014
  * 
  *         for m_it from 0 <= m_it < len_init: # Fill the rest of the array of parameters
  *             res[i,m_it+1] = init_list[m_it]             # <<<<<<<<<<<<<<
@@ -12300,14 +12300,14 @@ static PyObject *__pyx_pf_15Model_FB_cython_main(CYTHON_UNUSED PyObject *__pyx_s
       } else if (unlikely(__pyx_t_17 >= __pyx_pybuffernd_res.diminfo[1].shape)) __pyx_t_18 = 1;
       if (unlikely(__pyx_t_18 != -1)) {
         __Pyx_RaiseBufferIndexError(__pyx_t_18);
-        {__pyx_filename = __pyx_f[0]; __pyx_lineno = 2017; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+        {__pyx_filename = __pyx_f[0]; __pyx_lineno = 2014; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
       }
       *__Pyx_BufPtrStrided2d(__pyx_t_5numpy_float64_t *, __pyx_pybuffernd_res.rcbuffer->pybuffer.buf, __pyx_t_16, __pyx_pybuffernd_res.diminfo[0].strides, __pyx_t_17, __pyx_pybuffernd_res.diminfo[1].strides) = (__pyx_v_init_list[__pyx_v_m_it]);
     }
   }
   __pyx_L10_break:;
 
-  /* "Model_FB.pyx":2020
+  /* "Model_FB.pyx":2017
  * 
  * 
  *     free(init_list)             # <<<<<<<<<<<<<<
@@ -12316,7 +12316,7 @@ static PyObject *__pyx_pf_15Model_FB_cython_main(CYTHON_UNUSED PyObject *__pyx_s
  */
   free(__pyx_v_init_list);
 
-  /* "Model_FB.pyx":2021
+  /* "Model_FB.pyx":2018
  * 
  *     free(init_list)
  *     free(extra_params)             # <<<<<<<<<<<<<<
@@ -12325,7 +12325,7 @@ static PyObject *__pyx_pf_15Model_FB_cython_main(CYTHON_UNUSED PyObject *__pyx_s
  */
   free(__pyx_v_extra_params);
 
-  /* "Model_FB.pyx":2022
+  /* "Model_FB.pyx":2019
  *     free(init_list)
  *     free(extra_params)
  *     gsl_odeiv2_driver_free(d) # Release the system             # <<<<<<<<<<<<<<
@@ -12334,7 +12334,7 @@ static PyObject *__pyx_pf_15Model_FB_cython_main(CYTHON_UNUSED PyObject *__pyx_s
  */
   gsl_odeiv2_driver_free(__pyx_v_d);
 
-  /* "Model_FB.pyx":2024
+  /* "Model_FB.pyx":2021
  *     gsl_odeiv2_driver_free(d) # Release the system
  * 
  *     return res             # <<<<<<<<<<<<<<
@@ -12345,7 +12345,7 @@ static PyObject *__pyx_pf_15Model_FB_cython_main(CYTHON_UNUSED PyObject *__pyx_s
   __pyx_r = ((PyObject *)__pyx_v_res);
   goto __pyx_L0;
 
-  /* "Model_FB.pyx":1930
+  /* "Model_FB.pyx":1927
  * # %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% #
  * 
  * def main(init_array, params_array, nb_eq, t_start, t_end, time_step, h_step = 1e-6, rel_err = 1e-7, abs_err = 1e-7): # Function which can be call in python             # <<<<<<<<<<<<<<
@@ -14597,7 +14597,7 @@ static __Pyx_StringTabEntry __pyx_string_tab[] = {
   {0, 0, 0, 0, 0, 0, 0}
 };
 static int __Pyx_InitCachedBuiltins(void) {
-  __pyx_builtin_MemoryError = __Pyx_GetBuiltinName(__pyx_n_s_MemoryError); if (!__pyx_builtin_MemoryError) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 1941; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_builtin_MemoryError = __Pyx_GetBuiltinName(__pyx_n_s_MemoryError); if (!__pyx_builtin_MemoryError) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 1938; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __pyx_builtin_ValueError = __Pyx_GetBuiltinName(__pyx_n_s_ValueError); if (!__pyx_builtin_ValueError) {__pyx_filename = __pyx_f[1]; __pyx_lineno = 218; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __pyx_builtin_range = __Pyx_GetBuiltinName(__pyx_n_s_range); if (!__pyx_builtin_range) {__pyx_filename = __pyx_f[1]; __pyx_lineno = 231; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __pyx_builtin_RuntimeError = __Pyx_GetBuiltinName(__pyx_n_s_RuntimeError); if (!__pyx_builtin_RuntimeError) {__pyx_filename = __pyx_f[1]; __pyx_lineno = 799; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
@@ -14676,17 +14676,17 @@ static int __Pyx_InitCachedConstants(void) {
   __Pyx_GOTREF(__pyx_tuple__6);
   __Pyx_GIVEREF(__pyx_tuple__6);
 
-  /* "Model_FB.pyx":1930
+  /* "Model_FB.pyx":1927
  * # %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% #
  * 
  * def main(init_array, params_array, nb_eq, t_start, t_end, time_step, h_step = 1e-6, rel_err = 1e-7, abs_err = 1e-7): # Function which can be call in python             # <<<<<<<<<<<<<<
  * 
  * # --------------------------------------------------------------------------  #
  */
-  __pyx_tuple__7 = PyTuple_Pack(25, __pyx_n_s_init_array, __pyx_n_s_params_array, __pyx_n_s_nb_eq, __pyx_n_s_t_start, __pyx_n_s_t_end, __pyx_n_s_time_step, __pyx_n_s_h_step, __pyx_n_s_rel_err, __pyx_n_s_abs_err, __pyx_n_s_len_init, __pyx_n_s_init_list, __pyx_n_s_l, __pyx_n_s_t, __pyx_n_s_status, __pyx_n_s_ti, __pyx_n_s_nb_ode, __pyx_n_s_len_params, __pyx_n_s_extra_params, __pyx_n_s_j, __pyx_n_s_nb_time_step, __pyx_n_s_res, __pyx_n_s_i, __pyx_n_s_m_it, __pyx_n_s_sys, __pyx_n_s_d); if (unlikely(!__pyx_tuple__7)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 1930; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_tuple__7 = PyTuple_Pack(25, __pyx_n_s_init_array, __pyx_n_s_params_array, __pyx_n_s_nb_eq, __pyx_n_s_t_start, __pyx_n_s_t_end, __pyx_n_s_time_step, __pyx_n_s_h_step, __pyx_n_s_rel_err, __pyx_n_s_abs_err, __pyx_n_s_len_init, __pyx_n_s_init_list, __pyx_n_s_l, __pyx_n_s_t, __pyx_n_s_status, __pyx_n_s_ti, __pyx_n_s_nb_ode, __pyx_n_s_len_params, __pyx_n_s_extra_params, __pyx_n_s_j, __pyx_n_s_nb_time_step, __pyx_n_s_res, __pyx_n_s_i, __pyx_n_s_m_it, __pyx_n_s_sys, __pyx_n_s_d); if (unlikely(!__pyx_tuple__7)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 1927; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_GOTREF(__pyx_tuple__7);
   __Pyx_GIVEREF(__pyx_tuple__7);
-  __pyx_codeobj__8 = (PyObject*)__Pyx_PyCode_New(9, 0, 25, 0, 0, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__7, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_Users_alexandre_Desktop_INRIA_P, __pyx_n_s_main_2, 1930, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__8)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 1930; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_codeobj__8 = (PyObject*)__Pyx_PyCode_New(9, 0, 25, 0, 0, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__7, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_Users_alexandre_Desktop_INRIA_P, __pyx_n_s_main_2, 1927, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__8)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 1927; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_RefNannyFinishContext();
   return 0;
   __pyx_L1_error:;
@@ -14844,16 +14844,16 @@ PyMODINIT_FUNC PyInit_Model_FB_cython(void)
   if (PyDict_SetItem(__pyx_d, __pyx_n_s_np, __pyx_t_2) < 0) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 18; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "Model_FB.pyx":1930
+  /* "Model_FB.pyx":1927
  * # %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% #
  * 
  * def main(init_array, params_array, nb_eq, t_start, t_end, time_step, h_step = 1e-6, rel_err = 1e-7, abs_err = 1e-7): # Function which can be call in python             # <<<<<<<<<<<<<<
  * 
  * # --------------------------------------------------------------------------  #
  */
-  __pyx_t_2 = PyCFunction_NewEx(&__pyx_mdef_15Model_FB_cython_1main, NULL, __pyx_n_s_Model_FB_cython); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 1930; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_t_2 = PyCFunction_NewEx(&__pyx_mdef_15Model_FB_cython_1main, NULL, __pyx_n_s_Model_FB_cython); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 1927; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_GOTREF(__pyx_t_2);
-  if (PyDict_SetItem(__pyx_d, __pyx_n_s_main_2, __pyx_t_2) < 0) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 1930; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  if (PyDict_SetItem(__pyx_d, __pyx_n_s_main_2, __pyx_t_2) < 0) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 1927; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
   /* "Model_FB.pyx":1

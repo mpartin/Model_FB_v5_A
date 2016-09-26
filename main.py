@@ -1187,7 +1187,7 @@ nb_eq = len(init_array) # Number of equations
 
 
 # ----- To steady-states ------ #
-t_end_to_steady_states = 100000.
+t_end_to_steady_states = 50000.
 
 res = MSc.main(init_array, params_array_no_stim, nb_eq, t_start, t_end_to_steady_states, time_step, h_step = 1e-8, rel_err = 1e-8, abs_err = 1e-8)
 y_serie = pd.DataFrame(res[:,1:], columns = init_keys, index = res[:,0])
@@ -1196,11 +1196,17 @@ y_serie = pd.DataFrame(res[:,1:], columns = init_keys, index = res[:,0])
 # ----------- Continue -------------------------- #
 for j in xrange(len(y_serie.columns)):
     init_dict[y_serie.columns[j]] = y_serie.iloc[-1,j]
+
+#init_dict.pop('fpost')
+#init_dict.pop('phos_sum')
+#init_dict.pop('yCB1R')
+
 init_array = init_dict.values()
 
 
-res = MSc.main(init_array, params_array, nb_eq, t_start, t_end, time_step, h_step = 1e-8, rel_err = 1e-8, abs_err = 1e-8)
-y_serie = pd.DataFrame(res[:,1:], columns = init_keys, index = res[:,0])
+
+#res = MSc.main(init_array, params_array, nb_eq, t_start, t_end, time_step, h_step = 1e-8, rel_err = 1e-8, abs_err = 1e-8)
+#y_serie = pd.DataFrame(res[:,1:], columns = init_keys, index = res[:,0])
 
 
 # %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% #
