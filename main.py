@@ -634,7 +634,7 @@ params_dict_ord_stimulation = coll.OrderedDict([
     ("tsdt", 15.), # ms
     ("tpost", 500.), # ms
     ("post_on", 1.), # No unit
-    ("Delta_t_STDP", 80.), # ms
+    ("Delta_t_STDP", 20.), # ms
     ("num_stim", 20), # No unit | Integer
     ("pre_on", 1.), # No unit
     ("Freq", 1.0), # Hz
