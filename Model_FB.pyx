@@ -1783,7 +1783,8 @@ cdef int func (double t,  double y[], double f[], void *params) nogil:
     f[GsD1R] = 0.
     f[GsaGTP] = 0.
     f[Gbg] = 0.
-    f[PKAc] = 0.
+
+    f[PKAc] = forwardRate_PKAcAMP4_diss*y[PKAcAMP4] -reverseRate_PKAcAMP4_diss*y[PKAr]*y[PKAc]**2 -forwardRate_D32_plus_PKAc__D32PKAc_reac*y[D32]*y[PKAc] +reverseRate_D32_plus_PKAc__D32PKAc_reac*y[D32PKAc] +forwardRate_D32PKAc__PKAc_plus_D32p34_reac*y[D32PKAc] -forwardRate_D32p75_plus_PKAc__D32p75PKAc_reac*y[D32p75]*y[PKAc] +reverseRate_D32p75_plus_PKAc__D32p75PKAc_reac*y[D32p75PKAc]
     f[PKAcDaD1RGs] = 0.
     f[pDaD1RGs] = 0.
     f[GluGbuf] = 0.
@@ -1815,7 +1816,7 @@ cdef int func (double t,  double y[], double f[], void *params) nogil:
     f[AC5Gsa] = 0.
     f[ATP] = 0.
     f[AC5GsaATP] = 0.
-    f[cAMP] = 0.
+    f[cAMP] = -forwardRate_PKA_bind*y[PKA]*y[cAMP]**2 +reverseRate_PKA_bind*y[PKAcAMP2] -forwardRate_PKAcAMP2_bind*y[PKAcAMP2]*y[cAMP]**2 +reverseRate_PKAcAMP2_bind*y[PKAcAMP4]
     f[AC5Gia] = 0.
     f[AC5GsaGia] = 0.
     f[AC5GsaGiaATP] = 0.
@@ -1864,23 +1865,28 @@ cdef int func (double t,  double y[], double f[], void *params) nogil:
     f[Pkc] = 0.
     f[PkcCa] = 0.
     f[PkcCaDag] = 0.
-    f[PKA] = 0.
-    f[PKAcAMP2] = 0.
-    f[PKAcAMP4] = 0.
-    f[PKAr] = 0.
+
+    f[PKA] = -forwardRate_PKA_bind*y[PKA]*y[cAMP]**2 +reverseRate_PKA_bind*y[PKAcAMP2]
+    f[PKAcAMP2] = forwardRate_PKA_bind*y[PKA]*y[cAMP]**2 -reverseRate_PKA_bind*y[PKAcAMP2] -forwardRate_PKAcAMP2_bind*y[PKAcAMP2]*y[cAMP]**2 +reverseRate_PKAcAMP2_bind*y[PKAcAMP4]
+    f[PKAcAMP4] = forwardRate_PKAcAMP2_bind*y[PKAcAMP2]*y[cAMP]**2 -reverseRate_PKAcAMP2_bind*y[PKAcAMP4] -forwardRate_PKAcAMP4_diss*y[PKAcAMP4] +reverseRate_PKAcAMP4_diss*y[PKAr]*y[PKAc]**2
+    f[PKAr] = forwardRate_PKAcAMP4_diss*y[PKAcAMP4] -reverseRate_PKAcAMP4_diss*y[PKAr]*y[PKAc]**2
+
     f[Cam] = -forwardRate_CamC_bind*y[Cam]*y[Ca_cyt]**2 +reverseRate_CamC_bind*y[CamCa2C] -forwardRate_CamN_bind*y[Cam]*y[Ca_cyt]**2 +reverseRate_CamN_bind*y[CamCa2N] -forwardRate_Cam_plus_PP2B__PP2BCam_reac*y[Cam]*y[PP2B] +reverseRate_Cam_plus_PP2B__PP2BCam_reac*y[PP2BCam]
     f[PP2B] = -forwardRate_CamCa4_plus_PP2B__PP2BCamCa4_reac*y[CamCa4]*y[PP2B] +reverseRate_CamCa4_plus_PP2B__PP2BCamCa4_reac*y[PP2BCamCa4]
     f[PP2BCam] = forwardRate_Cam_plus_PP2B__PP2BCam_reac*y[Cam]*y[PP2B] -reverseRate_Cam_plus_PP2B__PP2BCam_reac*y[PP2BCam] -forwardRate_PP2BCam_plus_Ca2__PP2BCamCa2C_reac*y[PP2BCam]*y[Ca_cyt]**2 +reverseRate_PP2BCam_plus_Ca2__PP2BCamCa2C_reac*y[PP2BCamCa2C] -forwardRate_PP2BCam_plus_Ca2__PP2BCamCa2N_reac*y[PP2BCam]*y[Ca_cyt]**2 +reverseRate_PP2BCam_plus_Ca2__PP2BCamCa2N_reac*y[PP2BCamCa2N]
     f[CamCa2C] = forwardRate_CamC_bind*y[Cam]*y[Ca_cyt]**2 -reverseRate_CamC_bind*y[CamCa2C] -forwardRate_CamCa2C_bind*y[CamCa2C]*y[Ca_cyt]**2 +reverseRate_CamCa2C_bind*y[CamCa4] -forwardRate_CamCa2C_plus_PP2B__PP2BCamCa2C_reac*y[CamCa2C]*y[PP2B] +reverseRate_CamCa2C_plus_PP2B__PP2BCamCa2C_reac*y[PP2BCamCa2C]
+
     f[PP2BCamCa2C] = forwardRate_CamCa2C_plus_PP2B__PP2BCamCa2C_reac*y[CamCa2C]*y[PP2B] -reverseRate_CamCa2C_plus_PP2B__PP2BCamCa2C_reac*y[PP2BCamCa2C] +forwardRate_PP2BCam_plus_Ca2__PP2BCamCa2C_reac*y[PP2BCam]*y[Ca_cyt]**2 -reverseRate_PP2BCam_plus_Ca2__PP2BCamCa2C_reac*y[PP2BCamCa2C] -forwardRate_PP2BCamCa2C_plus_Ca2__PP2BCamCa4_reac*y[PP2BCamCa2C]*y[Ca_cyt]**2 +reverseRate_PP2BCamCa2C_plus_Ca2__PP2BCamCa4_reac*y[PP2BCamCa4]
     f[PP2BCamCa2N] = forwardRate_CamCa2N_plus_PP2B__PP2BCamCa2N_reac*y[CamCa2N]*y[PP2B] -reverseRate_CamCa2N_plus_PP2B__PP2BCamCa2N_reac*y[PP2BCamCa2N] +forwardRate_PP2BCam_plus_Ca2__PP2BCamCa2N_reac*y[PP2BCam]*y[Ca_cyt]**2 -reverseRate_PP2BCam_plus_Ca2__PP2BCamCa2N_reac*y[PP2BCamCa2N] -forwardRate_PP2BCamCa2N_plus_Ca2__PP2BCamCa4_reac*y[PP2BCamCa2N]*y[Ca_cyt]**2 +reverseRate_PP2BCamCa2N_plus_Ca2__PP2BCamCa4_reac*y[PP2BCamCa4]
     f[PP2BCamCa4] = forwardRate_CamCa4_plus_PP2B__PP2BCamCa4_reac*y[CamCa4]*y[PP2B] -reverseRate_CamCa4_plus_PP2B__PP2BCamCa4_reac*y[PP2BCamCa4] +forwardRate_PP2BCamCa2C_plus_Ca2__PP2BCamCa4_reac*y[PP2BCamCa2C]*y[Ca_cyt]**2 -reverseRate_PP2BCamCa2C_plus_Ca2__PP2BCamCa4_reac*y[PP2BCamCa4] +forwardRate_PP2BCamCa2N_plus_Ca2__PP2BCamCa4_reac*y[PP2BCamCa2N]*y[Ca_cyt]**2 -reverseRate_PP2BCamCa2N_plus_Ca2__PP2BCamCa4_reac*y[PP2BCamCa4] -forwardRate_D32p34_plus_PP2BCamCa4__D32p34PP2BCamCa4_reac*y[D32p34]*y[PP2BCamCa4] +reverseRate_D32p34_plus_PP2BCamCa4__D32p34PP2BCamCa4_reac*y[D32p34PP2BCamCa4] +forwardRate_D32p34PP2BCamCa4__PP2BCamCa4_plus_D32_reac*y[D32p34PP2BCamCa4] -forwardRate_D32p34PP1_plus_PP2BCamCa4__D32p34PP1PP2BCamCa4_reac*y[D32p34PP1]*y[PP2BCamCa4] +reverseRate_D32p34PP1_plus_PP2BCamCa4__D32p34PP1PP2BCamCa4_reac*y[D32p34PP1PP2BCamCa4] +forwardRate_D32p34PP1PP2BCamCa4__PP1_plus_PP2BCamCa4_plus_D32_reac*y[D32p34PP1PP2BCamCa4]
+
     f[PKAcPP2AB56d] = 0.
     f[pPP2A] = 0.
     f[PP2ABPR72] = 0.
     f[PP2Acal] = 0.
-    f[D32] = forwardRate_D32p34PP2BCamCa4__PP2BCamCa4_plus_D32_reac*y[D32p34PP2BCamCa4] +forwardRate_D32p34PP1PP2BCamCa4__PP1_plus_PP2BCamCa4_plus_D32_reac*y[D32p34PP1PP2BCamCa4]
-    f[D32PKAc] = 0.
+
+    f[D32] = forwardRate_D32p34PP2BCamCa4__PP2BCamCa4_plus_D32_reac*y[D32p34PP2BCamCa4] +forwardRate_D32p34PP1PP2BCamCa4__PP1_plus_PP2BCamCa4_plus_D32_reac*y[D32p34PP1PP2BCamCa4] -forwardRate_D32_plus_PKAc__D32PKAc_reac*y[D32]*y[PKAc] +reverseRate_D32_plus_PKAc__D32PKAc_reac*y[D32PKAc]
+    f[D32PKAc] = forwardRate_D32_plus_PKAc__D32PKAc_reac*y[D32]*y[PKAc] -reverseRate_D32_plus_PKAc__D32PKAc_reac*y[D32PKAc] -forwardRate_D32PKAc__PKAc_plus_D32p34_reac*y[D32PKAc]
     f[D32p34] = -forwardRate_D32p34_plus_PP1__D32p34pp1_reac*y[D32p34]*y[PP1] +reverseRate_D32p34_plus_PP1__D32p34pp1_reac*y[D32p34PP1] -forwardRate_D32p34_plus_PP2BCamCa4__D32p34PP2BCamCa4_reac*y[D32p34]*y[PP2BCamCa4] +reverseRate_D32p34_plus_PP2BCamCa4__D32p34PP2BCamCa4_reac*y[D32p34PP2BCamCa4]
     f[D32p34PP1] = forwardRate_D32p34_plus_PP1__D32p34pp1_reac*y[D32p34]*y[PP1] -reverseRate_D32p34_plus_PP1__D32p34pp1_reac*y[D32p34PP1] -forwardRate_D32p34PP1_plus_PP2BCamCa4__D32p34PP1PP2BCamCa4_reac*y[D32p34PP1]*y[PP2BCamCa4] +reverseRate_D32p34PP1_plus_PP2BCamCa4__D32p34PP1PP2BCamCa4_reac*y[D32p34PP1PP2BCamCa4]
     f[D32p34PP2BCamCa4] = forwardRate_D32p34_plus_PP2BCamCa4__D32p34PP2BCamCa4_reac*y[D32p34]*y[PP2BCamCa4] -reverseRate_D32p34_plus_PP2BCamCa4__D32p34PP2BCamCa4_reac*y[D32p34PP2BCamCa4]
@@ -1889,15 +1895,18 @@ cdef int func (double t,  double y[], double f[], void *params) nogil:
     f[D32p34PP2AB56d] = 0.
     f[D32p34PP1PP2ABPR72] = 0.
     f[D32p34PP1PP2AB56d] = 0.
+
     f[PP2AB56d] = 0.
     f[Cdk5] = 0.
     f[Cdk5D32] = 0.
-    f[D32p75] = 0.
-    f[D32p75PKAc] = 0.
+
+    f[D32p75] = -forwardRate_D32p75_plus_PKAc__D32p75PKAc_reac*y[D32p75]*y[PKAc] +reverseRate_D32p75_plus_PKAc__D32p75PKAc_reac*y[D32p75PKAc]
+    f[D32p75PKAc] = forwardRate_D32p75_plus_PKAc__D32p75PKAc_reac*y[D32p75]*y[PKAc] -reverseRate_D32p75_plus_PKAc__D32p75PKAc_reac*y[D32p75PKAc]
     f[D32p75pPP2A] = 0.
     f[D32p75PP2ABPR72] = 0.
     f[D32p75PP2AB56d] = 0.
     f[D32p75PP2Acal] = 0.
+
     f[CK] = 0.
     f[CKCamCa4] = 0.
     f[CKpCamCa4] = 0.
