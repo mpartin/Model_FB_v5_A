@@ -1498,8 +1498,8 @@ cdef int func (double t,  double y[], double f[], void *params) nogil:
             ctrl2 = kCB1R *y[o_CB1R] +gamma2DA *DA # No unit
 
         else:
-            ctrl1 = alphatwoAGCB1*y[twoAG] +betaAEACB1*alphaAEACB1*y[AEA] +gamma1DA *DA # No unit
-            ctrl2 = alphatwoAGCB1*y[twoAG] +betaAEACB1*alphaAEACB1*y[AEA] +gamma2DA *DA # No unit
+            ctrl1 = alphatwoAGCB1*y[two_ag] +betaAEACB1*alphaAEACB1*y[AEA] +gamma1DA *DA # No unit
+            ctrl2 = alphatwoAGCB1*y[two_ag] +betaAEACB1*alphaAEACB1*y[AEA] +gamma2DA *DA # No unit
 
     # ---------------- LTPwin_tab ------------------------------- #
     cdef gsl_vector * LTPwin_tab = gsl_vector_alloc(int(n_x_LTPwin))
@@ -1714,13 +1714,13 @@ cdef int func (double t,  double y[], double f[], void *params) nogil:
 
     # IP3, DAG, ECb
     f[IP3] = vip3prod -v3k -r5p_IP3 *y[IP3]
-    f[DAG] = vip3prod -rDGL *y[DAGLP]*y[DAG]/(y[DAG]+KDGL) -kDAGK*y[DAG]
+    f[DAG] = 0.#vip3prod -rDGL *y[DAGLP]*y[DAG]/(y[DAG]+KDGL) -kDAGK*y[DAG]
 
-    f[DAGLP] = rK_DAGLP*(alpha_DAGLP_Ca_cyt *y[Ca_cyt])**nK_DAGLP*(1 -y[DAGLP]) -rP_DAGLP*y[DAGLP]
+    f[DAGLP] = 0.#rK_DAGLP*(alpha_DAGLP_Ca_cyt *y[Ca_cyt])**nK_DAGLP*(1 -y[DAGLP]) -rP_DAGLP*y[DAGLP]
 
     if on_ECb:
 
-        f[twoAG] = rDGL * y[DAGLP] * y[DAG] / (y[DAG] + KDGL) - kMAGL * y[twoAG]
+        f[twoAG] = 0.#rDGL * y[DAGLP] * y[DAG] / (y[DAG] + KDGL) - kMAGL * y[twoAG]
         f[AEA] = vATAEA * y[Ca_cyt] - vFAAH * y[AEA] / (KFAAH + y[AEA])
         f[fpre] = (omega-y[fpre]) /taufpre
     else:
@@ -1850,14 +1850,14 @@ cdef int func (double t,  double y[], double f[], void *params) nogil:
     f[Ip3] = 0.
     f[Dag] = -forwardRate_Dag_plus_CaDlg__DagCaDgl*y[Dag]*y[CaDgl] +reverseRate_Dag_plus_CaDlg__DagCaDgl*y[DagCaDgl] -forwardRate_Dag_plus_CapDlg__DagCapDgl*y[Dag]*y[CapDgl] +reverseRate_Dag_plus_CapDlg__DagCapDgl*y[DagCapDgl]
     f[PlcCaGqaPip2] = 0.
-    f[Dgl] = -forwardRate_Ca_plus_Dlg__CaDgl*y[Ca]*y[Dgl] +reverseRate_Ca_plus_Dlg__CaDgl*y[CaDgl] +forwardRate_pDgl_dephos*y[pDgl]
+    f[Dgl] = -forwardRate_Ca_plus_Dlg__CaDgl*y[Ca_cyt]*y[Dgl] +reverseRate_Ca_plus_Dlg__CaDgl*y[CaDgl] +forwardRate_pDgl_dephos*y[pDgl]
     f[CaDgl] = 0.
-    f[DagCaDgl] = 0.
-    f[two_ag] = 0.
-    f[Ip3degrad] = 0.
+    f[DagCaDgl] = forwardRate_Dag_plus_CaDlg__DagCaDgl*y[Dag]*y[CaDgl] -reverseRate_Dag_plus_CaDlg__DagCaDgl*y[DagCaDgl] -forwardRate_DagCaDgl__CaDgl_plus_2ag*y[DagCaDgl]
+    f[two_ag] = forwardRate_DagCaDgl__CaDgl_plus_2ag*y[DagCaDgl] -forwardRate_2ag__2agDegrad*y[two_ag] +forwardRate_DagCapDgl__CapDgl_plus_2ag*y[DagCapDgl]
     f[PIkinase] = 0.
     f[Ip3degPIk] = 0.
-    f[two_agDegrad] = 0.
+    f[two_agDegrad] = forwardRate_2ag__2agDegrad*y[two_ag]
+    f[Ip3degrad] = 0.
     f[DagK] = 0.
     f[DagKdag] = 0.
     f[PA] = 0.
@@ -1905,10 +1905,10 @@ cdef int func (double t,  double y[], double f[], void *params) nogil:
     f[CKpPP1] = 0.
     f[CKpCamCa4PP1] = 0.
     f[Dgl_CKCamCa4] = 0.
-    f[pDgl] = -forwardRate_pDgl_dephos*y[pDgl] -forwardRate_Ca_plus_pDlg__CapDgl*y[Ca]*y[pDgl] +reverseRate_Ca_plus_pDlg__CapDgl*y[CapDgl]
+    f[pDgl] = -forwardRate_pDgl_dephos*y[pDgl] -forwardRate_Ca_plus_pDlg__CapDgl*y[Ca_cyt]*y[pDgl] +reverseRate_Ca_plus_pDlg__CapDgl*y[CapDgl]
     f[Dgl_CKpCamCa4] = 0.
     f[CaDgl_CKpCamCa4] = 0.
-    f[CapDgl] = forwardRate_Ca_plus_pDlg__CapDgl*y[Ca]*y[pDgl] -reverseRate_Ca_plus_pDlg__CapDgl*y[CapDgl] -forwardRate_Dag_plus_CapDlg__DagCapDgl*y[Dag]*y[CapDgl] +reverseRate_Dag_plus_CapDlg__DagCapDgl*y[DagCapDgl] +forwardRate_DagCapDgl__CapDgl_plus_2ag*y[DagCapDgl]
+    f[CapDgl] = forwardRate_Ca_plus_pDlg__CapDgl*y[Ca_cyt]*y[pDgl] -reverseRate_Ca_plus_pDlg__CapDgl*y[CapDgl] -forwardRate_Dag_plus_CapDlg__DagCapDgl*y[Dag]*y[CapDgl] +reverseRate_Dag_plus_CapDlg__DagCapDgl*y[DagCapDgl] +forwardRate_DagCapDgl__CapDgl_plus_2ag*y[DagCapDgl]
     f[Dgl_CKp] = 0.
     f[DagCapDgl] = forwardRate_Dag_plus_CapDlg__DagCapDgl*y[Dag]*y[CapDgl] -reverseRate_Dag_plus_CapDlg__DagCapDgl*y[DagCapDgl] -forwardRate_DagCapDgl__CapDgl_plus_2ag*y[DagCapDgl]
     f[AKAR3] = 0.

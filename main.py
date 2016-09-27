@@ -1211,8 +1211,8 @@ init_array = init_dict.values()
 
 
 
-#res = MSc.main(init_array, params_array, nb_eq, t_start, t_end, time_step, h_step = 1e-8, rel_err = 1e-8, abs_err = 1e-8)
-#y_serie = pd.DataFrame(res[:,1:], columns = init_keys, index = res[:,0])
+res = MSc.main(init_array, params_array, nb_eq, t_start, t_end, time_step, h_step = 1e-8, rel_err = 1e-8, abs_err = 1e-8)
+y_serie = pd.DataFrame(res[:,1:], columns = init_keys, index = res[:,0])
 
 
 # %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% #

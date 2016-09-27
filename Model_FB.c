@@ -2222,13 +2222,13 @@ static int __pyx_f_15Model_FB_cython_func(double __pyx_v_t, double *__pyx_v_y, d
   double __pyx_v_vbeta_IP3;
   double __pyx_v_kpi_IP3;
   double __pyx_v_n3_IP3;
-  double __pyx_v_KDGL;
-  double __pyx_v_kMAGL;
-  double __pyx_v_rDGL;
-  double __pyx_v_kDAGK;
-  double __pyx_v_nK_DAGLP;
-  double __pyx_v_rP_DAGLP;
-  double __pyx_v_rK_DAGLP;
+  CYTHON_UNUSED double __pyx_v_KDGL;
+  CYTHON_UNUSED double __pyx_v_kMAGL;
+  CYTHON_UNUSED double __pyx_v_rDGL;
+  CYTHON_UNUSED double __pyx_v_kDAGK;
+  CYTHON_UNUSED double __pyx_v_nK_DAGLP;
+  CYTHON_UNUSED double __pyx_v_rP_DAGLP;
+  CYTHON_UNUSED double __pyx_v_rK_DAGLP;
   double __pyx_v_on_ECb;
   double __pyx_v_ECb_CB1R_on;
   double __pyx_v_kCB1R;
@@ -2333,7 +2333,7 @@ static int __pyx_f_15Model_FB_cython_func(double __pyx_v_t, double *__pyx_v_y, d
   CYTHON_UNUSED double __pyx_v_tables_step;
   double __pyx_v_betaAEACB1;
   double __pyx_v_alphatwoAGCB1;
-  double __pyx_v_alpha_DAGLP_Ca_cyt;
+  CYTHON_UNUSED double __pyx_v_alpha_DAGLP_Ca_cyt;
   double __pyx_v_input_ampl_DA;
   double __pyx_v_t_stim_on_DA;
   double __pyx_v_t_stim_off_DA;
@@ -2531,7 +2531,7 @@ static int __pyx_f_15Model_FB_cython_func(double __pyx_v_t, double *__pyx_v_y, d
   double __pyx_v_reverseRate_Ca_plus_Dlg__CaDgl;
   double __pyx_v_forwardRate_Dag_plus_CaDlg__DagCaDgl;
   double __pyx_v_reverseRate_Dag_plus_CaDlg__DagCaDgl;
-  CYTHON_UNUSED double __pyx_v_forwardRate_DagCaDgl__CaDgl_plus_2ag;
+  double __pyx_v_forwardRate_DagCaDgl__CaDgl_plus_2ag;
   CYTHON_UNUSED double __pyx_v_reverseRate_DagCaDgl__CaDgl_plus_2ag;
   CYTHON_UNUSED double __pyx_v_forwardRate_Ip3__Ip3degrad;
   CYTHON_UNUSED double __pyx_v_reverseRate_Ip3__Ip3degrad;
@@ -2539,7 +2539,7 @@ static int __pyx_f_15Model_FB_cython_func(double __pyx_v_t, double *__pyx_v_y, d
   CYTHON_UNUSED double __pyx_v_reverseRate_Ip3degrad_plus_PIkinase__Ip3degPIk;
   CYTHON_UNUSED double __pyx_v_forwardRate_Ip3degPIk__PIP2__plus__PIkinase;
   CYTHON_UNUSED double __pyx_v_reverseRate_Ip3degPIk__PIP2__plus__PIkinase;
-  CYTHON_UNUSED double __pyx_v_forwardRate_2ag__2agDegrad;
+  double __pyx_v_forwardRate_2ag__2agDegrad;
   CYTHON_UNUSED double __pyx_v_reverseRate_2ag__2agDegrad;
   CYTHON_UNUSED double __pyx_v_forwardRate_DagKdag1;
   CYTHON_UNUSED double __pyx_v_reverseRate_DagKdag1;
@@ -8333,21 +8333,21 @@ static int __pyx_f_15Model_FB_cython_func(double __pyx_v_t, double *__pyx_v_y, d
     /* "Model_FB.pyx":1501
  * 
  *         else:
- *             ctrl1 = alphatwoAGCB1*y[twoAG] +betaAEACB1*alphaAEACB1*y[AEA] +gamma1DA *DA # No unit             # <<<<<<<<<<<<<<
- *             ctrl2 = alphatwoAGCB1*y[twoAG] +betaAEACB1*alphaAEACB1*y[AEA] +gamma2DA *DA # No unit
+ *             ctrl1 = alphatwoAGCB1*y[two_ag] +betaAEACB1*alphaAEACB1*y[AEA] +gamma1DA *DA # No unit             # <<<<<<<<<<<<<<
+ *             ctrl2 = alphatwoAGCB1*y[two_ag] +betaAEACB1*alphaAEACB1*y[AEA] +gamma2DA *DA # No unit
  * 
  */
     /*else*/ {
-      __pyx_v_ctrl1 = (((__pyx_v_alphatwoAGCB1 * (__pyx_v_y[_ind_twoAG])) + ((__pyx_v_betaAEACB1 * __pyx_v_alphaAEACB1) * (__pyx_v_y[_ind_AEA]))) + (__pyx_v_gamma1DA * __pyx_v_DA));
+      __pyx_v_ctrl1 = (((__pyx_v_alphatwoAGCB1 * (__pyx_v_y[_ind_two_ag])) + ((__pyx_v_betaAEACB1 * __pyx_v_alphaAEACB1) * (__pyx_v_y[_ind_AEA]))) + (__pyx_v_gamma1DA * __pyx_v_DA));
 
       /* "Model_FB.pyx":1502
  *         else:
- *             ctrl1 = alphatwoAGCB1*y[twoAG] +betaAEACB1*alphaAEACB1*y[AEA] +gamma1DA *DA # No unit
- *             ctrl2 = alphatwoAGCB1*y[twoAG] +betaAEACB1*alphaAEACB1*y[AEA] +gamma2DA *DA # No unit             # <<<<<<<<<<<<<<
+ *             ctrl1 = alphatwoAGCB1*y[two_ag] +betaAEACB1*alphaAEACB1*y[AEA] +gamma1DA *DA # No unit
+ *             ctrl2 = alphatwoAGCB1*y[two_ag] +betaAEACB1*alphaAEACB1*y[AEA] +gamma2DA *DA # No unit             # <<<<<<<<<<<<<<
  * 
  *     # ---------------- LTPwin_tab ------------------------------- #
  */
-      __pyx_v_ctrl2 = (((__pyx_v_alphatwoAGCB1 * (__pyx_v_y[_ind_twoAG])) + ((__pyx_v_betaAEACB1 * __pyx_v_alphaAEACB1) * (__pyx_v_y[_ind_AEA]))) + (__pyx_v_gamma2DA * __pyx_v_DA));
+      __pyx_v_ctrl2 = (((__pyx_v_alphatwoAGCB1 * (__pyx_v_y[_ind_two_ag])) + ((__pyx_v_betaAEACB1 * __pyx_v_alphaAEACB1) * (__pyx_v_y[_ind_AEA]))) + (__pyx_v_gamma2DA * __pyx_v_DA));
     }
     __pyx_L18:;
 
@@ -9822,7 +9822,7 @@ static int __pyx_f_15Model_FB_cython_func(double __pyx_v_t, double *__pyx_v_y, d
  * 
  *     # IP3, DAG, ECb
  *     f[IP3] = vip3prod -v3k -r5p_IP3 *y[IP3]             # <<<<<<<<<<<<<<
- *     f[DAG] = vip3prod -rDGL *y[DAGLP]*y[DAG]/(y[DAG]+KDGL) -kDAGK*y[DAG]
+ *     f[DAG] = 0.#vip3prod -rDGL *y[DAGLP]*y[DAG]/(y[DAG]+KDGL) -kDAGK*y[DAG]
  * 
  */
   (__pyx_v_f[_ind_IP3]) = ((__pyx_v_vip3prod - __pyx_v_v3k) - (__pyx_v_r5p_IP3 * (__pyx_v_y[_ind_IP3])));
@@ -9830,39 +9830,27 @@ static int __pyx_f_15Model_FB_cython_func(double __pyx_v_t, double *__pyx_v_y, d
   /* "Model_FB.pyx":1717
  *     # IP3, DAG, ECb
  *     f[IP3] = vip3prod -v3k -r5p_IP3 *y[IP3]
- *     f[DAG] = vip3prod -rDGL *y[DAGLP]*y[DAG]/(y[DAG]+KDGL) -kDAGK*y[DAG]             # <<<<<<<<<<<<<<
+ *     f[DAG] = 0.#vip3prod -rDGL *y[DAGLP]*y[DAG]/(y[DAG]+KDGL) -kDAGK*y[DAG]             # <<<<<<<<<<<<<<
  * 
- *     f[DAGLP] = rK_DAGLP*(alpha_DAGLP_Ca_cyt *y[Ca_cyt])**nK_DAGLP*(1 -y[DAGLP]) -rP_DAGLP*y[DAGLP]
+ *     f[DAGLP] = 0.#rK_DAGLP*(alpha_DAGLP_Ca_cyt *y[Ca_cyt])**nK_DAGLP*(1 -y[DAGLP]) -rP_DAGLP*y[DAGLP]
  */
-  __pyx_t_3 = ((__pyx_v_rDGL * (__pyx_v_y[_ind_DAGLP])) * (__pyx_v_y[_ind_DAG]));
-  __pyx_t_4 = ((__pyx_v_y[_ind_DAG]) + __pyx_v_KDGL);
-  if (unlikely(__pyx_t_4 == 0)) {
-    #ifdef WITH_THREAD
-    PyGILState_STATE __pyx_gilstate_save = PyGILState_Ensure();
-    #endif
-    PyErr_SetString(PyExc_ZeroDivisionError, "float division");
-    #ifdef WITH_THREAD
-    PyGILState_Release(__pyx_gilstate_save);
-    #endif
-    {__pyx_filename = __pyx_f[0]; __pyx_lineno = 1717; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
-  }
-  (__pyx_v_f[_ind_DAG]) = ((__pyx_v_vip3prod - (__pyx_t_3 / __pyx_t_4)) - (__pyx_v_kDAGK * (__pyx_v_y[_ind_DAG])));
+  (__pyx_v_f[_ind_DAG]) = 0.;
 
   /* "Model_FB.pyx":1719
- *     f[DAG] = vip3prod -rDGL *y[DAGLP]*y[DAG]/(y[DAG]+KDGL) -kDAGK*y[DAG]
+ *     f[DAG] = 0.#vip3prod -rDGL *y[DAGLP]*y[DAG]/(y[DAG]+KDGL) -kDAGK*y[DAG]
  * 
- *     f[DAGLP] = rK_DAGLP*(alpha_DAGLP_Ca_cyt *y[Ca_cyt])**nK_DAGLP*(1 -y[DAGLP]) -rP_DAGLP*y[DAGLP]             # <<<<<<<<<<<<<<
+ *     f[DAGLP] = 0.#rK_DAGLP*(alpha_DAGLP_Ca_cyt *y[Ca_cyt])**nK_DAGLP*(1 -y[DAGLP]) -rP_DAGLP*y[DAGLP]             # <<<<<<<<<<<<<<
  * 
  *     if on_ECb:
  */
-  (__pyx_v_f[_ind_DAGLP]) = (((__pyx_v_rK_DAGLP * pow((__pyx_v_alpha_DAGLP_Ca_cyt * (__pyx_v_y[_ind_Ca_cyt])), __pyx_v_nK_DAGLP)) * (1.0 - (__pyx_v_y[_ind_DAGLP]))) - (__pyx_v_rP_DAGLP * (__pyx_v_y[_ind_DAGLP])));
+  (__pyx_v_f[_ind_DAGLP]) = 0.;
 
   /* "Model_FB.pyx":1721
- *     f[DAGLP] = rK_DAGLP*(alpha_DAGLP_Ca_cyt *y[Ca_cyt])**nK_DAGLP*(1 -y[DAGLP]) -rP_DAGLP*y[DAGLP]
+ *     f[DAGLP] = 0.#rK_DAGLP*(alpha_DAGLP_Ca_cyt *y[Ca_cyt])**nK_DAGLP*(1 -y[DAGLP]) -rP_DAGLP*y[DAGLP]
  * 
  *     if on_ECb:             # <<<<<<<<<<<<<<
  * 
- *         f[twoAG] = rDGL * y[DAGLP] * y[DAG] / (y[DAG] + KDGL) - kMAGL * y[twoAG]
+ *         f[twoAG] = 0.#rDGL * y[DAGLP] * y[DAG] / (y[DAG] + KDGL) - kMAGL * y[twoAG]
  */
   __pyx_t_1 = (__pyx_v_on_ECb != 0);
   if (__pyx_t_1) {
@@ -9870,27 +9858,15 @@ static int __pyx_f_15Model_FB_cython_func(double __pyx_v_t, double *__pyx_v_y, d
     /* "Model_FB.pyx":1723
  *     if on_ECb:
  * 
- *         f[twoAG] = rDGL * y[DAGLP] * y[DAG] / (y[DAG] + KDGL) - kMAGL * y[twoAG]             # <<<<<<<<<<<<<<
+ *         f[twoAG] = 0.#rDGL * y[DAGLP] * y[DAG] / (y[DAG] + KDGL) - kMAGL * y[twoAG]             # <<<<<<<<<<<<<<
  *         f[AEA] = vATAEA * y[Ca_cyt] - vFAAH * y[AEA] / (KFAAH + y[AEA])
  *         f[fpre] = (omega-y[fpre]) /taufpre
  */
-    __pyx_t_4 = ((__pyx_v_rDGL * (__pyx_v_y[_ind_DAGLP])) * (__pyx_v_y[_ind_DAG]));
-    __pyx_t_3 = ((__pyx_v_y[_ind_DAG]) + __pyx_v_KDGL);
-    if (unlikely(__pyx_t_3 == 0)) {
-      #ifdef WITH_THREAD
-      PyGILState_STATE __pyx_gilstate_save = PyGILState_Ensure();
-      #endif
-      PyErr_SetString(PyExc_ZeroDivisionError, "float division");
-      #ifdef WITH_THREAD
-      PyGILState_Release(__pyx_gilstate_save);
-      #endif
-      {__pyx_filename = __pyx_f[0]; __pyx_lineno = 1723; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
-    }
-    (__pyx_v_f[_ind_twoAG]) = ((__pyx_t_4 / __pyx_t_3) - (__pyx_v_kMAGL * (__pyx_v_y[_ind_twoAG])));
+    (__pyx_v_f[_ind_twoAG]) = 0.;
 
     /* "Model_FB.pyx":1724
  * 
- *         f[twoAG] = rDGL * y[DAGLP] * y[DAG] / (y[DAG] + KDGL) - kMAGL * y[twoAG]
+ *         f[twoAG] = 0.#rDGL * y[DAGLP] * y[DAG] / (y[DAG] + KDGL) - kMAGL * y[twoAG]
  *         f[AEA] = vATAEA * y[Ca_cyt] - vFAAH * y[AEA] / (KFAAH + y[AEA])             # <<<<<<<<<<<<<<
  *         f[fpre] = (omega-y[fpre]) /taufpre
  *     else:
@@ -9910,7 +9886,7 @@ static int __pyx_f_15Model_FB_cython_func(double __pyx_v_t, double *__pyx_v_y, d
     (__pyx_v_f[_ind_AEA]) = ((__pyx_v_vATAEA * (__pyx_v_y[_ind_Ca_cyt])) - (__pyx_t_3 / __pyx_t_4));
 
     /* "Model_FB.pyx":1725
- *         f[twoAG] = rDGL * y[DAGLP] * y[DAG] / (y[DAG] + KDGL) - kMAGL * y[twoAG]
+ *         f[twoAG] = 0.#rDGL * y[DAGLP] * y[DAG] / (y[DAG] + KDGL) - kMAGL * y[twoAG]
  *         f[AEA] = vATAEA * y[Ca_cyt] - vFAAH * y[AEA] / (KFAAH + y[AEA])
  *         f[fpre] = (omega-y[fpre]) /taufpre             # <<<<<<<<<<<<<<
  *     else:
@@ -9930,11 +9906,11 @@ static int __pyx_f_15Model_FB_cython_func(double __pyx_v_t, double *__pyx_v_y, d
     (__pyx_v_f[_ind_fpre]) = (__pyx_t_4 / __pyx_v_taufpre);
 
     /* "Model_FB.pyx":1721
- *     f[DAGLP] = rK_DAGLP*(alpha_DAGLP_Ca_cyt *y[Ca_cyt])**nK_DAGLP*(1 -y[DAGLP]) -rP_DAGLP*y[DAGLP]
+ *     f[DAGLP] = 0.#rK_DAGLP*(alpha_DAGLP_Ca_cyt *y[Ca_cyt])**nK_DAGLP*(1 -y[DAGLP]) -rP_DAGLP*y[DAGLP]
  * 
  *     if on_ECb:             # <<<<<<<<<<<<<<
  * 
- *         f[twoAG] = rDGL * y[DAGLP] * y[DAG] / (y[DAG] + KDGL) - kMAGL * y[twoAG]
+ *         f[twoAG] = 0.#rDGL * y[DAGLP] * y[DAG] / (y[DAG] + KDGL) - kMAGL * y[twoAG]
  */
     goto __pyx_L36;
   }
@@ -10979,7 +10955,7 @@ static int __pyx_f_15Model_FB_cython_func(double __pyx_v_t, double *__pyx_v_y, d
  *     f[Ip3] = 0.
  *     f[Dag] = -forwardRate_Dag_plus_CaDlg__DagCaDgl*y[Dag]*y[CaDgl] +reverseRate_Dag_plus_CaDlg__DagCaDgl*y[DagCaDgl] -forwardRate_Dag_plus_CapDlg__DagCapDgl*y[Dag]*y[CapDgl] +reverseRate_Dag_plus_CapDlg__DagCapDgl*y[DagCapDgl]             # <<<<<<<<<<<<<<
  *     f[PlcCaGqaPip2] = 0.
- *     f[Dgl] = -forwardRate_Ca_plus_Dlg__CaDgl*y[Ca]*y[Dgl] +reverseRate_Ca_plus_Dlg__CaDgl*y[CaDgl] +forwardRate_pDgl_dephos*y[pDgl]
+ *     f[Dgl] = -forwardRate_Ca_plus_Dlg__CaDgl*y[Ca_cyt]*y[Dgl] +reverseRate_Ca_plus_Dlg__CaDgl*y[CaDgl] +forwardRate_pDgl_dephos*y[pDgl]
  */
   (__pyx_v_f[_ind_Dag]) = ((((((-__pyx_v_forwardRate_Dag_plus_CaDlg__DagCaDgl) * (__pyx_v_y[_ind_Dag])) * (__pyx_v_y[_ind_CaDgl])) + (__pyx_v_reverseRate_Dag_plus_CaDlg__DagCaDgl * (__pyx_v_y[_ind_DagCaDgl]))) - ((__pyx_v_forwardRate_Dag_plus_CapDlg__DagCapDgl * (__pyx_v_y[_ind_Dag])) * (__pyx_v_y[_ind_CapDgl]))) + (__pyx_v_reverseRate_Dag_plus_CapDlg__DagCapDgl * (__pyx_v_y[_ind_DagCapDgl])));
 
@@ -10987,7 +10963,7 @@ static int __pyx_f_15Model_FB_cython_func(double __pyx_v_t, double *__pyx_v_y, d
  *     f[Ip3] = 0.
  *     f[Dag] = -forwardRate_Dag_plus_CaDlg__DagCaDgl*y[Dag]*y[CaDgl] +reverseRate_Dag_plus_CaDlg__DagCaDgl*y[DagCaDgl] -forwardRate_Dag_plus_CapDlg__DagCapDgl*y[Dag]*y[CapDgl] +reverseRate_Dag_plus_CapDlg__DagCapDgl*y[DagCapDgl]
  *     f[PlcCaGqaPip2] = 0.             # <<<<<<<<<<<<<<
- *     f[Dgl] = -forwardRate_Ca_plus_Dlg__CaDgl*y[Ca]*y[Dgl] +reverseRate_Ca_plus_Dlg__CaDgl*y[CaDgl] +forwardRate_pDgl_dephos*y[pDgl]
+ *     f[Dgl] = -forwardRate_Ca_plus_Dlg__CaDgl*y[Ca_cyt]*y[Dgl] +reverseRate_Ca_plus_Dlg__CaDgl*y[CaDgl] +forwardRate_pDgl_dephos*y[pDgl]
  *     f[CaDgl] = 0.
  */
   (__pyx_v_f[_ind_PlcCaGqaPip2]) = 0.;
@@ -10995,78 +10971,78 @@ static int __pyx_f_15Model_FB_cython_func(double __pyx_v_t, double *__pyx_v_y, d
   /* "Model_FB.pyx":1853
  *     f[Dag] = -forwardRate_Dag_plus_CaDlg__DagCaDgl*y[Dag]*y[CaDgl] +reverseRate_Dag_plus_CaDlg__DagCaDgl*y[DagCaDgl] -forwardRate_Dag_plus_CapDlg__DagCapDgl*y[Dag]*y[CapDgl] +reverseRate_Dag_plus_CapDlg__DagCapDgl*y[DagCapDgl]
  *     f[PlcCaGqaPip2] = 0.
- *     f[Dgl] = -forwardRate_Ca_plus_Dlg__CaDgl*y[Ca]*y[Dgl] +reverseRate_Ca_plus_Dlg__CaDgl*y[CaDgl] +forwardRate_pDgl_dephos*y[pDgl]             # <<<<<<<<<<<<<<
+ *     f[Dgl] = -forwardRate_Ca_plus_Dlg__CaDgl*y[Ca_cyt]*y[Dgl] +reverseRate_Ca_plus_Dlg__CaDgl*y[CaDgl] +forwardRate_pDgl_dephos*y[pDgl]             # <<<<<<<<<<<<<<
  *     f[CaDgl] = 0.
- *     f[DagCaDgl] = 0.
+ *     f[DagCaDgl] = forwardRate_Dag_plus_CaDlg__DagCaDgl*y[Dag]*y[CaDgl] -reverseRate_Dag_plus_CaDlg__DagCaDgl*y[DagCaDgl] -forwardRate_DagCaDgl__CaDgl_plus_2ag*y[DagCaDgl]
  */
-  (__pyx_v_f[_ind_Dgl]) = (((((-__pyx_v_forwardRate_Ca_plus_Dlg__CaDgl) * (__pyx_v_y[_ind_Ca])) * (__pyx_v_y[_ind_Dgl])) + (__pyx_v_reverseRate_Ca_plus_Dlg__CaDgl * (__pyx_v_y[_ind_CaDgl]))) + (__pyx_v_forwardRate_pDgl_dephos * (__pyx_v_y[_ind_pDgl])));
+  (__pyx_v_f[_ind_Dgl]) = (((((-__pyx_v_forwardRate_Ca_plus_Dlg__CaDgl) * (__pyx_v_y[_ind_Ca_cyt])) * (__pyx_v_y[_ind_Dgl])) + (__pyx_v_reverseRate_Ca_plus_Dlg__CaDgl * (__pyx_v_y[_ind_CaDgl]))) + (__pyx_v_forwardRate_pDgl_dephos * (__pyx_v_y[_ind_pDgl])));
 
   /* "Model_FB.pyx":1854
  *     f[PlcCaGqaPip2] = 0.
- *     f[Dgl] = -forwardRate_Ca_plus_Dlg__CaDgl*y[Ca]*y[Dgl] +reverseRate_Ca_plus_Dlg__CaDgl*y[CaDgl] +forwardRate_pDgl_dephos*y[pDgl]
+ *     f[Dgl] = -forwardRate_Ca_plus_Dlg__CaDgl*y[Ca_cyt]*y[Dgl] +reverseRate_Ca_plus_Dlg__CaDgl*y[CaDgl] +forwardRate_pDgl_dephos*y[pDgl]
  *     f[CaDgl] = 0.             # <<<<<<<<<<<<<<
- *     f[DagCaDgl] = 0.
- *     f[two_ag] = 0.
+ *     f[DagCaDgl] = forwardRate_Dag_plus_CaDlg__DagCaDgl*y[Dag]*y[CaDgl] -reverseRate_Dag_plus_CaDlg__DagCaDgl*y[DagCaDgl] -forwardRate_DagCaDgl__CaDgl_plus_2ag*y[DagCaDgl]
+ *     f[two_ag] = forwardRate_DagCaDgl__CaDgl_plus_2ag*y[DagCaDgl] -forwardRate_2ag__2agDegrad*y[two_ag] +forwardRate_DagCapDgl__CapDgl_plus_2ag*y[DagCapDgl]
  */
   (__pyx_v_f[_ind_CaDgl]) = 0.;
 
   /* "Model_FB.pyx":1855
- *     f[Dgl] = -forwardRate_Ca_plus_Dlg__CaDgl*y[Ca]*y[Dgl] +reverseRate_Ca_plus_Dlg__CaDgl*y[CaDgl] +forwardRate_pDgl_dephos*y[pDgl]
+ *     f[Dgl] = -forwardRate_Ca_plus_Dlg__CaDgl*y[Ca_cyt]*y[Dgl] +reverseRate_Ca_plus_Dlg__CaDgl*y[CaDgl] +forwardRate_pDgl_dephos*y[pDgl]
  *     f[CaDgl] = 0.
- *     f[DagCaDgl] = 0.             # <<<<<<<<<<<<<<
- *     f[two_ag] = 0.
- *     f[Ip3degrad] = 0.
+ *     f[DagCaDgl] = forwardRate_Dag_plus_CaDlg__DagCaDgl*y[Dag]*y[CaDgl] -reverseRate_Dag_plus_CaDlg__DagCaDgl*y[DagCaDgl] -forwardRate_DagCaDgl__CaDgl_plus_2ag*y[DagCaDgl]             # <<<<<<<<<<<<<<
+ *     f[two_ag] = forwardRate_DagCaDgl__CaDgl_plus_2ag*y[DagCaDgl] -forwardRate_2ag__2agDegrad*y[two_ag] +forwardRate_DagCapDgl__CapDgl_plus_2ag*y[DagCapDgl]
+ *     f[PIkinase] = 0.
  */
-  (__pyx_v_f[_ind_DagCaDgl]) = 0.;
+  (__pyx_v_f[_ind_DagCaDgl]) = ((((__pyx_v_forwardRate_Dag_plus_CaDlg__DagCaDgl * (__pyx_v_y[_ind_Dag])) * (__pyx_v_y[_ind_CaDgl])) - (__pyx_v_reverseRate_Dag_plus_CaDlg__DagCaDgl * (__pyx_v_y[_ind_DagCaDgl]))) - (__pyx_v_forwardRate_DagCaDgl__CaDgl_plus_2ag * (__pyx_v_y[_ind_DagCaDgl])));
 
   /* "Model_FB.pyx":1856
  *     f[CaDgl] = 0.
- *     f[DagCaDgl] = 0.
- *     f[two_ag] = 0.             # <<<<<<<<<<<<<<
- *     f[Ip3degrad] = 0.
+ *     f[DagCaDgl] = forwardRate_Dag_plus_CaDlg__DagCaDgl*y[Dag]*y[CaDgl] -reverseRate_Dag_plus_CaDlg__DagCaDgl*y[DagCaDgl] -forwardRate_DagCaDgl__CaDgl_plus_2ag*y[DagCaDgl]
+ *     f[two_ag] = forwardRate_DagCaDgl__CaDgl_plus_2ag*y[DagCaDgl] -forwardRate_2ag__2agDegrad*y[two_ag] +forwardRate_DagCapDgl__CapDgl_plus_2ag*y[DagCapDgl]             # <<<<<<<<<<<<<<
  *     f[PIkinase] = 0.
+ *     f[Ip3degPIk] = 0.
  */
-  (__pyx_v_f[_ind_two_ag]) = 0.;
+  (__pyx_v_f[_ind_two_ag]) = (((__pyx_v_forwardRate_DagCaDgl__CaDgl_plus_2ag * (__pyx_v_y[_ind_DagCaDgl])) - (__pyx_v_forwardRate_2ag__2agDegrad * (__pyx_v_y[_ind_two_ag]))) + (__pyx_v_forwardRate_DagCapDgl__CapDgl_plus_2ag * (__pyx_v_y[_ind_DagCapDgl])));
 
   /* "Model_FB.pyx":1857
- *     f[DagCaDgl] = 0.
- *     f[two_ag] = 0.
- *     f[Ip3degrad] = 0.             # <<<<<<<<<<<<<<
- *     f[PIkinase] = 0.
- *     f[Ip3degPIk] = 0.
- */
-  (__pyx_v_f[_ind_Ip3degrad]) = 0.;
-
-  /* "Model_FB.pyx":1858
- *     f[two_ag] = 0.
- *     f[Ip3degrad] = 0.
+ *     f[DagCaDgl] = forwardRate_Dag_plus_CaDlg__DagCaDgl*y[Dag]*y[CaDgl] -reverseRate_Dag_plus_CaDlg__DagCaDgl*y[DagCaDgl] -forwardRate_DagCaDgl__CaDgl_plus_2ag*y[DagCaDgl]
+ *     f[two_ag] = forwardRate_DagCaDgl__CaDgl_plus_2ag*y[DagCaDgl] -forwardRate_2ag__2agDegrad*y[two_ag] +forwardRate_DagCapDgl__CapDgl_plus_2ag*y[DagCapDgl]
  *     f[PIkinase] = 0.             # <<<<<<<<<<<<<<
  *     f[Ip3degPIk] = 0.
- *     f[two_agDegrad] = 0.
+ *     f[two_agDegrad] = forwardRate_2ag__2agDegrad*y[two_ag]
  */
   (__pyx_v_f[_ind_PIkinase]) = 0.;
 
-  /* "Model_FB.pyx":1859
- *     f[Ip3degrad] = 0.
+  /* "Model_FB.pyx":1858
+ *     f[two_ag] = forwardRate_DagCaDgl__CaDgl_plus_2ag*y[DagCaDgl] -forwardRate_2ag__2agDegrad*y[two_ag] +forwardRate_DagCapDgl__CapDgl_plus_2ag*y[DagCapDgl]
  *     f[PIkinase] = 0.
  *     f[Ip3degPIk] = 0.             # <<<<<<<<<<<<<<
- *     f[two_agDegrad] = 0.
- *     f[DagK] = 0.
+ *     f[two_agDegrad] = forwardRate_2ag__2agDegrad*y[two_ag]
+ *     f[Ip3degrad] = 0.
  */
   (__pyx_v_f[_ind_Ip3degPIk]) = 0.;
 
-  /* "Model_FB.pyx":1860
+  /* "Model_FB.pyx":1859
  *     f[PIkinase] = 0.
  *     f[Ip3degPIk] = 0.
- *     f[two_agDegrad] = 0.             # <<<<<<<<<<<<<<
+ *     f[two_agDegrad] = forwardRate_2ag__2agDegrad*y[two_ag]             # <<<<<<<<<<<<<<
+ *     f[Ip3degrad] = 0.
+ *     f[DagK] = 0.
+ */
+  (__pyx_v_f[_ind_two_agDegrad]) = (__pyx_v_forwardRate_2ag__2agDegrad * (__pyx_v_y[_ind_two_ag]));
+
+  /* "Model_FB.pyx":1860
+ *     f[Ip3degPIk] = 0.
+ *     f[two_agDegrad] = forwardRate_2ag__2agDegrad*y[two_ag]
+ *     f[Ip3degrad] = 0.             # <<<<<<<<<<<<<<
  *     f[DagK] = 0.
  *     f[DagKdag] = 0.
  */
-  (__pyx_v_f[_ind_two_agDegrad]) = 0.;
+  (__pyx_v_f[_ind_Ip3degrad]) = 0.;
 
   /* "Model_FB.pyx":1861
- *     f[Ip3degPIk] = 0.
- *     f[two_agDegrad] = 0.
+ *     f[two_agDegrad] = forwardRate_2ag__2agDegrad*y[two_ag]
+ *     f[Ip3degrad] = 0.
  *     f[DagK] = 0.             # <<<<<<<<<<<<<<
  *     f[DagKdag] = 0.
  *     f[PA] = 0.
@@ -11074,7 +11050,7 @@ static int __pyx_f_15Model_FB_cython_func(double __pyx_v_t, double *__pyx_v_y, d
   (__pyx_v_f[_ind_DagK]) = 0.;
 
   /* "Model_FB.pyx":1862
- *     f[two_agDegrad] = 0.
+ *     f[Ip3degrad] = 0.
  *     f[DagK] = 0.
  *     f[DagKdag] = 0.             # <<<<<<<<<<<<<<
  *     f[PA] = 0.
@@ -11474,7 +11450,7 @@ static int __pyx_f_15Model_FB_cython_func(double __pyx_v_t, double *__pyx_v_y, d
  *     f[CKpPP1] = 0.
  *     f[CKpCamCa4PP1] = 0.             # <<<<<<<<<<<<<<
  *     f[Dgl_CKCamCa4] = 0.
- *     f[pDgl] = -forwardRate_pDgl_dephos*y[pDgl] -forwardRate_Ca_plus_pDlg__CapDgl*y[Ca]*y[pDgl] +reverseRate_Ca_plus_pDlg__CapDgl*y[CapDgl]
+ *     f[pDgl] = -forwardRate_pDgl_dephos*y[pDgl] -forwardRate_Ca_plus_pDlg__CapDgl*y[Ca_cyt]*y[pDgl] +reverseRate_Ca_plus_pDlg__CapDgl*y[CapDgl]
  */
   (__pyx_v_f[_ind_CKpCamCa4PP1]) = 0.;
 
@@ -11482,7 +11458,7 @@ static int __pyx_f_15Model_FB_cython_func(double __pyx_v_t, double *__pyx_v_y, d
  *     f[CKpPP1] = 0.
  *     f[CKpCamCa4PP1] = 0.
  *     f[Dgl_CKCamCa4] = 0.             # <<<<<<<<<<<<<<
- *     f[pDgl] = -forwardRate_pDgl_dephos*y[pDgl] -forwardRate_Ca_plus_pDlg__CapDgl*y[Ca]*y[pDgl] +reverseRate_Ca_plus_pDlg__CapDgl*y[CapDgl]
+ *     f[pDgl] = -forwardRate_pDgl_dephos*y[pDgl] -forwardRate_Ca_plus_pDlg__CapDgl*y[Ca_cyt]*y[pDgl] +reverseRate_Ca_plus_pDlg__CapDgl*y[CapDgl]
  *     f[Dgl_CKpCamCa4] = 0.
  */
   (__pyx_v_f[_ind_Dgl_CKCamCa4]) = 0.;
@@ -11490,26 +11466,26 @@ static int __pyx_f_15Model_FB_cython_func(double __pyx_v_t, double *__pyx_v_y, d
   /* "Model_FB.pyx":1908
  *     f[CKpCamCa4PP1] = 0.
  *     f[Dgl_CKCamCa4] = 0.
- *     f[pDgl] = -forwardRate_pDgl_dephos*y[pDgl] -forwardRate_Ca_plus_pDlg__CapDgl*y[Ca]*y[pDgl] +reverseRate_Ca_plus_pDlg__CapDgl*y[CapDgl]             # <<<<<<<<<<<<<<
+ *     f[pDgl] = -forwardRate_pDgl_dephos*y[pDgl] -forwardRate_Ca_plus_pDlg__CapDgl*y[Ca_cyt]*y[pDgl] +reverseRate_Ca_plus_pDlg__CapDgl*y[CapDgl]             # <<<<<<<<<<<<<<
  *     f[Dgl_CKpCamCa4] = 0.
  *     f[CaDgl_CKpCamCa4] = 0.
  */
-  (__pyx_v_f[_ind_pDgl]) = ((((-__pyx_v_forwardRate_pDgl_dephos) * (__pyx_v_y[_ind_pDgl])) - ((__pyx_v_forwardRate_Ca_plus_pDlg__CapDgl * (__pyx_v_y[_ind_Ca])) * (__pyx_v_y[_ind_pDgl]))) + (__pyx_v_reverseRate_Ca_plus_pDlg__CapDgl * (__pyx_v_y[_ind_CapDgl])));
+  (__pyx_v_f[_ind_pDgl]) = ((((-__pyx_v_forwardRate_pDgl_dephos) * (__pyx_v_y[_ind_pDgl])) - ((__pyx_v_forwardRate_Ca_plus_pDlg__CapDgl * (__pyx_v_y[_ind_Ca_cyt])) * (__pyx_v_y[_ind_pDgl]))) + (__pyx_v_reverseRate_Ca_plus_pDlg__CapDgl * (__pyx_v_y[_ind_CapDgl])));
 
   /* "Model_FB.pyx":1909
  *     f[Dgl_CKCamCa4] = 0.
- *     f[pDgl] = -forwardRate_pDgl_dephos*y[pDgl] -forwardRate_Ca_plus_pDlg__CapDgl*y[Ca]*y[pDgl] +reverseRate_Ca_plus_pDlg__CapDgl*y[CapDgl]
+ *     f[pDgl] = -forwardRate_pDgl_dephos*y[pDgl] -forwardRate_Ca_plus_pDlg__CapDgl*y[Ca_cyt]*y[pDgl] +reverseRate_Ca_plus_pDlg__CapDgl*y[CapDgl]
  *     f[Dgl_CKpCamCa4] = 0.             # <<<<<<<<<<<<<<
  *     f[CaDgl_CKpCamCa4] = 0.
- *     f[CapDgl] = forwardRate_Ca_plus_pDlg__CapDgl*y[Ca]*y[pDgl] -reverseRate_Ca_plus_pDlg__CapDgl*y[CapDgl] -forwardRate_Dag_plus_CapDlg__DagCapDgl*y[Dag]*y[CapDgl] +reverseRate_Dag_plus_CapDlg__DagCapDgl*y[DagCapDgl] +forwardRate_DagCapDgl__CapDgl_plus_2ag*y[DagCapDgl]
+ *     f[CapDgl] = forwardRate_Ca_plus_pDlg__CapDgl*y[Ca_cyt]*y[pDgl] -reverseRate_Ca_plus_pDlg__CapDgl*y[CapDgl] -forwardRate_Dag_plus_CapDlg__DagCapDgl*y[Dag]*y[CapDgl] +reverseRate_Dag_plus_CapDlg__DagCapDgl*y[DagCapDgl] +forwardRate_DagCapDgl__CapDgl_plus_2ag*y[DagCapDgl]
  */
   (__pyx_v_f[_ind_Dgl_CKpCamCa4]) = 0.;
 
   /* "Model_FB.pyx":1910
- *     f[pDgl] = -forwardRate_pDgl_dephos*y[pDgl] -forwardRate_Ca_plus_pDlg__CapDgl*y[Ca]*y[pDgl] +reverseRate_Ca_plus_pDlg__CapDgl*y[CapDgl]
+ *     f[pDgl] = -forwardRate_pDgl_dephos*y[pDgl] -forwardRate_Ca_plus_pDlg__CapDgl*y[Ca_cyt]*y[pDgl] +reverseRate_Ca_plus_pDlg__CapDgl*y[CapDgl]
  *     f[Dgl_CKpCamCa4] = 0.
  *     f[CaDgl_CKpCamCa4] = 0.             # <<<<<<<<<<<<<<
- *     f[CapDgl] = forwardRate_Ca_plus_pDlg__CapDgl*y[Ca]*y[pDgl] -reverseRate_Ca_plus_pDlg__CapDgl*y[CapDgl] -forwardRate_Dag_plus_CapDlg__DagCapDgl*y[Dag]*y[CapDgl] +reverseRate_Dag_plus_CapDlg__DagCapDgl*y[DagCapDgl] +forwardRate_DagCapDgl__CapDgl_plus_2ag*y[DagCapDgl]
+ *     f[CapDgl] = forwardRate_Ca_plus_pDlg__CapDgl*y[Ca_cyt]*y[pDgl] -reverseRate_Ca_plus_pDlg__CapDgl*y[CapDgl] -forwardRate_Dag_plus_CapDlg__DagCapDgl*y[Dag]*y[CapDgl] +reverseRate_Dag_plus_CapDlg__DagCapDgl*y[DagCapDgl] +forwardRate_DagCapDgl__CapDgl_plus_2ag*y[DagCapDgl]
  *     f[Dgl_CKp] = 0.
  */
   (__pyx_v_f[_ind_CaDgl_CKpCamCa4]) = 0.;
@@ -11517,15 +11493,15 @@ static int __pyx_f_15Model_FB_cython_func(double __pyx_v_t, double *__pyx_v_y, d
   /* "Model_FB.pyx":1911
  *     f[Dgl_CKpCamCa4] = 0.
  *     f[CaDgl_CKpCamCa4] = 0.
- *     f[CapDgl] = forwardRate_Ca_plus_pDlg__CapDgl*y[Ca]*y[pDgl] -reverseRate_Ca_plus_pDlg__CapDgl*y[CapDgl] -forwardRate_Dag_plus_CapDlg__DagCapDgl*y[Dag]*y[CapDgl] +reverseRate_Dag_plus_CapDlg__DagCapDgl*y[DagCapDgl] +forwardRate_DagCapDgl__CapDgl_plus_2ag*y[DagCapDgl]             # <<<<<<<<<<<<<<
+ *     f[CapDgl] = forwardRate_Ca_plus_pDlg__CapDgl*y[Ca_cyt]*y[pDgl] -reverseRate_Ca_plus_pDlg__CapDgl*y[CapDgl] -forwardRate_Dag_plus_CapDlg__DagCapDgl*y[Dag]*y[CapDgl] +reverseRate_Dag_plus_CapDlg__DagCapDgl*y[DagCapDgl] +forwardRate_DagCapDgl__CapDgl_plus_2ag*y[DagCapDgl]             # <<<<<<<<<<<<<<
  *     f[Dgl_CKp] = 0.
  *     f[DagCapDgl] = forwardRate_Dag_plus_CapDlg__DagCapDgl*y[Dag]*y[CapDgl] -reverseRate_Dag_plus_CapDlg__DagCapDgl*y[DagCapDgl] -forwardRate_DagCapDgl__CapDgl_plus_2ag*y[DagCapDgl]
  */
-  (__pyx_v_f[_ind_CapDgl]) = ((((((__pyx_v_forwardRate_Ca_plus_pDlg__CapDgl * (__pyx_v_y[_ind_Ca])) * (__pyx_v_y[_ind_pDgl])) - (__pyx_v_reverseRate_Ca_plus_pDlg__CapDgl * (__pyx_v_y[_ind_CapDgl]))) - ((__pyx_v_forwardRate_Dag_plus_CapDlg__DagCapDgl * (__pyx_v_y[_ind_Dag])) * (__pyx_v_y[_ind_CapDgl]))) + (__pyx_v_reverseRate_Dag_plus_CapDlg__DagCapDgl * (__pyx_v_y[_ind_DagCapDgl]))) + (__pyx_v_forwardRate_DagCapDgl__CapDgl_plus_2ag * (__pyx_v_y[_ind_DagCapDgl])));
+  (__pyx_v_f[_ind_CapDgl]) = ((((((__pyx_v_forwardRate_Ca_plus_pDlg__CapDgl * (__pyx_v_y[_ind_Ca_cyt])) * (__pyx_v_y[_ind_pDgl])) - (__pyx_v_reverseRate_Ca_plus_pDlg__CapDgl * (__pyx_v_y[_ind_CapDgl]))) - ((__pyx_v_forwardRate_Dag_plus_CapDlg__DagCapDgl * (__pyx_v_y[_ind_Dag])) * (__pyx_v_y[_ind_CapDgl]))) + (__pyx_v_reverseRate_Dag_plus_CapDlg__DagCapDgl * (__pyx_v_y[_ind_DagCapDgl]))) + (__pyx_v_forwardRate_DagCapDgl__CapDgl_plus_2ag * (__pyx_v_y[_ind_DagCapDgl])));
 
   /* "Model_FB.pyx":1912
  *     f[CaDgl_CKpCamCa4] = 0.
- *     f[CapDgl] = forwardRate_Ca_plus_pDlg__CapDgl*y[Ca]*y[pDgl] -reverseRate_Ca_plus_pDlg__CapDgl*y[CapDgl] -forwardRate_Dag_plus_CapDlg__DagCapDgl*y[Dag]*y[CapDgl] +reverseRate_Dag_plus_CapDlg__DagCapDgl*y[DagCapDgl] +forwardRate_DagCapDgl__CapDgl_plus_2ag*y[DagCapDgl]
+ *     f[CapDgl] = forwardRate_Ca_plus_pDlg__CapDgl*y[Ca_cyt]*y[pDgl] -reverseRate_Ca_plus_pDlg__CapDgl*y[CapDgl] -forwardRate_Dag_plus_CapDlg__DagCapDgl*y[Dag]*y[CapDgl] +reverseRate_Dag_plus_CapDlg__DagCapDgl*y[DagCapDgl] +forwardRate_DagCapDgl__CapDgl_plus_2ag*y[DagCapDgl]
  *     f[Dgl_CKp] = 0.             # <<<<<<<<<<<<<<
  *     f[DagCapDgl] = forwardRate_Dag_plus_CapDlg__DagCapDgl*y[Dag]*y[CapDgl] -reverseRate_Dag_plus_CapDlg__DagCapDgl*y[DagCapDgl] -forwardRate_DagCapDgl__CapDgl_plus_2ag*y[DagCapDgl]
  *     f[AKAR3] = 0.
@@ -11533,7 +11509,7 @@ static int __pyx_f_15Model_FB_cython_func(double __pyx_v_t, double *__pyx_v_y, d
   (__pyx_v_f[_ind_Dgl_CKp]) = 0.;
 
   /* "Model_FB.pyx":1913
- *     f[CapDgl] = forwardRate_Ca_plus_pDlg__CapDgl*y[Ca]*y[pDgl] -reverseRate_Ca_plus_pDlg__CapDgl*y[CapDgl] -forwardRate_Dag_plus_CapDlg__DagCapDgl*y[Dag]*y[CapDgl] +reverseRate_Dag_plus_CapDlg__DagCapDgl*y[DagCapDgl] +forwardRate_DagCapDgl__CapDgl_plus_2ag*y[DagCapDgl]
+ *     f[CapDgl] = forwardRate_Ca_plus_pDlg__CapDgl*y[Ca_cyt]*y[pDgl] -reverseRate_Ca_plus_pDlg__CapDgl*y[CapDgl] -forwardRate_Dag_plus_CapDlg__DagCapDgl*y[Dag]*y[CapDgl] +reverseRate_Dag_plus_CapDlg__DagCapDgl*y[DagCapDgl] +forwardRate_DagCapDgl__CapDgl_plus_2ag*y[DagCapDgl]
  *     f[Dgl_CKp] = 0.
  *     f[DagCapDgl] = forwardRate_Dag_plus_CapDlg__DagCapDgl*y[Dag]*y[CapDgl] -reverseRate_Dag_plus_CapDlg__DagCapDgl*y[DagCapDgl] -forwardRate_DagCapDgl__CapDgl_plus_2ag*y[DagCapDgl]             # <<<<<<<<<<<<<<
  *     f[AKAR3] = 0.
