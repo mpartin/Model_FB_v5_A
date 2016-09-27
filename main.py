@@ -566,6 +566,11 @@ params_dict_ord_post_CaMKII_plast = coll.OrderedDict([
     ("Ka4", 400.), # nM
     ("npkaI1", 3.0) # No unit
 	])
+
+params_dict_ord_post_CaMKII_bis = coll.OrderedDict([
+    ('conc_max_sub_unit', 200000.), # nM
+    ('K9', 1e-1) # nM
+    ])
 params_dict_ord_DA = coll.OrderedDict([
     ("gamma1DA", 0.7e-3), # nM-1
     ("gamma2DA", 0.07e-3), # nM-1
@@ -1123,6 +1128,7 @@ params_dict.update(params_dict_ord_KandP_on_DAGLP)
 params_dict.update(params_dict_ord_ECb)
 params_dict.update(params_dict_ord_ECb_smooth)
 params_dict.update(params_dict_ord_post_CaMKII_plast)
+params_dict.update(params_dict_ord_post_CaMKII_bis)
 params_dict.update(params_dict_ord_DA)
 params_dict.update(params_dict_ord_AMPA)
 params_dict.update(params_dict_ord_NMDA)
