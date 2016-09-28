@@ -566,6 +566,11 @@ params_dict_ord_post_CaMKII_plast = coll.OrderedDict([
     ("Ka4", 400.), # nM
     ("npkaI1", 3.0) # No unit
 	])
+
+params_dict_ord_post_CaMKII_bis = coll.OrderedDict([
+    ('conc_max_sub_unit', 200000.), # nM
+    ('K9', 1e-1) # nM
+    ])
 params_dict_ord_DA = coll.OrderedDict([
     ("gamma1DA", 0.7e-3), # nM-1
     ("gamma2DA", 0.07e-3), # nM-1
@@ -634,7 +639,7 @@ params_dict_ord_stimulation = coll.OrderedDict([
     ("tsdt", 15.), # ms
     ("tpost", 500.), # ms
     ("post_on", 1.), # No unit
-    ("Delta_t_STDP", 80.), # ms
+    ("Delta_t_STDP", 20.), # ms
     ("num_stim", 20), # No unit | Integer
     ("pre_on", 1.), # No unit
     ("Freq", 1.0), # Hz
@@ -1123,6 +1128,7 @@ params_dict.update(params_dict_ord_KandP_on_DAGLP)
 params_dict.update(params_dict_ord_ECb)
 params_dict.update(params_dict_ord_ECb_smooth)
 params_dict.update(params_dict_ord_post_CaMKII_plast)
+params_dict.update(params_dict_ord_post_CaMKII_bis)
 params_dict.update(params_dict_ord_DA)
 params_dict.update(params_dict_ord_AMPA)
 params_dict.update(params_dict_ord_NMDA)
@@ -1187,7 +1193,7 @@ nb_eq = len(init_array) # Number of equations
 
 
 # ----- To steady-states ------ #
-t_end_to_steady_states = 100000.
+t_end_to_steady_states = 50000.
 
 res = MSc.main(init_array, params_array_no_stim, nb_eq, t_start, t_end_to_steady_states, time_step, h_step = 1e-8, rel_err = 1e-8, abs_err = 1e-8)
 y_serie = pd.DataFrame(res[:,1:], columns = init_keys, index = res[:,0])
@@ -1196,7 +1202,13 @@ y_serie = pd.DataFrame(res[:,1:], columns = init_keys, index = res[:,0])
 # ----------- Continue -------------------------- #
 for j in xrange(len(y_serie.columns)):
     init_dict[y_serie.columns[j]] = y_serie.iloc[-1,j]
+
+#init_dict.pop('fpost')
+#init_dict.pop('phos_sum')
+#init_dict.pop('yCB1R')
+
 init_array = init_dict.values()
+
 
 
 res = MSc.main(init_array, params_array, nb_eq, t_start, t_end, time_step, h_step = 1e-8, rel_err = 1e-8, abs_err = 1e-8)
