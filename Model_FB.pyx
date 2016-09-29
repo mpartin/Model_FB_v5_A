@@ -52,13 +52,8 @@ cdef extern from "init_variables.h":
     cdef int h_CICR "_ind_h_CICR"
     cdef int Ca_cyt "_ind_Ca_cyt"
     cdef int Ca_ER "_ind_Ca_ER"
-    cdef int IP3 "_ind_IP3"
-    cdef int DAG "_ind_DAG"
-    cdef int DAGLP "_ind_DAGLP"
-    cdef int twoAG "_ind_twoAG"
     cdef int AEA "_ind_AEA"
     cdef int fpre "_ind_fpre"
-    cdef int I1P "_ind_I1P"
     cdef int PP1 "_ind_PP1"
     cdef int V "_ind_V"
     cdef int o_CB1R "_ind_o_CB1R"
@@ -76,7 +71,6 @@ cdef extern from "init_variables.h":
     cdef int B11 "_ind_B11"
     cdef int B12 "_ind_B12"
     cdef int B13 "_ind_B13"
-    cdef int Ca "_ind_Ca"
     cdef int pmca "_ind_pmca"
     cdef int pmcaCa "_ind_pmcaCa"
     cdef int CaOut "_ind_CaOut"
@@ -104,7 +98,6 @@ cdef extern from "init_variables.h":
     cdef int pDaD1RGs "_ind_pDaD1RGs"
     cdef int GluGbuf "_ind_GluGbuf"
     cdef int Gbuf "_ind_Gbuf"
-    cdef int Glu_Blackwell "_ind_Glu"
     cdef int GluOut "_ind_GluOut"
     cdef int GluMgluR "_ind_GluMgluR"
     cdef int GluMgluRdesens "_ind_GluMgluRdesens"
@@ -145,7 +138,6 @@ cdef extern from "init_variables.h":
     cdef int pPDE10cAMP "_ind_pPDE10cAMP"
     cdef int PKAcPDE10 "_ind_PKAcPDE10"
     cdef int PKAcPDE10cAMP "_ind_PKAcPDE10cAMP"
-    cdef int PP1_Blackwell "_ind_PP1_Blackwell"
     cdef int pPDE10PP1 "_ind_pPDE10PP1"
     cdef int PDE2 "_ind_PDE2"
     cdef int PDE2cAMP "_ind_PDE2cAMP"
@@ -214,18 +206,8 @@ cdef extern from "init_variables.h":
     cdef int D32p75PP2ABPR72 "_ind_D32p75PP2ABPR72"
     cdef int D32p75PP2AB56d "_ind_D32p75PP2AB56d"
     cdef int D32p75PP2Acal "_ind_D32p75PP2Acal"
-    cdef int CK "_ind_CK"
-    cdef int CKCamCa4 "_ind_CKCamCa4"
-    cdef int CKpCamCa4 "_ind_CKpCamCa4"
-    cdef int CKp "_ind_CKp"
-    cdef int CKpPP1 "_ind_CKpPP1"
-    cdef int CKpCamCa4PP1 "_ind_CKpCamCa4PP1"
-    cdef int Dgl_CKCamCa4 "_ind_Dgl_CKCamCa4"
     cdef int pDgl "_ind_pDgl"
-    cdef int Dgl_CKpCamCa4 "_ind_Dgl_CKpCamCa4"
-    cdef int CaDgl_CKpCamCa4 "_ind_CaDgl_CKpCamCa4"
     cdef int CapDgl "_ind_CapDgl"
-    cdef int Dgl_CKp "_ind_Dgl_CKp"
     cdef int DagCapDgl "_ind_DagCapDgl"
     cdef int AKAR3 "_ind_AKAR3"
     cdef int PKAcAKAR3 "_ind_PKAcAKAR3"
@@ -1581,7 +1563,6 @@ cdef int func (double t,  double y[], double f[], void *params) nogil:
     # --------- CB1R ----------- #
     cdef double c_CB1R = 1 -y[o_CB1R] -y[d_CB1R]
     # ----------------------
-
     # CaM and CaMKII plasticity
     cdef double occ_r_CaMKII = y[B1] + y[B2] + y[B3] + y[B4] + y[B5] + y[B6] + y[B7] + y[B8] + y[B9] + y[B10] + y[B11] + y[B12] + y[B13]
 
@@ -1674,7 +1655,6 @@ cdef int func (double t,  double y[], double f[], void *params) nogil:
     cdef double Ileak = gL * (y[V] - EL)
     cdef double Itotal = -Ileak -I_caL13 -I_TRPV1 -I_AMPA -I_NMDA -I_action
 
-
     # CaMKII sub-units concentration #
     #    cdef double CK_sub_unit = conc_max_sub_unit -phos_sum
     #    cdef double CKp_sub_unit = phos_sum
@@ -1706,43 +1686,36 @@ cdef int func (double t,  double y[], double f[], void *params) nogil:
 
     f[h_CICR] = (a2_CICR *d2_CICR *(y[Ip3] +d1_CICR)/(y[Ip3] +d3_CICR))*(1 -y[h_CICR]) - a2_CICR *y[Ca_cyt]*y[h_CICR]
     f[Ca_cyt] = (J_tot -(y[Ca_cyt] -Cab)/tauCab
-                -forwardRate_Ca_pump1a*y[Ca_cyt]*y[pmca] +reverseRate_Ca_pump1a*y[pmcaCa] -forwardRate_Ca_pump2a*y[Ca_cyt]*y[ncx] +reverseRate_Ca_pump2a*y[ncxCa] +forwardRate_Ca_leak_1*y[CaOutLeak] -forwardRate_Ca_buffer*y[Ca_cyt]*y[Calbin] +reverseRate_Ca_buffer*y[CalbinC]
-                -forwardRate_CamC_bind*y[Cam]*y[Ca_cyt]**2 +reverseRate_CamC_bind*y[CamCa2C] -forwardRate_CamCa2C_bind*y[CamCa2C]*y[Ca_cyt]**2 +reverseRate_CamCa2C_bind*y[CamCa4] -forwardRate_CamN_bind*y[Cam]*y[Ca_cyt]**2 +reverseRate_CamN_bind*y[CamCa2N] -forwardRate_CamCa2N_bind*y[CamCa2N]*y[Ca_cyt]**2 +reverseRate_CamCa2N_bind*y[CamCa4]
-                -forwardRate_Plc_plus_Ca__PlcCa*y[Ca_cyt]*y[Plc] +reverseRate_Plc_plus_Ca__PlcCa*y[PlcCa] -forwardRate_PlcGaGTP_plus_Ca__PlcCaGqa*y[Ca_cyt]*y[PlcGqa] +reverseRate_PlcGaGTP_plus_Ca__PlcCaGqa*y[PlcCaGqa]
-                -forwardRate_Ca_plus_Dlg__CaDgl*y[Ca_cyt]*y[Dgl] +reverseRate_Ca_plus_Dlg__CaDgl*y[CaDgl] -forwardRate_Pkc_plus_Ca__PkcCa*y[Ca_cyt]*y[Pkc] +reverseRate_Pkc_plus_Ca__PkcCa*y[PkcCa]
-                -forwardRate_PP2BCam_plus_Ca2__PP2BCamCa2C_reac*y[PP2BCam]*y[Ca_cyt]**2 +reverseRate_PP2BCam_plus_Ca2__PP2BCamCa2C_reac*y[PP2BCamCa2C] -forwardRate_PP2BCam_plus_Ca2__PP2BCamCa2N_reac*y[PP2BCam]*y[Ca_cyt]**2 +reverseRate_PP2BCam_plus_Ca2__PP2BCamCa2N_reac*y[PP2BCamCa2N] -forwardRate_PP2BCamCa2C_plus_Ca2__PP2BCamCa4_reac*y[PP2BCamCa2C]*y[Ca_cyt]**2 +reverseRate_PP2BCamCa2C_plus_Ca2__PP2BCamCa4_reac*y[PP2BCamCa4] -forwardRate_PP2BCamCa2N_plus_Ca2__PP2BCamCa4_reac*y[PP2BCamCa2N]*y[Ca_cyt]**2 +reverseRate_PP2BCamCa2N_plus_Ca2__PP2BCamCa4_reac*y[PP2BCamCa4]
-                -forwardRate_PP2ABPR72_plus_Ca__PP2Acal_reac*y[PP2ABPR72]*y[Ca_cyt] +reverseRate_PP2ABPR72_plus_Ca__PP2Acal_reac*y[PP2Acal] -forwardRate_Ca_plus_pDlg__CapDgl*y[Ca_cyt]*y[pDgl] +reverseRate_Ca_plus_pDlg__CapDgl*y[CapDgl]
-                )/tauCa(y[Ca_cyt], BT_CaBuff, KdB_CaBuff)
+                    -forwardRate_Ca_pump1a*y[Ca_cyt]*y[pmca] +reverseRate_Ca_pump1a*y[pmcaCa] -forwardRate_Ca_pump2a*y[Ca_cyt]*y[ncx] +reverseRate_Ca_pump2a*y[ncxCa] +forwardRate_Ca_leak_1*y[CaOutLeak] -forwardRate_Ca_buffer*y[Ca_cyt]*y[Calbin] +reverseRate_Ca_buffer*y[CalbinC]
+                    -forwardRate_CamC_bind*y[Cam]*y[Ca_cyt]**2 +reverseRate_CamC_bind*y[CamCa2C] -forwardRate_CamCa2C_bind*y[CamCa2C]*y[Ca_cyt]**2 +reverseRate_CamCa2C_bind*y[CamCa4] -forwardRate_CamN_bind*y[Cam]*y[Ca_cyt]**2 +reverseRate_CamN_bind*y[CamCa2N] -forwardRate_CamCa2N_bind*y[CamCa2N]*y[Ca_cyt]**2 +reverseRate_CamCa2N_bind*y[CamCa4]
+                    -forwardRate_Plc_plus_Ca__PlcCa*y[Ca_cyt]*y[Plc] +reverseRate_Plc_plus_Ca__PlcCa*y[PlcCa] -forwardRate_PlcGaGTP_plus_Ca__PlcCaGqa*y[Ca_cyt]*y[PlcGqa] +reverseRate_PlcGaGTP_plus_Ca__PlcCaGqa*y[PlcCaGqa]
+                    -forwardRate_Ca_plus_Dlg__CaDgl*y[Ca_cyt]*y[Dgl] +reverseRate_Ca_plus_Dlg__CaDgl*y[CaDgl] -forwardRate_Pkc_plus_Ca__PkcCa*y[Ca_cyt]*y[Pkc] +reverseRate_Pkc_plus_Ca__PkcCa*y[PkcCa]
+                    -forwardRate_PP2BCam_plus_Ca2__PP2BCamCa2C_reac*y[PP2BCam]*y[Ca_cyt]**2 +reverseRate_PP2BCam_plus_Ca2__PP2BCamCa2C_reac*y[PP2BCamCa2C] -forwardRate_PP2BCam_plus_Ca2__PP2BCamCa2N_reac*y[PP2BCam]*y[Ca_cyt]**2 +reverseRate_PP2BCam_plus_Ca2__PP2BCamCa2N_reac*y[PP2BCamCa2N] -forwardRate_PP2BCamCa2C_plus_Ca2__PP2BCamCa4_reac*y[PP2BCamCa2C]*y[Ca_cyt]**2 +reverseRate_PP2BCamCa2C_plus_Ca2__PP2BCamCa4_reac*y[PP2BCamCa4] -forwardRate_PP2BCamCa2N_plus_Ca2__PP2BCamCa4_reac*y[PP2BCamCa2N]*y[Ca_cyt]**2 +reverseRate_PP2BCamCa2N_plus_Ca2__PP2BCamCa4_reac*y[PP2BCamCa4]
+                    -forwardRate_PP2ABPR72_plus_Ca__PP2Acal_reac*y[PP2ABPR72]*y[Ca_cyt] +reverseRate_PP2ABPR72_plus_Ca__PP2Acal_reac*y[PP2Acal] -forwardRate_Ca_plus_pDlg__CapDgl*y[Ca_cyt]*y[pDgl] +reverseRate_Ca_plus_pDlg__CapDgl*y[CapDgl]
+                    )/tauCa(y[Ca_cyt], BT_CaBuff, KdB_CaBuff)
 
     f[Ca_ER] = -J_CaER*rhoER_CICR/tauCa(y[Ca_ER], BT_CaBuff, KdB_CaBuff)
 
     # IP3, DAG, ECb
-    f[IP3] = 0.#vip3prod -v3k -r5p_IP3 *y[Ip3]
-    f[DAG] = 0.#vip3prod -rDGL *y[DAGLP]*y[DAG]/(y[DAG]+KDGL) -kDAGK*y[DAG]
-
-    f[DAGLP] = 0.#rK_DAGLP*(alpha_DAGLP_Ca_cyt *y[Ca_cyt])**nK_DAGLP*(1 -y[DAGLP]) -rP_DAGLP*y[DAGLP]
 
     if on_ECb:
 
-        f[twoAG] = 0.#rDGL * y[DAGLP] * y[DAG] / (y[DAG] + KDGL) - kMAGL * y[twoAG]
         f[AEA] = vATAEA * y[Ca_cyt] - vFAAH * y[AEA] / (KFAAH + y[AEA])
         f[fpre] = (omega-y[fpre]) /taufpre
     else:
 
-        f[twoAG] = 0.
         f[AEA] = 0.
         f[fpre] = 0.
 
 
     # dPP1/dt and dI1P/dt #
-    f[I1P] = 0.#-k11*y[I1P]*y[PP1] + km11*(PP10 - y[PP1]) + vPKA*I10 - vCaN*y[I1P]
     f[PP1] = -forwardRate_PDE10_d_phosp1*y[pPDE10]*y[PP1] +reverseRate_PDE10_d_phosp1*y[pPDE10PP1] +forwardRate_PDE10_d_phosp2*y[pPDE10PP1] -forwardRate_PDE4_d_phosp1*y[pPDE4]*y[PP1] +reverseRate_PDE4_d_phosp1*y[pPDE4PP1] +forwardRate_PDE4_d_phosp2*y[pPDE4PP1] -forwardRate_D32p34_plus_PP1__D32p34pp1_reac*y[D32p34]*y[PP1] +reverseRate_D32p34_plus_PP1__D32p34pp1_reac*y[D32p34PP1] +forwardRate_D32p34PP1PP2BCamCa4__PP1_plus_PP2BCamCa4_plus_D32_reac*y[D32p34PP1PP2BCamCa4] +forwardRate_D32p34PP1PP2ABPR72__PP1_plus_PP2ABPR72_plus_D32_reac*y[D32p34PP1PP2ABPR72] +forwardRate_D32p34PP1PP2AB56d__PP1_plus_PP2AB56d_plus_D32_reac*y[D32p34PP1PP2AB56d] -forwardRate_pAKAR3_plus_PP1_bind*y[pAKAR3]*y[PP1] +reverseRate_pAKAR3_plus_PP1_bind*y[PP1pAKAR3] +forwardRate_PP1pAKAR3_dephos*y[PP1pAKAR3]
 
     # membrane potential
     f[V] = Itotal/Cm
 
     if on_CB1R:
-        f[o_CB1R] = Alpha_CB1R *(y[twoAG] +alphaAEACB1*y[AEA]) *c_CB1R - (Beta_CB1R +Gamma_CB1R)*y[o_CB1R]
+        f[o_CB1R] = Alpha_CB1R *(y[two_ag] +alphaAEACB1*y[AEA]) *c_CB1R - (Beta_CB1R +Gamma_CB1R)*y[o_CB1R]
         f[d_CB1R] = -Epsilon_CB1R*y[d_CB1R] + Gamma_CB1R*y[o_CB1R]
     else:
         f[o_CB1R] = 0.
@@ -1764,9 +1737,6 @@ cdef int func (double t,  double y[], double f[], void *params) nogil:
     f[B13] = k7gamma*y[B12] - 6*k10*y[B13]
 
     # ---- Blackwell variables ---- #
-
-    f[Ca] = 0.
-
     f[pmca] = -forwardRate_Ca_pump1a*y[Ca_cyt]*y[pmca] +reverseRate_Ca_pump1a*y[pmcaCa] +forwardRate_Ca_pump1b*y[pmcaCa]
     f[pmcaCa] = forwardRate_Ca_pump1a*y[Ca_cyt]*y[pmca] -reverseRate_Ca_pump1a*y[pmcaCa] -forwardRate_Ca_pump1b*y[pmcaCa]
     f[CaOut] = forwardRate_Ca_pump1b*y[pmcaCa] +forwardRate_Ca_pump2b*y[ncxCa] -forwardRate_Ca_leak*y[CaOut]*y[Leak] +reverseRate_Ca_leak*y[CaOutLeak]
@@ -1777,7 +1747,7 @@ cdef int func (double t,  double y[], double f[], void *params) nogil:
     f[Calbin] = -forwardRate_Ca_buffer*y[Ca_cyt]*y[Calbin] +reverseRate_Ca_buffer*y[CalbinC]
     f[CalbinC] = forwardRate_Ca_buffer*y[Ca_cyt]*y[Calbin] -reverseRate_Ca_buffer*y[CalbinC]
 
-    f[CamCa4] = forwardRate_CamCa2C_bind*y[CamCa2C]*y[Ca_cyt]**2 -reverseRate_CamCa2C_bind*y[CamCa4] +forwardRate_CamCa2N_bind*y[CamCa2N]*y[Ca_cyt]**2 -reverseRate_CamCa2N_bind*y[CamCa4] -forwardRate_PDE1_plus_CamCa4__PDE1CamCa4*y[PDE1]*y[CamCa4] +reverseRate_PDE1_plus_CamCa4__PDE1CamCa4*y[PDE1CamCa4] -forwardRate_CamCa4_plus_PP2B__PP2BCamCa4_reac*y[CamCa4]*y[PP2B] +reverseRate_CamCa4_plus_PP2B__PP2BCamCa4_reac*y[PP2BCamCa4] -forwardRate_CK_bind*y[CamCa4]*y[CK] +reverseRate_CK_bind*y[CKCamCa4] +forwardRate_CKp_auto*y[CKpCamCa4] -reverseRate_CKp_auto*y[CamCa4]*y[CKp] -forwardRate_AC1GsaGTP_CamCa4_Reac*y[AC1Gsa]*y[CamCa4] +reverseRate_AC1GsaGTP_CamCa4_Reac*y[AC1GsaCamCa4] -forwardRate_AC1CamCa4_Reac*y[AC1]*y[CamCa4] +reverseRate_AC1CamCa4_Reac*y[AC1CamCa4]
+    f[CamCa4] = forwardRate_CamCa2C_bind*y[CamCa2C]*y[Ca_cyt]**2 -reverseRate_CamCa2C_bind*y[CamCa4] +forwardRate_CamCa2N_bind*y[CamCa2N]*y[Ca_cyt]**2 -reverseRate_CamCa2N_bind*y[CamCa4] -forwardRate_PDE1_plus_CamCa4__PDE1CamCa4*y[PDE1]*y[CamCa4] +reverseRate_PDE1_plus_CamCa4__PDE1CamCa4*y[PDE1CamCa4] -forwardRate_CamCa4_plus_PP2B__PP2BCamCa4_reac*y[CamCa4]*y[PP2B] +reverseRate_CamCa4_plus_PP2B__PP2BCamCa4_reac*y[PP2BCamCa4] -forwardRate_AC1GsaGTP_CamCa4_Reac*y[AC1Gsa]*y[CamCa4] +reverseRate_AC1GsaGTP_CamCa4_Reac*y[AC1GsaCamCa4] -forwardRate_AC1CamCa4_Reac*y[AC1]*y[CamCa4] +reverseRate_AC1CamCa4_Reac*y[AC1CamCa4]
     f[CamCa2N] = forwardRate_CamN_bind*y[Cam]*y[Ca_cyt]**2 -reverseRate_CamN_bind*y[CamCa2N] -forwardRate_CamCa2N_bind*y[CamCa2N]*y[Ca_cyt]**2 +reverseRate_CamCa2N_bind*y[CamCa4] -forwardRate_CamCa2N_plus_PP2B__PP2BCamCa2N_reac*y[CamCa2N]*y[PP2B] +reverseRate_CamCa2N_plus_PP2B__PP2BCamCa2N_reac*y[PP2BCamCa2N]
 
     f[DaDbuf] = -forwardRate_DaDbuf__Da_plus_Dbuf*y[DaDbuf]
@@ -1799,7 +1769,6 @@ cdef int func (double t,  double y[], double f[], void *params) nogil:
 
     f[GluGbuf] = -forwardRate_Glubuf__Glu_plus_Gbuf*y[GluGbuf]
     f[Gbuf] = forwardRate_Glubuf__Glu_plus_Gbuf*y[GluGbuf] -forwardRate_GluOut_buf_reac*y[GluOut]*y[Gbuf]
-    f[Glu_Blackwell] = 0.#forwardRate_Glubuf__Glu_plus_Gbuf*y[GluGbuf] -forwardRate_Glu__GluOut*Glu +reverseRate_Glu__GluOut*y[GluOut] -forwardRate_Glu_plus_MgluR__GluMgluR*Glu*y[MgluR] +reverseRate_Glu_plus_MgluR__GluMgluR*y[GluMgluR] -forwardRate_Glu_plus_MgluRGq___GluMgluRGq*Glu*y[MgluRGq] +reverseRate_Glu_plus_MgluRGq___GluMgluRGq*y[GluMgluRGq]
 
     f[GluOut] = forwardRate_Glu__GluOut*Glu -reverseRate_Glu__GluOut*y[GluOut] -forwardRate_GluOut_buf_reac*y[GluOut]*y[Gbuf]
     f[GluMgluR] = -forwardRate_Glu_plus_MgluR__GluMgluRdesens*y[GluMgluR] +reverseRate_Glu_plus_MgluR__GluMgluRdesens*y[GluMgluRdesens] +forwardRate_Glu_plus_MgluR__GluMgluR*Glu*y[MgluR] -reverseRate_Glu_plus_MgluR__GluMgluR*y[GluMgluR] -forwardRate_Gqabg_plus_GluMgluR__GluMgluRGq*y[Gqabg]*y[GluMgluR] +reverseRate_Gqabg_plus_GluMgluR__GluMgluRGq*y[GluMgluRGq] +forwardRate_GluMgluRGq__GqaGTP_plus_GluMgluRGbg*y[GluMgluRGq]
@@ -1850,7 +1819,6 @@ cdef int func (double t,  double y[], double f[], void *params) nogil:
     f[pPDE10cAMP] = forwardRate_pPDE10_plus_cAMP__pPDE10cAMP*y[pPDE10]*y[cAMP] -reverseRate_pPDE10_plus_cAMP__pPDE10cAMP*y[pPDE10cAMP] -forwardRate_pPDE10cAMP__pPDE10_plus_AMP*y[pPDE10cAMP] +forwardRate_PDE10cAMP_phosp2*y[PKAcPDE10cAMP]
     f[PKAcPDE10] = forwardRate_PDE10_phosp1*y[PKAc]*y[PDE10] -reverseRate_PDE10_phosp1*y[PKAcPDE10] -forwardRate_PDE10_phosp2*y[PKAcPDE10]
     f[PKAcPDE10cAMP] = forwardRate_PDE10cAMP_phosp1*y[PKAc]*y[PDE10cAMP] -reverseRate_PDE10cAMP_phosp1*y[PKAcPDE10cAMP] -forwardRate_PDE10cAMP_phosp2*y[PKAcPDE10cAMP]
-    f[PP1_Blackwell] = 0.
     f[pPDE10PP1] = forwardRate_PDE10_d_phosp1*y[pPDE10]*y[PP1] -reverseRate_PDE10_d_phosp1*y[pPDE10PP1] -forwardRate_PDE10_d_phosp2*y[pPDE10PP1]
 
     f[PDE2] = -forwardRate_PDE2_plus_cAMP__PDE2cAMP*y[PDE2]*y[cAMP] +reverseRate_PDE2_plus_cAMP__PDE2cAMP*y[PDE2cAMP]
@@ -1876,7 +1844,7 @@ cdef int func (double t,  double y[], double f[], void *params) nogil:
 
     f[PlcCaGqaPip2] = forwardRate_PlcCaGqa_plus_Pip2__PlcCaGqaPip2*y[PlcCaGqa]*y[Pip2] -reverseRate_PlcCaGqa_plus_Pip2__PlcCaGqaPip2*y[PlcCaGqaPip2] -forwardRate_PlcCaGqaPip2__PlcCaGqaDag_plus_Ip3*y[PlcCaGqaPip2]
     f[Dgl] = -forwardRate_Ca_plus_Dlg__CaDgl*y[Ca_cyt]*y[Dgl] +reverseRate_Ca_plus_Dlg__CaDgl*y[CaDgl] +forwardRate_pDgl_dephos*y[pDgl]
-    f[CaDgl] = forwardRate_Ca_plus_Dlg__CaDgl*y[Ca_cyt]*y[Dgl] -reverseRate_Ca_plus_Dlg__CaDgl*y[CaDgl] -forwardRate_Dag_plus_CaDlg__DagCaDgl*y[Dag]*y[CaDgl] +reverseRate_Dag_plus_CaDlg__DagCaDgl*y[DagCaDgl] +forwardRate_DagCaDgl__CaDgl_plus_2ag*y[DagCaDgl] -forwardRate_CaDgl_CKpCamCa4_bind*y[CaDgl]*y[CKpCamCa4] +reverseRate_CaDgl_CKpCamCa4_bind*y[CaDgl_CKpCamCa4]
+    f[CaDgl] = forwardRate_Ca_plus_Dlg__CaDgl*y[Ca_cyt]*y[Dgl] -reverseRate_Ca_plus_Dlg__CaDgl*y[CaDgl] -forwardRate_Dag_plus_CaDlg__DagCaDgl*y[Dag]*y[CaDgl] +reverseRate_Dag_plus_CaDlg__DagCaDgl*y[DagCaDgl] +forwardRate_DagCaDgl__CaDgl_plus_2ag*y[DagCaDgl]
 
     f[DagCaDgl] = forwardRate_Dag_plus_CaDlg__DagCaDgl*y[Dag]*y[CaDgl] -reverseRate_Dag_plus_CaDlg__DagCaDgl*y[DagCaDgl] -forwardRate_DagCaDgl__CaDgl_plus_2ag*y[DagCaDgl]
     f[two_ag] = forwardRate_DagCaDgl__CaDgl_plus_2ag*y[DagCaDgl] -forwardRate_2ag__2agDegrad*y[two_ag] +forwardRate_DagCapDgl__CapDgl_plus_2ag*y[DagCapDgl]
@@ -1932,18 +1900,8 @@ cdef int func (double t,  double y[], double f[], void *params) nogil:
     f[D32p75PP2AB56d] = forwardRate_D32p75_plus_PP2AB56d__D32p75PP2AB56d_reac*y[D32p75]*y[PP2AB56d] -reverseRate_D32p75_plus_PP2AB56d__D32p75PP2AB56d_reac*y[D32p75PP2AB56d] -forwardRate_D32p75PP2AB56d__D32_plus_PP2AB56d_reac*y[D32p75PP2AB56d]
     f[D32p75PP2Acal] = forwardRate_D32p75_plus_PP2Acal__D32p75PP2Acal_reac*y[D32p75]*y[PP2Acal] -reverseRate_D32p75_plus_PP2Acal__D32p75PP2Acal_reac*y[D32p75PP2Acal] -forwardRate_D32p75PP2Acal_D32_plus_PP2Acal_reac*y[D32p75PP2Acal]
 
-    f[CK] = 0.
-    f[CKCamCa4] = 0.
-    f[CKpCamCa4] = 0.
-    f[CKp] = 0.
-    f[CKpPP1] = 0.
-    f[CKpCamCa4PP1] = 0.
-    f[Dgl_CKCamCa4] = 0.
     f[pDgl] = -forwardRate_pDgl_dephos*y[pDgl] -forwardRate_Ca_plus_pDlg__CapDgl*y[Ca_cyt]*y[pDgl] +reverseRate_Ca_plus_pDlg__CapDgl*y[CapDgl]
-    f[Dgl_CKpCamCa4] = 0.
-    f[CaDgl_CKpCamCa4] = 0.
     f[CapDgl] = forwardRate_Ca_plus_pDlg__CapDgl*y[Ca_cyt]*y[pDgl] -reverseRate_Ca_plus_pDlg__CapDgl*y[CapDgl] -forwardRate_Dag_plus_CapDlg__DagCapDgl*y[Dag]*y[CapDgl] +reverseRate_Dag_plus_CapDlg__DagCapDgl*y[DagCapDgl] +forwardRate_DagCapDgl__CapDgl_plus_2ag*y[DagCapDgl]
-    f[Dgl_CKp] = 0.
     f[DagCapDgl] = forwardRate_Dag_plus_CapDlg__DagCapDgl*y[Dag]*y[CapDgl] -reverseRate_Dag_plus_CapDlg__DagCapDgl*y[DagCapDgl] -forwardRate_DagCapDgl__CapDgl_plus_2ag*y[DagCapDgl]
 
     f[AKAR3] = -forwardRate_AKAR3_plus_PKAc_bind*y[AKAR3]*y[PKAc] +reverseRate_AKAR3_plus_PKAc_bind*y[PKAcAKAR3] +forwardRate_PP1pAKAR3_dephos*y[PP1pAKAR3]

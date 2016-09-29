@@ -59,13 +59,8 @@ init_dict_ord_UP = coll.OrderedDict([
                         ('h_CICR', 0.806764947937), # No unit | prob
                         ('Ca_cyt', 121.328558067), # nM
                         ('Ca_ER', 11674.4333459), # nM
-                        ('IP3', 32.0601588447), # nM
-                        ('DAG', 5.82936737534), # nM
-                        ('DAGLP', 4.19724618359e-07), # No unit
-                        ('twoAG', 0.00326167154646), # nM
                         ('AEA', 6.10345406741), # nM
                         ('fpre', 1.), # No unit
-                        ('I1P', 42.3801795171), # nM
                         ('PP1', 0.939404212327), # nM
                         ('V', -69.9990159858), # mV
                         ('o_CB1R', 1.41213798961e-06), # No unit | prob
@@ -96,13 +91,8 @@ init_dict_ord_DOWN = coll.OrderedDict([
                         ('h_CICR', 0.824666350479), # No unit | prob
                         ('Ca_cyt', 121.328558067), # nM
                         ('Ca_ER', 3685.55545234), # nM
-                        ('IP3', 57.2919012476), # nM
-                        ('DAG', 5.73491809464), # nM
-                        ('DAGLP', 4.19724618358e-07), # No unit
-                        ('twoAG', 0.00320883499792), # nM
                         ('AEA', 6.10345406741), # nM
                         ('fpre', 1.), # No unit
-                        ('I1P', 42.3801795171), # nM
                         ('PP1', 0.939404212327), # nM
                         ('V', -69.9990159858), # mV
                         ('o_CB1R', 1.4121086643e-06), # No unit | prob
@@ -131,13 +121,8 @@ init_dict_ord_ILYA = coll.OrderedDict([
                         ('h_CICR', 0.8246676668946951), # No unit | prob
                         ('Ca_cyt', 0.12132718966407073*1e3), # nM
                         ('Ca_ER', 63.348087686853646*1e3), # nM
-                        ('IP3', 0.05729140044675357*1e3), # nM
-                        ('DAG', 0.005734867663641929*1e3), # nM
-                        ('DAGLP', 4.1969621599776083e-07), # No unit
-                        ('twoAG', 3.2085896623941232e-06*1e3), # nM
                         ('AEA', 0.006103384809978344*1e3), # nM
                         ('fpre', 1.0), # No unit
-                        ('I1P', 0.042380592866431144*1e3), # nM
                         ('PP1', 0.000939395093112328*1e3), # nM
                         ('V', -69.99901620452822), # mV
                         ('o_CB1R', 3.4373437854140236e-07), # No unit | prob
@@ -419,7 +404,7 @@ init_dict_ord.update(init_dict_ord_PicoSD) # Replace value of the "soma" compart
 init_dict_ord.update(init_dict_ord_Rxn_missing_var)
 
 # ------ ODE in order ------- #
-list_ODE = ['Ca', 'pmca', 'pmcaCa', 'CaOut', 'ncx', 'ncxCa', 'Leak', 'CaOutLeak', 'Calbin', 'CalbinC', 'CamCa4', 'CamCa2N', 'DaDbuf', 'Dbuf', 'DaOut', 'Da', 'DaD1R', 'Gsabg', 'DaD1RGs', 'D1R', 'GsD1R', 'GsaGTP', 'Gbg', 'PKAc', 'PKAcDaD1RGs', 'pDaD1RGs', 'GluGbuf', 'Gbuf', 'Glu', 'GluOut', 'GluMgluR', 'GluMgluRdesens', 'MgluR', 'Gqabg', 'MgluRGq', 'GluMgluRGq', 'GqaGTP', 'ACh', 'm1R', 'AChm1R', 'AChm1RGq', 'm1RGq', 'm4R', 'AChm4R', 'Giabg', 'AChm4RGi', 'Gim4R', 'GsaGDP', 'GqaGDP', 'GiaGTP', 'GiaGDP', 'AC5', 'AC5Gsa', 'ATP', 'AC5GsaATP', 'cAMP', 'AC5Gia', 'AC5GsaGia', 'AC5GsaGiaATP', 'PDE1', 'PDE1CamCa4', 'PDE1CamCa4cAMP', 'AMP', 'PDE10', 'PDE10cAMP', 'pPDE10', 'pPDE10cAMP', 'PKAcPDE10', 'PKAcPDE10cAMP', 'PP1_Blackwell', 'pPDE10PP1', 'PDE2', 'PDE2cAMP', 'PDE2cAMP2', 'PDE4', 'PDE4cAMP', 'pPDE4', 'pPDE4cAMP', 'PKAcPDE4', 'PKAcPDE4cAMP', 'pPDE4PP1', 'Plc', 'PlcCa', 'PlcCaGqa', 'PlcGqa', 'Pip2', 'PlcCaPip2', 'Ip3', 'Dag', 'PlcCaGqaPip2', 'Dgl', 'CaDgl', 'DagCaDgl', 'two_ag', 'Ip3degrad', 'PIkinase', 'Ip3degPIk', 'two_agDegrad', 'DagK', 'DagKdag', 'PA', 'Pkc', 'PkcCa', 'PkcCaDag', 'PKA', 'PKAcAMP2', 'PKAcAMP4', 'PKAr', 'Cam', 'PP2B', 'PP2BCam', 'CamCa2C', 'PP2BCamCa2C', 'PP2BCamCa2N', 'PP2BCamCa4', 'PKAcPP2AB56d', 'pPP2A', 'PP2ABPR72', 'PP2Acal', 'D32', 'D32PKAc', 'D32p34', 'D32p34PP1', 'D32p34PP2BCamCa4', 'D32p34PP1PP2BCamCa4', 'D32p34PP2ABPR72', 'D32p34PP2AB56d', 'D32p34PP1PP2ABPR72', 'D32p34PP1PP2AB56d', 'PP2AB56d', 'Cdk5', 'Cdk5D32', 'D32p75', 'D32p75PKAc', 'D32p75pPP2A', 'D32p75PP2ABPR72', 'D32p75PP2AB56d', 'D32p75PP2Acal', 'CK', 'CKCamCa4', 'CKpCamCa4', 'CKp', 'CKpPP1', 'CKpCamCa4PP1', 'Dgl_CKCamCa4', 'pDgl', 'Dgl_CKpCamCa4', 'CaDgl_CKpCamCa4', 'CapDgl', 'Dgl_CKp', 'DagCapDgl', 'AKAR3', 'PKAcAKAR3', 'pAKAR3', 'PP1pAKAR3', 'AC1', 'AC1Gsa', 'AC1GsaCamCa4', 'AC1GsaCamCa4ATP', 'AC1CamCa4', 'AC1CamCa4ATP']
+list_ODE = ['pmca', 'pmcaCa', 'CaOut', 'ncx', 'ncxCa', 'Leak', 'CaOutLeak', 'Calbin', 'CalbinC', 'CamCa4', 'CamCa2N', 'DaDbuf', 'Dbuf', 'DaOut', 'Da', 'DaD1R', 'Gsabg', 'DaD1RGs', 'D1R', 'GsD1R', 'GsaGTP', 'Gbg', 'PKAc', 'PKAcDaD1RGs', 'pDaD1RGs', 'GluGbuf', 'Gbuf', 'GluOut', 'GluMgluR', 'GluMgluRdesens', 'MgluR', 'Gqabg', 'MgluRGq', 'GluMgluRGq', 'GqaGTP', 'ACh', 'm1R', 'AChm1R', 'AChm1RGq', 'm1RGq', 'm4R', 'AChm4R', 'Giabg', 'AChm4RGi', 'Gim4R', 'GsaGDP', 'GqaGDP', 'GiaGTP', 'GiaGDP', 'AC5', 'AC5Gsa', 'ATP', 'AC5GsaATP', 'cAMP', 'AC5Gia', 'AC5GsaGia', 'AC5GsaGiaATP', 'PDE1', 'PDE1CamCa4', 'PDE1CamCa4cAMP', 'AMP', 'PDE10', 'PDE10cAMP', 'pPDE10', 'pPDE10cAMP', 'PKAcPDE10', 'PKAcPDE10cAMP', 'pPDE10PP1', 'PDE2', 'PDE2cAMP', 'PDE2cAMP2', 'PDE4', 'PDE4cAMP', 'pPDE4', 'pPDE4cAMP', 'PKAcPDE4', 'PKAcPDE4cAMP', 'pPDE4PP1', 'Plc', 'PlcCa', 'PlcCaGqa', 'PlcGqa', 'Pip2', 'PlcCaPip2', 'Ip3', 'Dag', 'PlcCaGqaPip2', 'Dgl', 'CaDgl', 'DagCaDgl', 'two_ag', 'Ip3degrad', 'PIkinase', 'Ip3degPIk', 'two_agDegrad', 'DagK', 'DagKdag', 'PA', 'Pkc', 'PkcCa', 'PkcCaDag', 'PKA', 'PKAcAMP2', 'PKAcAMP4', 'PKAr', 'Cam', 'PP2B', 'PP2BCam', 'CamCa2C', 'PP2BCamCa2C', 'PP2BCamCa2N', 'PP2BCamCa4', 'PKAcPP2AB56d', 'pPP2A', 'PP2ABPR72', 'PP2Acal', 'D32', 'D32PKAc', 'D32p34', 'D32p34PP1', 'D32p34PP2BCamCa4', 'D32p34PP1PP2BCamCa4', 'D32p34PP2ABPR72', 'D32p34PP2AB56d', 'D32p34PP1PP2ABPR72', 'D32p34PP1PP2AB56d', 'PP2AB56d', 'Cdk5', 'Cdk5D32', 'D32p75', 'D32p75PKAc', 'D32p75pPP2A', 'D32p75PP2ABPR72', 'D32p75PP2AB56d', 'D32p75PP2Acal', 'pDgl', 'CapDgl', 'DagCapDgl', 'AKAR3', 'PKAcAKAR3', 'pAKAR3', 'PP1pAKAR3', 'AC1', 'AC1Gsa', 'AC1GsaCamCa4', 'AC1GsaCamCa4ATP', 'AC1CamCa4', 'AC1CamCa4ATP']
 init_dict_ord = coll.OrderedDict([(k,init_dict_ord[k]) for k in list_ODE if k in list_ODE])
 
 init_dict_Blackwell = init_dict_ord
@@ -429,7 +414,6 @@ init_dict.update(init_dict_Blackwell)
 
 init_array = init_dict.values()
 init_keys = init_dict.keys()
-
 
 # ------------------------------------------------------ #
 
@@ -638,7 +622,7 @@ params_dict_ord_stimulation = coll.OrderedDict([
     ("regular_on", 0.), # No unit
     ("tsdt", 15.), # ms
     ("tpost", 500.), # ms
-    ("post_on", 0.), # No unit
+    ("post_on", 1.), # No unit
     ("Delta_t_STDP", 20.), # ms
     ("num_stim", 20), # No unit | Integer
     ("pre_on", 1.), # No unit
@@ -1193,11 +1177,10 @@ nb_eq = len(init_array) # Number of equations
 
 
 # ----- To steady-states ------ #
-t_end_to_steady_states = 50000.
+t_end_to_steady_states = 500000.
 
 res = MSc.main(init_array, params_array_no_stim, nb_eq, t_start, t_end_to_steady_states, time_step, h_step = 1e-8, rel_err = 1e-8, abs_err = 1e-8)
 y_serie = pd.DataFrame(res[:,1:], columns = init_keys, index = res[:,0])
-
 
 # ----------- Continue -------------------------- #
 for j in xrange(len(y_serie.columns)):
@@ -1211,8 +1194,8 @@ init_array = init_dict.values()
 
 
 
-res = MSc.main(init_array, params_array, nb_eq, t_start, t_end, time_step, h_step = 1e-8, rel_err = 1e-8, abs_err = 1e-8)
-y_serie = pd.DataFrame(res[:,1:], columns = init_keys, index = res[:,0])
+#res = MSc.main(init_array, params_array, nb_eq, t_start, t_end, time_step, h_step = 1e-8, rel_err = 1e-8, abs_err = 1e-8)
+#y_serie = pd.DataFrame(res[:,1:], columns = init_keys, index = res[:,0])
 
 
 # %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% #
