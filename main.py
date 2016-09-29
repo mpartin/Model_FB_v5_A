@@ -1163,7 +1163,7 @@ params_array_no_stim = np.concatenate([params_array_no_stim, LTPwin_tab, minf_ca
 ## ----------- Concat params array with Glu stim tab----- #
 params_array = np.concatenate([params_array, Glumax_tab, tauglu_tab, t_start_glu_tab])
 params_array_no_stim = np.concatenate([params_array_no_stim, Glumax_tab, tauglu_tab, t_start_glu_tab])
-#
+
 ## ----------- Concat params array with Glu stim tab----- #
 params_array = np.concatenate([params_array, DPmax_tab, APmax_tab, tausbAP_tab, t_start_Iact_tab])
 params_array_no_stim = np.concatenate([params_array_no_stim, DPmax_tab, APmax_tab, tausbAP_tab, t_start_Iact_tab])
@@ -1294,6 +1294,9 @@ for i in xrange(len(y_serie)):
 phos_sum = y_serie['B1'] + 2*(y_serie['B2'] + y_serie['B3'] + y_serie['B4']) + 3*(y_serie['B5'] + y_serie['B6'] + y_serie['B7'] + y_serie['B8']) + 4*(y_serie['B9'] + y_serie['B10'] + y_serie['B11']) + 5*y_serie['B12'] + 6*y_serie['B13']
 
 y_serie['phos_sum'] = phos_sum
+y_serie['Glu'] = Glu_serie
+
+
 #print y_serie
 
 phos_sum_max = 164.6*1e3 # C'est quoi le calcul ???
