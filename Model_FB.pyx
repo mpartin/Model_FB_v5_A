@@ -1839,8 +1839,9 @@ cdef int func (double t,  double y[], double f[], void *params) nogil:
     f[Pip2] = -forwardRate_PlcCa_plus_Pip2__PlcCaPip2*y[PlcCa]*y[Pip2] +reverseRate_PlcCa_plus_Pip2__PlcCaPip2*y[PlcCaPip2] -forwardRate_PlcCaGqa_plus_Pip2__PlcCaGqaPip2*y[PlcCaGqa]*y[Pip2] +reverseRate_PlcCaGqa_plus_Pip2__PlcCaGqaPip2*y[PlcCaGqaPip2] +forwardRate_Ip3degPIk__PIP2__plus__PIkinase*y[Ip3degPIk]
     f[PlcCaPip2] = forwardRate_PlcCa_plus_Pip2__PlcCaPip2*y[PlcCa]*y[Pip2] -reverseRate_PlcCa_plus_Pip2__PlcCaPip2*y[PlcCaPip2] -forwardRate_PlcCaPip2__PlcCa_plus_Dag_plus_Ip3*y[PlcCaPip2]
 
-    f[Ip3] = forwardRate_PlcCaPip2__PlcCa_plus_Dag_plus_Ip3*y[PlcCaPip2] +forwardRate_PlcCaGqaPip2__PlcCaGqaDag_plus_Ip3*y[PlcCaGqaPip2] -forwardRate_Ip3__Ip3degrad*y[Ip3]
-    f[Dag] = forwardRate_PlcCaPip2__PlcCa_plus_Dag_plus_Ip3*y[PlcCaPip2] +forwardRate_PlcCaGqaPip2__PlcCaGqaDag_plus_Ip3*y[PlcCaGqaPip2] -forwardRate_Dag_plus_CaDlg__DagCaDgl*y[Dag]*y[CaDgl] +reverseRate_Dag_plus_CaDlg__DagCaDgl*y[DagCaDgl] -forwardRate_DagKdag1*y[Dag]*y[DagK] +reverseRate_DagKdag1*y[DagKdag] -forwardRate_PkcCa_plus_Dag__PkcCaDag*y[PkcCa]*y[Dag] +reverseRate_PkcCa_plus_Dag__PkcCaDag*y[PkcCaDag] -forwardRate_Dag_plus_CapDlg__DagCapDgl*y[Dag]*y[CapDgl] +reverseRate_Dag_plus_CapDlg__DagCapDgl*y[DagCapDgl]
+
+    f[Ip3] = vip3prod -v3k -forwardRate_Ip3__Ip3degrad*y[Ip3]
+    f[Dag] = vip3prod -forwardRate_Dag_plus_CaDlg__DagCaDgl*y[Dag]*y[CaDgl] +reverseRate_Dag_plus_CaDlg__DagCaDgl*y[DagCaDgl] -forwardRate_DagKdag1*y[Dag]*y[DagK] +reverseRate_DagKdag1*y[DagKdag] -forwardRate_PkcCa_plus_Dag__PkcCaDag*y[PkcCa]*y[Dag] +reverseRate_PkcCa_plus_Dag__PkcCaDag*y[PkcCaDag] -forwardRate_Dag_plus_CapDlg__DagCapDgl*y[Dag]*y[CapDgl] +reverseRate_Dag_plus_CapDlg__DagCapDgl*y[DagCapDgl]
 
     f[PlcCaGqaPip2] = forwardRate_PlcCaGqa_plus_Pip2__PlcCaGqaPip2*y[PlcCaGqa]*y[Pip2] -reverseRate_PlcCaGqa_plus_Pip2__PlcCaGqaPip2*y[PlcCaGqaPip2] -forwardRate_PlcCaGqaPip2__PlcCaGqaDag_plus_Ip3*y[PlcCaGqaPip2]
     f[Dgl] = -forwardRate_Ca_plus_Dlg__CaDgl*y[Ca_cyt]*y[Dgl] +reverseRate_Ca_plus_Dlg__CaDgl*y[CaDgl] +forwardRate_pDgl_dephos*y[pDgl]

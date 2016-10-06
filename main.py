@@ -1167,7 +1167,7 @@ nb_eq = len(init_array) # Number of equations
 #if __name__ == '__main__':
 
     # ----------- Meta - Continue -------------------------- #
-#nb_rep = 100
+#nb_rep = 10000
 #for k in xrange(nb_rep): # Instead of having a big array which take all memory
 #
 #    print 'nb_rep: ', k
