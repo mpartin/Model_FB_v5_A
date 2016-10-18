@@ -123,9 +123,12 @@ init_dict_ord_ILYA = coll.OrderedDict([
                         ('h_CICR', 0.8246676668946951), # No unit | prob
                         ('Ca_cyt', 0.12132718966407073*1e3), # nM
                         ('Ca_ER', 63.348087686853646*1e3), # nM
+                        ('DAGLP', 4.*1e-7), # No unit | prob
                         ('AEA', 0.006103384809978344*1e3), # nM
                         ('fpre', 1.0), # No unit
-                        ('PP1', 1.), # nM
+#                        ('PP1', 1.), # nM
+                        ('PP1', 10.), # nM
+
                         ('V', -69.99901620452822), # mV
                         ('o_CB1R', 3.4373437854140236e-07), # No unit | prob
                         ('d_CB1R', 0.002994487796947427), # No unit | prob
@@ -164,10 +167,12 @@ init_dict_ord_nM = coll.OrderedDict([
 
                                     #-- cytosolic molecules -->
                                     #-- total calmodulin = 9000 nM -->
-                                    ('Cam', 3491*1e-2),
-                                    ('CamCa2C', 185*1e-2),
-                                    ('CamCa2N', 35*1e-2),
-                                    ('CamCa4', 4.*1e-2),
+#                                    ('Cam', 3491),
+                                    ('Cam', 3491*4.),
+
+                                    ('CamCa2C', 185),
+                                    ('CamCa2N', 351),
+                                    ('CamCa4', 4.),
 
                                     #-- Dopamine, ACh, Glu and their buffers: cytosolic molecules -->
                                     ('Da', 10),
@@ -233,7 +238,7 @@ init_dict_ord_nM = coll.OrderedDict([
                                     ('AMP', 0),
 
                                     ('PDE1', 1700),
-                                    ('PDE1CamCa4', 300*1e-2),
+                                    ('PDE1CamCa4', 300),
                                     ('PDE1CamCa4cAMP', 0),
 
                                     #-- membrane molecules -->
@@ -266,11 +271,18 @@ init_dict_ord_nM = coll.OrderedDict([
 
                                     #-- cytosolic molecules -->
                                     #-- total PP2B = 5000 nM, PP2ABPR72=1400, PP2AB56d=1400-->
-                                    ('PP2B', 15),
-                                    ('PP2BCam', 3000*1e-2),
-                                    ('PP2BCamCa2C', 1710*1e-2),
-                                    ('PP2BCamCa2N', 260*1e-2),
-                                    ('PP2BCamCa4', 15*1e-2),
+#                                    ('PP2B', 15.),
+#                                    ('PP2BCam', 3000.),
+#                                    ('PP2BCamCa2C', 1710.),
+#                                    ('PP2BCamCa2N', 260.),
+#                                    ('PP2BCamCa4', 15.),
+                                    ('PP2B', 15.*1e-1),
+                                    ('PP2BCam', 3000.*1e-1),
+                                    ('PP2BCamCa2C', 1710.*1e-1),
+                                    ('PP2BCamCa2N', 260.*1e-1),
+                                    ('PP2BCamCa4', 15.*1e-1),
+
+
                                     ('PP1_Blackwell', 3400),
                                     ('PP2AB56d', 1100),
                                     ('PKAcPP2AB56d', 0),
@@ -278,7 +290,7 @@ init_dict_ord_nM = coll.OrderedDict([
                                     ('PP2ABPR72', 1100),
                                     ('PP2Acal', 20),
                                     ('CK', 11930),
-                                    ('CKCamCa4', 70*1e-2),
+                                    ('CKCamCa4', 70),
                                     ('CKpCamCa4', 0),
                                     ('CKp', 0),
                                     ('Complex', 0),
@@ -290,13 +302,13 @@ init_dict_ord_nM = coll.OrderedDict([
                                     ('D32', 37060),
                                     ('D32PKAc', 0),
                                     ('D32p34', 0),
-                                    ('D32p34PP1', 200.),
+                                    ('D32p34PP1', 200.*1e-1),
                                     ('D32p34PP2BCamCa4', 0),
                                     ('D32p34PP1PP2BCamCa4', 0),
                                     ('D32p34PP2ABPR72', 0),
                                     ('D32p34PP2AB56d', 0),
-                                    ('D32p34PP1PP2ABPR72', 10.*1e-3),
-                                    ('D32p34PP1PP2AB56d', 10.*1e-3),
+                                    ('D32p34PP1PP2ABPR72', 10.*1e-1),
+                                    ('D32p34PP1PP2AB56d', 10.*1e-1),
                                     ('Cdk5', 370),
                                     ('Cdk5D32', 1215),
                                     ('D32p75', 10650),
@@ -376,7 +388,7 @@ init_dict_ord_PicoSD = coll.OrderedDict([
                                 ('PIkinase', 280/sub_memb_vol_micrometer*1e-3),
 
                                 ('Ip3degPIk', 0/sub_memb_vol_micrometer),
-                                ('Ip3', 20/sub_memb_vol_micrometer*1e-2),
+                                ('Ip3', 20/sub_memb_vol_micrometer),
 
                                 ('Ip3degrad', 0/sub_memb_vol_micrometer),
                                 ('PKA', 812/sub_memb_vol_micrometer),
@@ -537,7 +549,10 @@ params_dict_ord_post_CaMKII_plast = coll.OrderedDict([
     ("kpkaI1", 4.67e-3), # ms-1
     ("PP10", 200.), # nM
     ("KM", 400.), # nM
-    ("K5", 100.), # nM
+#    ("K5", 100.), # nM
+    ("K5", 300.), # nM
+
+
     ("k12", 6.0), # ms-1
     ("k11", 500.0e-6), # nM-1.ms-1
     ("kcan0I1", 0.05e-3), # ms-1
@@ -623,6 +638,7 @@ params_dict_ord_action = coll.OrderedDict([
 params_dict_ord_Glu_release = coll.OrderedDict([
     ("steadyrise_on", 0.), # No unit
     ("Glumax", 2000.0e3), # nM
+
     ("BaseLevel", 0.0), # nM
     ("tauGlu", 5.) # ms
 	])
@@ -678,14 +694,40 @@ params_dict_reactionRate = coll.OrderedDict([
                     ('reverseRate_Ca_leak_1', 0.0),
                     ('forwardRate_Ca_buffer', 2.8e-05),
                     ('reverseRate_Ca_buffer', 19.6),
+
+#                    ('forwardRate_Ca_pump1a', 5e-05*1e-3),
+#                    ('reverseRate_Ca_pump1a', 0.009*1e-3),
+#                    ('forwardRate_Ca_pump1b', 0.003*1e-3),
+#                    ('reverseRate_Ca_pump1b', 0.0),
+#                    ('forwardRate_Ca_pump2a', 1.1e-05*1e-3),
+#                    ('reverseRate_Ca_pump2a', 0.0112*1e-3),
+#                    ('forwardRate_Ca_pump2b', 0.0056*1e-3),
+#                    ('reverseRate_Ca_pump2b', 0.0),
+#                    ('forwardRate_Ca_leak', 1e-08*1e-3),
+#                    ('reverseRate_Ca_leak', 0.0011*1e-3),
+#                    ('forwardRate_Ca_leak_1', 0.0011*1e-3),
+#                    ('reverseRate_Ca_leak_1', 0.0),
+#                    ('forwardRate_Ca_buffer', 2.8e-05*1e-3),
+#                    ('reverseRate_Ca_buffer', 19.6*1e-3),
+
+#                    ('forwardRate_CamC_bind', 6e-06),
+#                    ('reverseRate_CamC_bind', 0.0091),
+#                    ('forwardRate_CamCa2C_bind', 0.0001),
+#                    ('reverseRate_CamCa2C_bind', 1.0),
+#                    ('forwardRate_CamN_bind', 0.0001),
+#                    ('reverseRate_CamN_bind', 1.0),
+#                    ('forwardRate_CamCa2N_bind', 6e-06),
+#                    ('reverseRate_CamCa2N_bind', 0.0091),
+
                     ('forwardRate_CamC_bind', 6e-06),
-                    ('reverseRate_CamC_bind', 0.0091),
+                    ('reverseRate_CamC_bind', 0.0091*1e2),
                     ('forwardRate_CamCa2C_bind', 0.0001),
-                    ('reverseRate_CamCa2C_bind', 1.0),
+                    ('reverseRate_CamCa2C_bind', 1.0*1e2),
                     ('forwardRate_CamN_bind', 0.0001),
-                    ('reverseRate_CamN_bind', 1.0),
+                    ('reverseRate_CamN_bind', 1.0*1e2),
                     ('forwardRate_CamCa2N_bind', 6e-06),
-                    ('reverseRate_CamCa2N_bind', 0.0091),
+                    ('reverseRate_CamCa2N_bind', 0.0091*1e2),
+
                     ('forwardRate_DaDbuf__Da_plus_Dbuf', 0.01),
                     ('reverseRate_DaDbuf__Da_plus_Dbuf', 0.0),
                     ('forwardRate_Da__DaOut', 0.001),
@@ -775,12 +817,14 @@ params_dict_reactionRate = coll.OrderedDict([
                     ('reverseRate_AC5GsaGiaATP__AC5GsaGia_plus_cAMP', 2.592e-07),
                     ('forwardRate_AC5GsaGiaATP__AC5Gia_plus_Gs_plus_cAMP', 1e-05),
                     ('reverseRate_AC5GsaGiaATP__AC5Gia_plus_Gs_plus_cAMP', 0.0),
+
                     ('forwardRate_PDE1_plus_CamCa4__PDE1CamCa4', 0.0001),
                     ('reverseRate_PDE1_plus_CamCa4__PDE1CamCa4', 0.001),
                     ('forwardRate_PDE1CamCa4_plus_cAMP__PDE1CamCa4cAMP', 4.6e-06),
                     ('reverseRate_PDE1CamCa4_plus_cAMP__PDE1CamCa4cAMP', 0.044),
                     ('forwardRate_PDE1CamCa4cAMP__PDE1CamCa4_plus_AMP', 0.011),
                     ('reverseRate_PDE1CamCa4cAMP__PDE1CamCa4_plus_AMP', 0.0),
+
                     ('forwardRate_PDE10_plus_cAMP__PDE10cAMP', 8.4e-05),
                     ('reverseRate_PDE10_plus_cAMP__PDE10cAMP', 0.0168),
                     ('forwardRate_PDE10cAMP__PDE10_plus_AMP', 0.0042),
@@ -829,6 +873,7 @@ params_dict_reactionRate = coll.OrderedDict([
                     ('reverseRate_PDE4_d_phosp1', 3.2e-06),
                     ('forwardRate_PDE4_d_phosp2', 8e-07),
                     ('reverseRate_PDE4_d_phosp2', 0.0),
+
                     ('forwardRate_Plc_plus_Ca__PlcCa', 5e-07),
                     ('reverseRate_Plc_plus_Ca__PlcCa', 0.001),
                     ('forwardRate_PlcCa_plus_GqaGTP__PlcCaGqa', 3.5e-06),
@@ -867,16 +912,21 @@ params_dict_reactionRate = coll.OrderedDict([
                     ('reverseRate_DagKdag1', 0.0008),
                     ('forwardRate_DagKdag1_1', 0.0002),
                     ('reverseRate_DagKdag1_1', 0.0),
+
                     ('forwardRate_Pkc_plus_Ca__PkcCa', 2e-05),
                     ('reverseRate_Pkc_plus_Ca__PkcCa', 0.05),
+
                     ('forwardRate_PkcCa_plus_Dag__PkcCaDag', 1.5e-08),
                     ('reverseRate_PkcCa_plus_Dag__PkcCaDag', 0.00015),
+
+
                     ('forwardRate_PKA_bind', 2.61e-07),
                     ('reverseRate_PKA_bind', 6e-05),
                     ('forwardRate_PKAcAMP2_bind', 3.5e-07),
                     ('reverseRate_PKAcAMP2_bind', 0.0006),
                     ('forwardRate_PKAcAMP4_diss', 0.00024),
                     ('reverseRate_PKAcAMP4_diss', 2.55e-05),
+
                     ('forwardRate_Cam_plus_PP2B__PP2BCam_reac', 4.6e-06),
                     ('reverseRate_Cam_plus_PP2B__PP2BCam_reac', 1.2e-06),
                     ('forwardRate_CamCa2C_plus_PP2B__PP2BCamCa2C_reac', 4.6e-05),
@@ -893,6 +943,7 @@ params_dict_reactionRate = coll.OrderedDict([
                     ('reverseRate_PP2BCamCa2C_plus_Ca2__PP2BCamCa4_reac', 1.0),
                     ('forwardRate_PP2BCamCa2N_plus_Ca2__PP2BCamCa4_reac', 6e-06),
                     ('reverseRate_PP2BCamCa2N_plus_Ca2__PP2BCamCa4_reac', 0.0091),
+
                     ('forwardRate_PKAc_plus_PP2A__PKAcPP2AB56d_reac', 2.5e-06),
                     ('reverseRate_PKAc_plus_PP2A__PKAcPP2AB56d_reac', 0.00037),
                     ('forwardRate_PKAcPP2AB56d__PKAc_plus_pPP2A_reac', 6e-05),
@@ -907,6 +958,7 @@ params_dict_reactionRate = coll.OrderedDict([
                     ('reverseRate_D32PKAc__PKAc_plus_D32p34_reac', 0.0),
                     ('forwardRate_D32p34_plus_PP1__D32p34pp1_reac', 0.0004),
                     ('reverseRate_D32p34_plus_PP1__D32p34pp1_reac', 0.00058),
+
                     ('forwardRate_D32p34_plus_PP2BCamCa4__D32p34PP2BCamCa4_reac', 2.5e-06),
                     ('reverseRate_D32p34_plus_PP2BCamCa4__D32p34PP2BCamCa4_reac', 0.004),
                     ('forwardRate_D32p34PP2BCamCa4__PP2BCamCa4_plus_D32_reac', 0.001),
@@ -915,6 +967,8 @@ params_dict_reactionRate = coll.OrderedDict([
                     ('reverseRate_D32p34PP1_plus_PP2BCamCa4__D32p34PP1PP2BCamCa4_reac', 0.004),
                     ('forwardRate_D32p34PP1PP2BCamCa4__PP1_plus_PP2BCamCa4_plus_D32_reac', 0.001),
                     ('reverseRate_D32p34PP1PP2BCamCa4__PP1_plus_PP2BCamCa4_plus_D32_reac', 0.0),
+
+
                     ('forwardRate_D32p34_plus_PP2ABPR72__D32p34PP2ABPR72_reac', 1.52e-06),
                     ('reverseRate_D32p34_plus_PP2ABPR72__D32p34PP2ABPR72_reac', 0.056),
                     ('forwardRate_D32p34PP2ABPR72__PP2ABPR72_plus_D32_reac', 0.014),
@@ -1167,7 +1221,7 @@ nb_eq = len(init_array) # Number of equations
 #if __name__ == '__main__':
 
     # ----------- Meta - Continue -------------------------- #
-#nb_rep = 10000
+#nb_rep = 10
 #for k in xrange(nb_rep): # Instead of having a big array which take all memory
 #
 #    print 'nb_rep: ', k
@@ -1179,8 +1233,8 @@ nb_eq = len(init_array) # Number of equations
 
     # ----- To steady-states ------ #
 
-    #init_dict = pickle.load(open('init_dict_DOWN.p','rb'))
-    #init_dict['PP1'] = 3000.
+    #init_dict = pickle.load(open('init_dict_PP1_100_CamCatot_6000_PP2BCam_300.p','rb'))
+    #
     #init_array = init_dict.values()
 
 t_end_to_steady_states = 500.
@@ -1188,6 +1242,13 @@ time_step = 1.
 
 res = MSc.main(init_array, params_array_no_stim, nb_eq, t_start, t_end_to_steady_states, time_step, h_step = 1e-8, rel_err = 1e-8, abs_err = 1e-8)
 y_serie = pd.DataFrame(res[:,1:], columns = init_keys, index = res[:,0])
+
+#for j in xrange(len(y_serie.columns)):
+#    init_dict[y_serie.columns[j]] = y_serie.iloc[-1,j]
+#pickle.dump(init_dict, open('init_dict_temp.p','wb'))
+
+#pickle.dump(init_dict, open('init_dict_PP1_250_CamCatot_14800_CamSpeed_x100_K5_300_PP2B_x001.p','wb'))
+
 
 # ----------- Continue -------------------------- #
 #for j in xrange(len(y_serie.columns)):
@@ -1208,7 +1269,7 @@ y_serie = pd.DataFrame(res[:,1:], columns = init_keys, index = res[:,0])
 #init_dict = pickle.load(open('init_dict_temp.p','rb'))
 
 # ---- to save ---- #
-#pickle.dump(init_dict, open('init_dict_DOWN.p','wb'))
+#pickle.dump(init_dict, open('init_dict_DOWN_A.p','wb'))
 
 
 #res = MSc.main(init_array, params_array, nb_eq, t_start, t_end, time_step, h_step = 1e-8, rel_err = 1e-8, abs_err = 1e-8)
