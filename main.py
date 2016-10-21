@@ -127,7 +127,7 @@ init_dict_ord_ILYA = coll.OrderedDict([
                         ('AEA', 0.006103384809978344*1e3), # nM
                         ('fpre', 1.0), # No unit
 #                        ('PP1', 1.), # nM
-                        ('PP1', 10.), # nM
+                        ('PP1', 100.), # nM
 
                         ('V', -69.99901620452822), # mV
                         ('o_CB1R', 3.4373437854140236e-07), # No unit | prob
@@ -528,11 +528,17 @@ params_dict_ord_ECb = coll.OrderedDict([
     ("P3_ECb", 7.), # No unit
     ("P4_ECb", 2.0e3), # ms
     ("vATAEA", 2.0e-4), # ms-1
-    ("LTDstart", 0.027), # No unit
-    ("LTDstop", 0.047), # No unit
+#    ("LTDstart", 0.027), # No unit
+#    ("LTDstop", 0.047), # No unit
+#    ("LTDMax", 0.65), # No unit
+#    ("LTPstart", 0.086), # No unit
+#    ("LTPMax", 13.5425), # No unit
+    ("LTDstart", 0.008), # No unit
+    ("LTDstop", 0.00823), # No unit
     ("LTDMax", 0.65), # No unit
-    ("LTPstart", 0.086), # No unit
+    ("LTPstart", 0.01), # No unit
     ("LTPMax", 13.5425), # No unit
+
     ("KFAAH", 1000.), # nM
     ("vFAAH", 4.0), # nM.ms-1
 	])
@@ -549,8 +555,9 @@ params_dict_ord_post_CaMKII_plast = coll.OrderedDict([
     ("kpkaI1", 4.67e-3), # ms-1
     ("PP10", 200.), # nM
     ("KM", 400.), # nM
+
 #    ("K5", 100.), # nM
-    ("K5", 300.), # nM
+    ("K5", 700.), # nM
 
 
     ("k12", 6.0), # ms-1
@@ -650,7 +657,7 @@ params_dict_ord_stimulation = coll.OrderedDict([
     ("Delta_t_STDP", 20.), # ms
     ("num_stim", 20), # No unit | Integer
     ("pre_on", 1.), # No unit
-    ("Freq", 1.0), # Hz
+    ("Freq", 10.0), # Hz
     ("tables_step", 5e-02) # ms
 ])
 
@@ -695,21 +702,6 @@ params_dict_reactionRate = coll.OrderedDict([
                     ('forwardRate_Ca_buffer', 2.8e-05),
                     ('reverseRate_Ca_buffer', 19.6),
 
-#                    ('forwardRate_Ca_pump1a', 5e-05*1e-3),
-#                    ('reverseRate_Ca_pump1a', 0.009*1e-3),
-#                    ('forwardRate_Ca_pump1b', 0.003*1e-3),
-#                    ('reverseRate_Ca_pump1b', 0.0),
-#                    ('forwardRate_Ca_pump2a', 1.1e-05*1e-3),
-#                    ('reverseRate_Ca_pump2a', 0.0112*1e-3),
-#                    ('forwardRate_Ca_pump2b', 0.0056*1e-3),
-#                    ('reverseRate_Ca_pump2b', 0.0),
-#                    ('forwardRate_Ca_leak', 1e-08*1e-3),
-#                    ('reverseRate_Ca_leak', 0.0011*1e-3),
-#                    ('forwardRate_Ca_leak_1', 0.0011*1e-3),
-#                    ('reverseRate_Ca_leak_1', 0.0),
-#                    ('forwardRate_Ca_buffer', 2.8e-05*1e-3),
-#                    ('reverseRate_Ca_buffer', 19.6*1e-3),
-
 #                    ('forwardRate_CamC_bind', 6e-06),
 #                    ('reverseRate_CamC_bind', 0.0091),
 #                    ('forwardRate_CamCa2C_bind', 0.0001),
@@ -719,12 +711,21 @@ params_dict_reactionRate = coll.OrderedDict([
 #                    ('forwardRate_CamCa2N_bind', 6e-06),
 #                    ('reverseRate_CamCa2N_bind', 0.0091),
 
+#                    ('forwardRate_CamC_bind', 6e-06),
+#                    ('reverseRate_CamC_bind', 0.0091*1e2),
+#                    ('forwardRate_CamCa2C_bind', 0.0001),
+#                    ('reverseRate_CamCa2C_bind', 1.0*1e2),
+#                    ('forwardRate_CamN_bind', 0.0001),
+#                    ('reverseRate_CamN_bind', 1.0*1e2),
+#                    ('forwardRate_CamCa2N_bind', 6e-06),
+#                    ('reverseRate_CamCa2N_bind', 0.0091*1e2),
+
                     ('forwardRate_CamC_bind', 6e-06),
                     ('reverseRate_CamC_bind', 0.0091*1e2),
                     ('forwardRate_CamCa2C_bind', 0.0001),
-                    ('reverseRate_CamCa2C_bind', 1.0*1e2),
+                    ('reverseRate_CamCa2C_bind', 1.0*5e1),
                     ('forwardRate_CamN_bind', 0.0001),
-                    ('reverseRate_CamN_bind', 1.0*1e2),
+                    ('reverseRate_CamN_bind', 1.0*5e1),
                     ('forwardRate_CamCa2N_bind', 6e-06),
                     ('reverseRate_CamCa2N_bind', 0.0091*1e2),
 
@@ -1221,7 +1222,7 @@ nb_eq = len(init_array) # Number of equations
 #if __name__ == '__main__':
 
     # ----------- Meta - Continue -------------------------- #
-#nb_rep = 10
+#nb_rep = 1000
 #for k in xrange(nb_rep): # Instead of having a big array which take all memory
 #
 #    print 'nb_rep: ', k
@@ -1247,7 +1248,7 @@ y_serie = pd.DataFrame(res[:,1:], columns = init_keys, index = res[:,0])
 #    init_dict[y_serie.columns[j]] = y_serie.iloc[-1,j]
 #pickle.dump(init_dict, open('init_dict_temp.p','wb'))
 
-#pickle.dump(init_dict, open('init_dict_PP1_250_CamCatot_14800_CamSpeed_x100_K5_300_PP2B_x001.p','wb'))
+#pickle.dump(init_dict, open('init_dict_PP1_100_CamCatot_14800_CamSpeed_x10x100_K5_700_PP2B_x01.p','wb'))
 
 
 # ----------- Continue -------------------------- #
